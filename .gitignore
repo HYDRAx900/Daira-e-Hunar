@@ -1,0 +1,31 @@
+# ── Environment ──────────────────────────────────────────────
+.env
+
+# ── Python ───────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# ── Flutter ──────────────────────────────────────────────────
+frontend/.dart_tool/
+frontend/.packages
+frontend/build/
+
+# ── Trace files ──────────────────────────────────────────────
+# NOTE: We WANT traces in git for submission — do NOT ignore them.
+# trace/*.json
+
+# ── IDE ──────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# ── OS ───────────────────────────────────────────────────────
+Thumbs.db
+.DS_Store
