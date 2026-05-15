@@ -1,1 +1,1407 @@
-[]
+[
+  {
+    "id": "P0001",
+    "name": "Muhammad Irfan",
+    "category": "AC Technician",
+    "sector": "G-13",
+    "lat": 33.6358,
+    "lng": 73.0262,
+    "rating": 4.7,
+    "rating_count": 132,
+    "price_range": {
+      "min": 2000,
+      "max": 5000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T17:00:00+05:00",
+      "2026-05-17T09:00:00+05:00",
+      "2026-05-17T17:00:00+05:00",
+      "2026-05-17T18:00:00+05:00",
+      "2026-05-18T10:00:00+05:00",
+      "2026-05-21T18:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0002",
+    "name": "Ahmed Raza",
+    "category": "AC Technician",
+    "sector": "G-11",
+    "lat": 33.6666,
+    "lng": 73.0209,
+    "rating": 4.5,
+    "rating_count": 89,
+    "price_range": {
+      "min": 2500,
+      "max": 6000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T10:00:00+05:00",
+      "2026-05-16T11:00:00+05:00",
+      "2026-05-16T16:00:00+05:00",
+      "2026-05-19T14:00:00+05:00",
+      "2026-05-20T16:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0003",
+    "name": "Bilal Hussain",
+    "category": "AC Technician",
+    "sector": "F-10",
+    "lat": 33.6916,
+    "lng": 73.0109,
+    "rating": 4.3,
+    "rating_count": 64,
+    "price_range": {
+      "min": 1800,
+      "max": 4500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T10:00:00+05:00",
+      "2026-05-17T15:00:00+05:00",
+      "2026-05-20T14:00:00+05:00",
+      "2026-05-20T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0004",
+    "name": "Usman Ali",
+    "category": "AC Technician",
+    "sector": "F-11",
+    "lat": 33.6868,
+    "lng": 73.0307,
+    "rating": 4.8,
+    "rating_count": 201,
+    "price_range": {
+      "min": 3000,
+      "max": 7000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T09:00:00+05:00",
+      "2026-05-17T17:00:00+05:00",
+      "2026-05-18T10:00:00+05:00",
+      "2026-05-19T11:00:00+05:00",
+      "2026-05-19T15:00:00+05:00",
+      "2026-05-20T16:00:00+05:00",
+      "2026-05-22T09:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0005",
+    "name": "Farhan Saeed",
+    "category": "AC Technician",
+    "sector": "I-8",
+    "lat": 33.6658,
+    "lng": 73.0542,
+    "rating": 4.1,
+    "rating_count": 45,
+    "price_range": {
+      "min": 1500,
+      "max": 4000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-17T10:00:00+05:00",
+      "2026-05-17T16:00:00+05:00",
+      "2026-05-18T10:00:00+05:00",
+      "2026-05-18T16:00:00+05:00",
+      "2026-05-22T09:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0006",
+    "name": "Kamran Shahid",
+    "category": "AC Technician",
+    "sector": "I-10",
+    "lat": 33.642,
+    "lng": 73.0196,
+    "rating": 3.9,
+    "rating_count": 33,
+    "price_range": {
+      "min": 2000,
+      "max": 5000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T17:00:00+05:00",
+      "2026-05-18T17:00:00+05:00",
+      "2026-05-20T17:00:00+05:00",
+      "2026-05-22T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0007",
+    "name": "Nadeem Akhtar",
+    "category": "AC Technician",
+    "sector": "Blue Area",
+    "lat": 33.7086,
+    "lng": 73.0453,
+    "rating": 4.6,
+    "rating_count": 156,
+    "price_range": {
+      "min": 3500,
+      "max": 8000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T16:00:00+05:00",
+      "2026-05-16T18:00:00+05:00",
+      "2026-05-18T11:00:00+05:00",
+      "2026-05-19T09:00:00+05:00",
+      "2026-05-19T16:00:00+05:00",
+      "2026-05-20T11:00:00+05:00",
+      "2026-05-20T14:00:00+05:00",
+      "2026-05-21T09:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0008",
+    "name": "Sajid Mehmood",
+    "category": "AC Technician",
+    "sector": "G-13",
+    "lat": 33.6357,
+    "lng": 73.0312,
+    "rating": 4.4,
+    "rating_count": 78,
+    "price_range": {
+      "min": 2000,
+      "max": 5500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T11:00:00+05:00",
+      "2026-05-16T15:00:00+05:00",
+      "2026-05-17T15:00:00+05:00",
+      "2026-05-20T15:00:00+05:00",
+      "2026-05-21T11:00:00+05:00",
+      "2026-05-21T16:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "_synthetic": true,
+    "notes": "Also experienced in electrical wiring and switchboard repair"
+  },
+  {
+    "id": "P0009",
+    "name": "Tariq Mahmood",
+    "category": "AC Technician",
+    "sector": "DHA Phase 2 Rawalpindi",
+    "lat": 33.5544,
+    "lng": 73.1107,
+    "rating": 4.2,
+    "rating_count": 52,
+    "price_range": {
+      "min": 2500,
+      "max": 6000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T16:00:00+05:00",
+      "2026-05-16T17:00:00+05:00",
+      "2026-05-17T17:00:00+05:00",
+      "2026-05-22T17:00:00+05:00",
+      "2026-05-22T18:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0010",
+    "name": "Waqar Hassan",
+    "category": "AC Technician",
+    "sector": "G-11",
+    "lat": 33.6648,
+    "lng": 73.0182,
+    "rating": 4.0,
+    "rating_count": 28,
+    "price_range": {
+      "min": 1500,
+      "max": 3500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-17T11:00:00+05:00",
+      "2026-05-18T18:00:00+05:00",
+      "2026-05-22T16:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0011",
+    "name": "Zubair Ahmad",
+    "category": "AC Technician",
+    "sector": "F-10",
+    "lat": 33.6932,
+    "lng": 73.0108,
+    "rating": 4.5,
+    "rating_count": 91,
+    "price_range": {
+      "min": 2000,
+      "max": 5000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T15:00:00+05:00",
+      "2026-05-18T10:00:00+05:00",
+      "2026-05-20T17:00:00+05:00",
+      "2026-05-21T10:00:00+05:00",
+      "2026-05-21T14:00:00+05:00",
+      "2026-05-21T15:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0012",
+    "name": "Faisal Raza Khan",
+    "category": "AC Technician",
+    "sector": "I-8",
+    "lat": 33.6648,
+    "lng": 73.0532,
+    "rating": 3.8,
+    "rating_count": 19,
+    "price_range": {
+      "min": 1800,
+      "max": 4000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-17T11:00:00+05:00",
+      "2026-05-17T18:00:00+05:00",
+      "2026-05-19T09:00:00+05:00",
+      "2026-05-19T16:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0013",
+    "name": "Hassan Ali Shah",
+    "category": "Plumber",
+    "sector": "G-11",
+    "lat": 33.6641,
+    "lng": 73.0211,
+    "rating": 4.6,
+    "rating_count": 110,
+    "price_range": {
+      "min": 1000,
+      "max": 3000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-17T17:00:00+05:00",
+      "2026-05-18T15:00:00+05:00",
+      "2026-05-20T14:00:00+05:00",
+      "2026-05-21T14:00:00+05:00",
+      "2026-05-21T15:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0014",
+    "name": "Imran Malik",
+    "category": "Plumber",
+    "sector": "F-11",
+    "lat": 33.6876,
+    "lng": 73.0312,
+    "rating": 4.3,
+    "rating_count": 67,
+    "price_range": {
+      "min": 800,
+      "max": 2500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T11:00:00+05:00",
+      "2026-05-17T17:00:00+05:00",
+      "2026-05-18T15:00:00+05:00",
+      "2026-05-19T10:00:00+05:00",
+      "2026-05-22T14:00:00+05:00",
+      "2026-05-22T15:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0015",
+    "name": "Junaid Sheikh",
+    "category": "Plumber",
+    "sector": "I-10",
+    "lat": 33.6416,
+    "lng": 73.0203,
+    "rating": 4.5,
+    "rating_count": 88,
+    "price_range": {
+      "min": 1200,
+      "max": 3500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-17T16:00:00+05:00",
+      "2026-05-18T15:00:00+05:00",
+      "2026-05-19T10:00:00+05:00",
+      "2026-05-19T18:00:00+05:00",
+      "2026-05-20T15:00:00+05:00",
+      "2026-05-21T10:00:00+05:00",
+      "2026-05-21T16:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0016",
+    "name": "Kashif Nawaz",
+    "category": "Plumber",
+    "sector": "DHA Phase 2 Rawalpindi",
+    "lat": 33.5583,
+    "lng": 73.1129,
+    "rating": 4.1,
+    "rating_count": 41,
+    "price_range": {
+      "min": 1000,
+      "max": 3000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-17T09:00:00+05:00",
+      "2026-05-17T10:00:00+05:00",
+      "2026-05-17T18:00:00+05:00",
+      "2026-05-18T09:00:00+05:00",
+      "2026-05-21T18:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0017",
+    "name": "Liaqat Ali",
+    "category": "Plumber",
+    "sector": "G-13",
+    "lat": 33.6354,
+    "lng": 73.0276,
+    "rating": 2.1,
+    "rating_count": 9,
+    "price_range": {
+      "min": 500,
+      "max": 1500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-19T10:00:00+05:00",
+      "2026-05-19T14:00:00+05:00",
+      "2026-05-20T16:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0018",
+    "name": "Mansoor Ahmed",
+    "category": "Plumber",
+    "sector": "G-11",
+    "lat": 33.6647,
+    "lng": 73.0215,
+    "rating": 4.7,
+    "rating_count": 145,
+    "price_range": {
+      "min": 1500,
+      "max": 4000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T14:00:00+05:00",
+      "2026-05-16T16:00:00+05:00",
+      "2026-05-16T18:00:00+05:00",
+      "2026-05-17T09:00:00+05:00",
+      "2026-05-17T10:00:00+05:00",
+      "2026-05-19T18:00:00+05:00",
+      "2026-05-20T09:00:00+05:00",
+      "2026-05-22T09:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0019",
+    "name": "Naeem Ullah",
+    "category": "Plumber",
+    "sector": "F-10",
+    "lat": 33.6948,
+    "lng": 73.0143,
+    "rating": 4.0,
+    "rating_count": 36,
+    "price_range": {
+      "min": 800,
+      "max": 2000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T15:00:00+05:00",
+      "2026-05-19T09:00:00+05:00",
+      "2026-05-19T14:00:00+05:00",
+      "2026-05-20T17:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0020",
+    "name": "Omar Farooq",
+    "category": "Plumber",
+    "sector": "Blue Area",
+    "lat": 33.7093,
+    "lng": 73.051,
+    "rating": 4.4,
+    "rating_count": 73,
+    "price_range": {
+      "min": 1200,
+      "max": 3500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T09:00:00+05:00",
+      "2026-05-18T09:00:00+05:00",
+      "2026-05-20T10:00:00+05:00",
+      "2026-05-20T14:00:00+05:00",
+      "2026-05-21T14:00:00+05:00",
+      "2026-05-21T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0021",
+    "name": "Qaiser Abbas",
+    "category": "Plumber",
+    "sector": "I-8",
+    "lat": 33.6617,
+    "lng": 73.0553,
+    "rating": 3.9,
+    "rating_count": 25,
+    "price_range": {
+      "min": 700,
+      "max": 2000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-18T10:00:00+05:00",
+      "2026-05-21T10:00:00+05:00",
+      "2026-05-22T09:00:00+05:00",
+      "2026-05-22T10:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0022",
+    "name": "Rizwan Chaudhry",
+    "category": "Plumber",
+    "sector": "F-11",
+    "lat": 33.6845,
+    "lng": 73.0283,
+    "rating": 4.2,
+    "rating_count": 55,
+    "price_range": {
+      "min": 1000,
+      "max": 3000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T09:00:00+05:00",
+      "2026-05-17T11:00:00+05:00",
+      "2026-05-18T09:00:00+05:00",
+      "2026-05-19T16:00:00+05:00",
+      "2026-05-21T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0023",
+    "name": "Sohail Aslam",
+    "category": "Electrician",
+    "sector": "F-10",
+    "lat": 33.6968,
+    "lng": 73.0141,
+    "rating": 4.5,
+    "rating_count": 97,
+    "price_range": {
+      "min": 1500,
+      "max": 4000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T17:00:00+05:00",
+      "2026-05-18T14:00:00+05:00",
+      "2026-05-20T09:00:00+05:00",
+      "2026-05-21T09:00:00+05:00",
+      "2026-05-22T16:00:00+05:00",
+      "2026-05-22T18:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0024",
+    "name": "Tahir Abbas",
+    "category": "Electrician",
+    "sector": "F-11",
+    "lat": 33.6862,
+    "lng": 73.0274,
+    "rating": 4.3,
+    "rating_count": 62,
+    "price_range": {
+      "min": 1200,
+      "max": 3500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-17T11:00:00+05:00",
+      "2026-05-20T10:00:00+05:00",
+      "2026-05-20T11:00:00+05:00",
+      "2026-05-22T09:00:00+05:00",
+      "2026-05-22T10:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0025",
+    "name": "Waseem Raja",
+    "category": "Electrician",
+    "sector": "I-8",
+    "lat": 33.6665,
+    "lng": 73.0536,
+    "rating": 4.6,
+    "rating_count": 118,
+    "price_range": {
+      "min": 1800,
+      "max": 4500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T10:00:00+05:00",
+      "2026-05-16T18:00:00+05:00",
+      "2026-05-17T18:00:00+05:00",
+      "2026-05-18T14:00:00+05:00",
+      "2026-05-18T18:00:00+05:00",
+      "2026-05-19T18:00:00+05:00",
+      "2026-05-22T14:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0026",
+    "name": "Yasir Habib",
+    "category": "Electrician",
+    "sector": "G-13",
+    "lat": 33.6323,
+    "lng": 73.0313,
+    "rating": 4.1,
+    "rating_count": 38,
+    "price_range": {
+      "min": 1000,
+      "max": 3000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T16:00:00+05:00",
+      "2026-05-19T18:00:00+05:00",
+      "2026-05-21T17:00:00+05:00",
+      "2026-05-22T15:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0027",
+    "name": "Amir Hamza",
+    "category": "Electrician",
+    "sector": "Blue Area",
+    "lat": 33.7074,
+    "lng": 73.0496,
+    "rating": 4.8,
+    "rating_count": 189,
+    "price_range": {
+      "min": 2500,
+      "max": 6000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-17T09:00:00+05:00",
+      "2026-05-17T11:00:00+05:00",
+      "2026-05-18T09:00:00+05:00",
+      "2026-05-19T17:00:00+05:00",
+      "2026-05-20T14:00:00+05:00",
+      "2026-05-21T11:00:00+05:00",
+      "2026-05-22T10:00:00+05:00",
+      "2026-05-22T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0028",
+    "name": "Babar Khan",
+    "category": "Electrician",
+    "sector": "G-11",
+    "lat": 33.6657,
+    "lng": 73.0191,
+    "rating": 4.0,
+    "rating_count": 29,
+    "price_range": {
+      "min": 1000,
+      "max": 2500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-17T16:00:00+05:00",
+      "2026-05-20T11:00:00+05:00",
+      "2026-05-21T17:00:00+05:00",
+      "2026-05-22T09:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0029",
+    "name": "Danish Butt",
+    "category": "Electrician",
+    "sector": "DHA Phase 2 Rawalpindi",
+    "lat": 33.5571,
+    "lng": 73.1133,
+    "rating": 4.4,
+    "rating_count": 71,
+    "price_range": {
+      "min": 1500,
+      "max": 4000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-18T18:00:00+05:00",
+      "2026-05-19T10:00:00+05:00",
+      "2026-05-19T15:00:00+05:00",
+      "2026-05-21T10:00:00+05:00",
+      "2026-05-21T11:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English"
+    ],
+    "_synthetic": true,
+    "notes": "Also does plumbing work — previously trained as a plumber"
+  },
+  {
+    "id": "P0030",
+    "name": "Ehsan Elahi",
+    "category": "Electrician",
+    "sector": "I-10",
+    "lat": 33.6454,
+    "lng": 73.0217,
+    "rating": 3.7,
+    "rating_count": 15,
+    "price_range": {
+      "min": 800,
+      "max": 2000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T15:00:00+05:00",
+      "2026-05-17T17:00:00+05:00",
+      "2026-05-17T18:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0031",
+    "name": "Ghulam Mustafa",
+    "category": "Electrician",
+    "sector": "F-10",
+    "lat": 33.693,
+    "lng": 73.013,
+    "rating": 4.2,
+    "rating_count": 54,
+    "price_range": {
+      "min": 1200,
+      "max": 3000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T09:00:00+05:00",
+      "2026-05-16T15:00:00+05:00",
+      "2026-05-17T17:00:00+05:00",
+      "2026-05-20T16:00:00+05:00",
+      "2026-05-21T16:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0032",
+    "name": "Hamid Raza",
+    "category": "Electrician",
+    "sector": "G-13",
+    "lat": 33.6358,
+    "lng": 73.0274,
+    "rating": 4.3,
+    "rating_count": 66,
+    "price_range": {
+      "min": 1400,
+      "max": 3500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T11:00:00+05:00",
+      "2026-05-16T15:00:00+05:00",
+      "2026-05-17T18:00:00+05:00",
+      "2026-05-18T10:00:00+05:00",
+      "2026-05-18T16:00:00+05:00",
+      "2026-05-20T09:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0033",
+    "name": "Iftikhar Ahmed",
+    "category": "Tutor",
+    "sector": "F-10",
+    "lat": 33.695,
+    "lng": 73.0108,
+    "rating": 4.5,
+    "rating_count": 83,
+    "price_range": {
+      "min": 3000,
+      "max": 8000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-18T09:00:00+05:00",
+      "2026-05-18T18:00:00+05:00",
+      "2026-05-20T17:00:00+05:00",
+      "2026-05-21T15:00:00+05:00",
+      "2026-05-22T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0034",
+    "name": "Javed Iqbal",
+    "category": "Tutor",
+    "sector": "F-11",
+    "lat": 33.6872,
+    "lng": 73.0313,
+    "rating": 4.7,
+    "rating_count": 134,
+    "price_range": {
+      "min": 2500,
+      "max": 7000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T17:00:00+05:00",
+      "2026-05-17T15:00:00+05:00",
+      "2026-05-18T17:00:00+05:00",
+      "2026-05-19T14:00:00+05:00",
+      "2026-05-21T11:00:00+05:00",
+      "2026-05-22T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0035",
+    "name": "Khalid Mehmood",
+    "category": "Tutor",
+    "sector": "G-13",
+    "lat": 33.6345,
+    "lng": 73.0288,
+    "rating": 4.4,
+    "rating_count": 76,
+    "price_range": {
+      "min": 2000,
+      "max": 5000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T14:00:00+05:00",
+      "2026-05-16T17:00:00+05:00",
+      "2026-05-21T10:00:00+05:00",
+      "2026-05-21T14:00:00+05:00",
+      "2026-05-21T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0036",
+    "name": "Asif Rafiq",
+    "category": "Tutor",
+    "sector": "I-10",
+    "lat": 33.6404,
+    "lng": 73.0234,
+    "rating": 4.2,
+    "rating_count": 48,
+    "price_range": {
+      "min": 1500,
+      "max": 4000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T17:00:00+05:00",
+      "2026-05-17T18:00:00+05:00",
+      "2026-05-22T14:00:00+05:00",
+      "2026-05-22T18:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0037",
+    "name": "Mohsin Abbas",
+    "category": "Tutor",
+    "sector": "G-11",
+    "lat": 33.6636,
+    "lng": 73.0187,
+    "rating": 4.6,
+    "rating_count": 105,
+    "price_range": {
+      "min": 3000,
+      "max": 8000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T15:00:00+05:00",
+      "2026-05-17T09:00:00+05:00",
+      "2026-05-17T14:00:00+05:00",
+      "2026-05-17T18:00:00+05:00",
+      "2026-05-18T10:00:00+05:00",
+      "2026-05-19T14:00:00+05:00",
+      "2026-05-19T16:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0038",
+    "name": "Noman Javed",
+    "category": "Tutor",
+    "sector": "Blue Area",
+    "lat": 33.7097,
+    "lng": 73.0502,
+    "rating": 4.8,
+    "rating_count": 167,
+    "price_range": {
+      "min": 5000,
+      "max": 12000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T09:00:00+05:00",
+      "2026-05-16T14:00:00+05:00",
+      "2026-05-16T16:00:00+05:00",
+      "2026-05-16T17:00:00+05:00",
+      "2026-05-20T11:00:00+05:00",
+      "2026-05-20T14:00:00+05:00",
+      "2026-05-21T10:00:00+05:00",
+      "2026-05-22T09:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0039",
+    "name": "Pervaiz Masih",
+    "category": "Tutor",
+    "sector": "F-10",
+    "lat": 33.6961,
+    "lng": 73.0105,
+    "rating": 4.1,
+    "rating_count": 39,
+    "price_range": {
+      "min": 2000,
+      "max": 5000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-17T16:00:00+05:00",
+      "2026-05-19T17:00:00+05:00",
+      "2026-05-19T18:00:00+05:00",
+      "2026-05-22T18:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu",
+      "English",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0040",
+    "name": "Raheel Sharif",
+    "category": "Tutor",
+    "sector": "DHA Phase 2 Rawalpindi",
+    "lat": 33.5554,
+    "lng": 73.1094,
+    "rating": 4.3,
+    "rating_count": 59,
+    "price_range": {
+      "min": 2500,
+      "max": 6000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T09:00:00+05:00",
+      "2026-05-18T09:00:00+05:00",
+      "2026-05-19T09:00:00+05:00",
+      "2026-05-19T16:00:00+05:00",
+      "2026-05-22T11:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0041",
+    "name": "Shafiq Ahmad",
+    "category": "Tutor",
+    "sector": "I-8",
+    "lat": 33.6627,
+    "lng": 73.0542,
+    "rating": 4.0,
+    "rating_count": 31,
+    "price_range": {
+      "min": 1500,
+      "max": 4000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T14:00:00+05:00",
+      "2026-05-21T11:00:00+05:00",
+      "2026-05-21T17:00:00+05:00",
+      "2026-05-22T11:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0042",
+    "name": "Taimoor Shah",
+    "category": "Tutor",
+    "sector": "F-11",
+    "lat": 33.6868,
+    "lng": 73.0274,
+    "rating": 4.4,
+    "rating_count": 72,
+    "price_range": {
+      "min": 2000,
+      "max": 5500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T14:00:00+05:00",
+      "2026-05-17T16:00:00+05:00",
+      "2026-05-18T11:00:00+05:00",
+      "2026-05-20T11:00:00+05:00",
+      "2026-05-20T16:00:00+05:00",
+      "2026-05-21T18:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0043",
+    "name": "Ayesha Bibi",
+    "category": "Beautician",
+    "sector": "G-11",
+    "lat": 33.6629,
+    "lng": 73.0174,
+    "rating": 4.6,
+    "rating_count": 121,
+    "price_range": {
+      "min": 2000,
+      "max": 8000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T14:00:00+05:00",
+      "2026-05-17T11:00:00+05:00",
+      "2026-05-19T17:00:00+05:00",
+      "2026-05-20T09:00:00+05:00",
+      "2026-05-20T10:00:00+05:00",
+      "2026-05-20T16:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0044",
+    "name": "Fatima Zahra",
+    "category": "Beautician",
+    "sector": "DHA Phase 2 Rawalpindi",
+    "lat": 33.5533,
+    "lng": 73.112,
+    "rating": 4.8,
+    "rating_count": 198,
+    "price_range": {
+      "min": 3000,
+      "max": 12000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T15:00:00+05:00",
+      "2026-05-17T14:00:00+05:00",
+      "2026-05-17T18:00:00+05:00",
+      "2026-05-20T17:00:00+05:00",
+      "2026-05-21T14:00:00+05:00",
+      "2026-05-22T16:00:00+05:00",
+      "2026-05-22T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0045",
+    "name": "Sana Malik",
+    "category": "Beautician",
+    "sector": "F-10",
+    "lat": 33.6934,
+    "lng": 73.0151,
+    "rating": 4.3,
+    "rating_count": 65,
+    "price_range": {
+      "min": 1500,
+      "max": 5000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T11:00:00+05:00",
+      "2026-05-17T18:00:00+05:00",
+      "2026-05-20T15:00:00+05:00",
+      "2026-05-20T16:00:00+05:00",
+      "2026-05-20T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0046",
+    "name": "Hina Rashid",
+    "category": "Beautician",
+    "sector": "Blue Area",
+    "lat": 33.7107,
+    "lng": 73.0475,
+    "rating": 4.5,
+    "rating_count": 93,
+    "price_range": {
+      "min": 2500,
+      "max": 10000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-17T16:00:00+05:00",
+      "2026-05-18T09:00:00+05:00",
+      "2026-05-18T15:00:00+05:00",
+      "2026-05-20T10:00:00+05:00",
+      "2026-05-20T15:00:00+05:00",
+      "2026-05-20T16:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0047",
+    "name": "Noor Electric",
+    "category": "Beautician",
+    "sector": "G-13",
+    "lat": 33.636,
+    "lng": 73.0279,
+    "rating": 4.1,
+    "rating_count": 42,
+    "price_range": {
+      "min": 1800,
+      "max": 6000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-17T09:00:00+05:00",
+      "2026-05-18T09:00:00+05:00",
+      "2026-05-19T10:00:00+05:00",
+      "2026-05-21T10:00:00+05:00",
+      "2026-05-21T11:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0048",
+    "name": "Rabia Aslam",
+    "category": "Beautician",
+    "sector": "F-11",
+    "lat": 33.6843,
+    "lng": 73.0284,
+    "rating": 4.4,
+    "rating_count": 58,
+    "price_range": {
+      "min": 2000,
+      "max": 7000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T09:00:00+05:00",
+      "2026-05-16T15:00:00+05:00",
+      "2026-05-19T16:00:00+05:00",
+      "2026-05-22T09:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0049",
+    "name": "Zainab Shah",
+    "category": "Beautician",
+    "sector": "I-10",
+    "lat": 33.6437,
+    "lng": 73.0224,
+    "rating": 4.2,
+    "rating_count": 37,
+    "price_range": {
+      "min": 1500,
+      "max": 5000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T15:00:00+05:00",
+      "2026-05-16T17:00:00+05:00",
+      "2026-05-17T16:00:00+05:00",
+      "2026-05-20T11:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "_synthetic": true
+  },
+  {
+    "id": "P0050",
+    "name": "Uzma Shahid",
+    "category": "Beautician",
+    "sector": "DHA Phase 2 Rawalpindi",
+    "lat": 33.556,
+    "lng": 73.1098,
+    "rating": 4.0,
+    "rating_count": 22,
+    "price_range": {
+      "min": 1200,
+      "max": 4000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-16T15:00:00+05:00",
+      "2026-05-17T18:00:00+05:00",
+      "2026-05-18T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "_synthetic": true
+  }
+]

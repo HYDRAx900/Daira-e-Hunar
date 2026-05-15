@@ -5,6 +5,13 @@ Reads from environment variables (loaded via .env file).
 
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load .env from the backend/ directory — makes config self-contained
+# regardless of entry point (uvicorn, pytest, direct script)
+_ENV_PATH = Path(__file__).resolve().parent / ".env"
+load_dotenv(_ENV_PATH, override=False)
+
 
 # --- Paths ---
 # Project root is one level up from backend/

@@ -1,0 +1,24 @@
+{
+  "trace_type": "intent_agent",
+  "timestamp": "2026-05-15T12:29:32.277868+00:00",
+  "model": "gemini-2.5-flash",
+  "latency_ms": 3195.2,
+  "input": {
+    "user_text": "koi banda chahiye for tap fix"
+  },
+  "prompt_sent_to_llm": "You are an intent-parsing agent for ServiceWala, a service marketplace operating in Islamabad and Rawalpindi, Pakistan.\n\nYour job: take a user's free-form text — which may be in English, Urdu (script), or Roman Urdu (Urdu written in Latin characters) — and extract a structured service request.\n\n## Valid service types\n- AC Technician\n- Plumber\n- Electrician\n- Tutor\n- Beautician\n\n## Known sectors/areas\n- G-13, G-11, F-10, F-11, I-8, I-10 (Islamabad sectors)\n- Blue Area (Islamabad commercial district)\n- DHA Phase 2 Rawalpindi\n\n## Confidence scoring rules (IMPORTANT — be conservative)\n- Return confidence >= 0.8 ONLY when service_type, location, AND time are ALL explicitly stated.\n- Return confidence 0.5–0.7 when you had to INFER any field (e.g., \"tap fix\" → Plumber is an inference).\n- Return confidence < 0.5 for nonsensical, unrelated, or extremely vague inputs.\n\n## Clarification rules\n- Set needs_clarification = true when service_type, location_sector, OR requested_time is missing or ambiguous.\n- When needs_clarification is true, generate a helpful clarification_question in the SAME LANGUAGE the user used.\n- Ask about the most critical missing field first (usually service_type > location > time).\n\n## Urgency mapping\n- Words like \"abhi\", \"now\", \"immediately\", \"foran\" → \"now\"\n- Words like \"aaj\", \"today\" → \"today\"\n- Words like \"is hafte\", \"this week\", \"weekend\" → \"this_week\"\n- No time pressure or not mentioned → \"flexible\"\n- \"jaldi\" (quickly) → \"now\" or \"today\" depending on context\n- \"kal\" (tomorrow) → \"today\" or \"this_week\" depending on context\n\n## Few-shot examples\n\nINPUT: \"Mujhe kal subah G-13 mein AC technician chahiye\"\nOUTPUT: service_type=\"AC Technician\", location_sector=\"G-13\", requested_time=\"tomorrow morning\", urgency=\"this_week\", detected_language=\"roman_urdu\", confidence=0.92, needs_clarification=false\n\nINPUT: \"G-11 mein plumber chahiye abhi\"\nOUTPUT: service_type=\"Plumber\", location_sector=\"G-11\", requested_time=null, urgency=\"now\", detected_language=\"roman_urdu\", confidence=0.85, needs_clarification=true (requested_time missing), clarification_question=\"Kya aap abhi foran plumber chahte hain ya koi specific time hai?\"\n\nINPUT: \"I need a tutor for O-level math in F-10 this weekend\"\nOUTPUT: service_type=\"Tutor\", location_sector=\"F-10\", requested_time=\"this weekend\", urgency=\"this_week\", detected_language=\"english\", confidence=0.90, needs_clarification=false\n\nINPUT: \"بیوٹیشن چاہیے DHA میں\"\nOUTPUT: service_type=\"Beautician\", location_sector=\"DHA Phase 2 Rawalpindi\", requested_time=null, urgency=\"flexible\", detected_language=\"urdu\", confidence=0.75, needs_clarification=true (requested_time missing), clarification_question=\"آپ کو بیوٹیشن کب چاہیے؟\"\n\nINPUT: \"electrician F-11 jaldi\"\nOUTPUT: service_type=\"Electrician\", location_sector=\"F-11\", requested_time=null, urgency=\"now\", detected_language=\"roman_urdu\", confidence=0.80, needs_clarification=true (requested_time missing), clarification_question=\"Kab chahiye? Abhi ya aaj kisi waqt?\"\n\nAlways echo the original user input verbatim in the raw_input field.\n\n---\n\nUser input: koi banda chahiye for tap fix",
+  "raw_llm_response": "{\n  \"service_type\": \"Plumber\",\n  \"location_sector\": null,\n  \"requested_time\": null,\n  \"urgency\": \"flexible\",\n  \"constraints\": {},\n  \"raw_input\": \"koi banda chahiye for tap fix\",\n  \"detected_language\": \"roman_urdu\",\n  \"confidence\": 0.6,\n  \"needs_clarification\": true,\n  \"clarification_question\": \"Aapko kis area mein plumber chahiye aur kab?\"\n}",
+  "parsed_output": {
+    "service_type": "Plumber",
+    "location_sector": null,
+    "requested_time": null,
+    "urgency": "flexible",
+    "constraints": {},
+    "raw_input": "koi banda chahiye for tap fix",
+    "detected_language": "roman_urdu",
+    "confidence": 0.6,
+    "needs_clarification": true,
+    "clarification_question": "Aapko kis area mein plumber chahiye aur kab?"
+  },
+  "summary": "[CLARIFICATION NEEDED] roman_urdu input -> Plumber, confidence 0.60. Question: Aapko kis area mein plumber chahiye aur kab?"
+}

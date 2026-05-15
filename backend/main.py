@@ -16,15 +16,17 @@ load_dotenv()
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from typing import Optional
 
 from backend.config import HOST, PORT
+from backend.agents.intent_agent import IntentAgent
 
 # ── App setup ────────────────────────────────────────────────────────────────
 
 app = FastAPI(
     title="ServiceWala API",
     description="AI Service Orchestrator for Pakistan's Informal Economy",
-    version="0.1.0",
+    version="0.2.0",
 )
 
 # Allow all origins — needed for Flutter web during development
@@ -36,6 +38,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# ── Agent instances ──────────────────────────────────────────────────────────
+
+intent_agent = IntentAgent()
+
 
 # ── Request / Response models ────────────────────────────────────────────────
 
@@ -46,9 +52,11 @@ class ServiceRequest(BaseModel):
 
 
 class ServiceResponse(BaseModel):
-    """Placeholder response — will be enriched in Phases 1–3."""
+    """Response containing parsed intent and trace file path."""
     status: str
     message: str
+    intent: Optional[dict] = None
+    trace_file: Optional[str] = None
 
 
 # ── Endpoints ────────────────────────────────────────────────────────────────
@@ -56,25 +64,37 @@ class ServiceResponse(BaseModel):
 @app.get("/health")
 async def health_check():
     """Simple health check for connectivity testing."""
-    return {"status": "ok", "service": "ServiceWala API", "version": "0.1.0"}
+    return {"status": "ok", "service": "ServiceWala API", "version": "0.2.0"}
 
 
 @app.post("/request", response_model=ServiceResponse)
 async def handle_request(request: ServiceRequest):
     """
     Main endpoint — accepts a natural-language service request and
-    orchestrates the four-agent pipeline.
+    orchestrates the agent pipeline.
 
-    Phase 0: returns a stub response.
-    Phases 1–3 will wire up Intent → Discovery → Ranking → Action.
+    Phase 1: Intent Agent only (parses NL → structured intent).
+    Phases 2–3 will wire up Discovery → Ranking → Action.
     """
-    return ServiceResponse(
-        status="not_implemented",
-        message=(
-            f"Received query: '{request.query}' in mode '{request.mode}'. "
-            "Agent pipeline not yet wired — see Phase 1."
-        ),
-    )
+    try:
+        result = await intent_agent.run(request.query)
+
+        # Extract trace_file from result (added by IntentAgent, not part of LLM schema)
+        trace_file = result.pop("_trace_file", None)
+
+        return ServiceResponse(
+            status="ok",
+            message="Intent parsed successfully.",
+            intent=result,
+            trace_file=trace_file,
+        )
+    except Exception as e:
+        return ServiceResponse(
+            status="error",
+            message=f"Intent Agent failed: {str(e)}",
+            intent=None,
+            trace_file=None,
+        )
 
 
 # ── Entry point (for running directly with `python -m backend.main`) ────────
