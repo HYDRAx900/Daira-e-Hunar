@@ -1,5 +1,5 @@
 """
-Pytest configuration for ServiceWala tests.
+Pytest configuration for Daira-e-Hunar tests.
 
 Loads .env before any tests run and configures asyncio mode.
 """

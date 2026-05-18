@@ -1,5 +1,5 @@
 """
-ServiceWala API — FastAPI backend for the AI Service Orchestrator.
+Daira-e-Hunar API — FastAPI backend for the AI Service Orchestrator.
 
 Exposes a single POST /request endpoint that will chain four ADK agents
 (Intent → Discovery → Ranking → Action) in later phases.
@@ -24,9 +24,9 @@ from backend.agents.intent_agent import IntentAgent
 # ── App setup ────────────────────────────────────────────────────────────────
 
 app = FastAPI(
-    title="ServiceWala API",
-    description="AI Service Orchestrator for Pakistan's Informal Economy",
-    version="0.2.0",
+    title="Daira-e-Hunar API",
+    description="Daira-e-Hunar — AI Service Orchestrator for Pakistan's Informal Economy",
+    version="0.3.0",
 )
 
 # Allow all origins — needed for Flutter web during development
@@ -64,7 +64,7 @@ class ServiceResponse(BaseModel):
 @app.get("/health")
 async def health_check():
     """Simple health check for connectivity testing."""
-    return {"status": "ok", "service": "ServiceWala API", "version": "0.2.0"}
+    return {"status": "ok", "service": "Daira-e-Hunar API", "version": "0.3.0"}
 
 
 @app.post("/request", response_model=ServiceResponse)

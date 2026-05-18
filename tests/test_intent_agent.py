@@ -28,6 +28,9 @@ REQUIRED_KEYS = {
     "confidence",
     "needs_clarification",
     "clarification_question",
+    "formality_level",
+    "literacy_register",
+    "code_switching",
 }
 
 
@@ -85,10 +88,12 @@ async def test_english_clear(agent):
 
     _assert_valid_structure(result, text)
     assert result["service_type"] == "Tutor"
-    assert result["location_sector"] == "F-10"
+    assert result["location_sector"] == "F-10, Islamabad"
     assert result["urgency"] in ("this_week", "today")
     assert result["confidence"] >= 0.7
     assert result["detected_language"] == "english"
+    assert result["formality_level"] == "formal"
+    assert result["code_switching"] is False
 
 
 # ── Test 2: Clear Roman Urdu input ───────────────────────────────────────────
@@ -101,7 +106,7 @@ async def test_roman_urdu_clear(agent):
 
     _assert_valid_structure(result, text)
     assert result["service_type"] == "AC Technician"
-    assert result["location_sector"] == "G-13"
+    assert result["location_sector"] == "G-13, Islamabad"
     assert result["detected_language"] == "roman_urdu"
     assert result["confidence"] >= 0.7
 
@@ -116,7 +121,7 @@ async def test_roman_urdu_urgent(agent):
 
     _assert_valid_structure(result, text)
     assert result["service_type"] == "Plumber"
-    assert result["location_sector"] == "G-11"
+    assert result["location_sector"] == "G-11, Islamabad"
     assert result["urgency"] == "now"
 
 
@@ -131,6 +136,8 @@ async def test_urdu_script(agent):
     _assert_valid_structure(result, text)
     assert result["service_type"] == "Beautician"
     assert result["detected_language"] == "urdu"
+    assert result["formality_level"] in ("casual", "formal")
+    assert result["literacy_register"] in ("medium", "high")
 
 
 # ── Test 5: Terse Roman Urdu ────────────────────────────────────────────────
@@ -143,7 +150,7 @@ async def test_roman_urdu_terse(agent):
 
     _assert_valid_structure(result, text)
     assert result["service_type"] == "Electrician"
-    assert result["location_sector"] == "F-11"
+    assert result["location_sector"] == "F-11, Islamabad"
     assert result["urgency"] in ("now", "today")
 
 
@@ -190,3 +197,27 @@ async def test_no_location(agent):
     assert result["location_sector"] is None
     assert result["urgency"] in ("now", "today")
     assert result["needs_clarification"] is True
+
+
+# ── Test 9: Casual slang ────────────────────────────────────────────────────
+
+@pytest.mark.asyncio
+async def test_formality_casual_slang(agent):
+    """Casual/slang Roman Urdu request."""
+    text = "AC bana de bhai G-13 mein kal subah"
+    result = await agent.run(text)
+
+    _assert_valid_structure(result, text)
+    assert result["formality_level"] in ("slang", "casual")
+
+
+# ── Test 10: Code-switching ─────────────────────────────────────────────────
+
+@pytest.mark.asyncio
+async def test_code_switching(agent):
+    """Input mixing English and Roman Urdu."""
+    text = "Mujhe ek good plumber chahiye urgent F-10 mein"
+    result = await agent.run(text)
+
+    _assert_valid_structure(result, text)
+    assert result["code_switching"] is True

@@ -71,8 +71,8 @@ def _build_summary(parsed: dict) -> str:
     Generate a one-line human-readable summary of the intent parse result.
 
     Examples:
-        "Parsed roman_urdu request -> AC Technician in G-13, tomorrow morning, confidence 0.95"
-        "Needs clarification: Could you specify which sector you need the electrician in?"
+        "Parsed casual roman_urdu request (code_switched) -> AC Technician in G-13, Islamabad, tomorrow morning, confidence 0.95"
+        "[CLARIFICATION NEEDED] unknown input -> unknown service, confidence 0.00. Question: Ambiguous input"
     """
     if parsed.get("needs_clarification"):
         question = parsed.get("clarification_question", "Ambiguous input")
@@ -89,8 +89,17 @@ def _build_summary(parsed: dict) -> str:
     sector = parsed.get("location_sector", "unspecified location")
     time = parsed.get("requested_time", "flexible timing")
     conf = parsed.get("confidence", 0.0)
+    
+    # Extract new signals
+    formality = parsed.get("formality_level", "")
+    code_switched = parsed.get("code_switching", False)
+    
+    # Build the format: "{formality} {lang} request {code_switched}"
+    request_desc = f"{formality} {lang}".strip() if formality else lang
+    if code_switched:
+        request_desc += " (code_switched)"
 
     return (
-        f"Parsed {lang} request -> {stype} in {sector}, "
+        f"Parsed {request_desc} request -> {stype} in {sector}, "
         f"{time}, confidence {conf:.2f}"
     )

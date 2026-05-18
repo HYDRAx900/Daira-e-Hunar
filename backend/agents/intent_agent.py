@@ -45,8 +45,11 @@ class IntentResult(BaseModel):
     location_sector: Optional[str] = Field(
         None,
         description=(
-            "The sector/area in Islamabad or Rawalpindi. Known sectors: "
-            "G-13, G-11, F-10, F-11, I-8, I-10, Blue Area, DHA Phase 2 Rawalpindi. "
+            "The neighborhood or area where the user wants the service. "
+            "If the user names a specific neighborhood, output in "
+            "'Neighborhood, City' format (e.g. 'Lyari, Karachi', 'Misri Shah, Lahore', "
+            "'G-13, Islamabad'). If the user names only a city (e.g. 'Lahore mein'), "
+            "output just the city name (e.g. 'Lahore'). "
             "Set to null if the user did not specify a location."
         ),
     )
@@ -104,11 +107,40 @@ class IntentResult(BaseModel):
             "most important missing field first."
         ),
     )
+    formality_level: Literal["formal", "casual", "slang"] = Field(
+        "casual",
+        description=(
+            "The formality level of the user's input. "
+            "'formal' = polite/respectful language (e.g. 'Mohtarma', 'aap', 'zaroorat hai'). "
+            "'casual' = normal conversational tone (e.g. 'chahiye', 'mujhe'). "
+            "'slang' = very informal, street language (e.g. 'bana de bhai', 'yaar', 'de de')."
+        ),
+    )
+    literacy_register: Literal["high", "medium", "low"] = Field(
+        "medium",
+        description=(
+            "Inferred literacy register of the input, used for matching the "
+            "response tone so it feels natural to the user. "
+            "'high' = complete sentences, correct grammar, sophisticated vocabulary. "
+            "'medium' = understandable, some shorthand, normal everyday language. "
+            "'low' = very terse, misspellings, minimal punctuation, broken syntax. "
+            "This is NOT a judgment of the person — it is a signal for "
+            "response calibration so the reply feels natural."
+        ),
+    )
+    code_switching: bool = Field(
+        False,
+        description=(
+            "True if the user's input mixes English and Urdu/Roman Urdu "
+            "within the same message (e.g. 'Mujhe ek good plumber chahiye'). "
+            "False if the input is purely one language."
+        ),
+    )
 
 
 # ── System prompt ────────────────────────────────────────────────────────────
 
-SYSTEM_PROMPT = """You are an intent-parsing agent for ServiceWala, a service marketplace operating in Islamabad and Rawalpindi, Pakistan.
+SYSTEM_PROMPT = """You are an intent-parsing agent for Daira-e-Hunar, a service marketplace operating across Pakistan (Islamabad, Rawalpindi, Lahore, Faisalabad, Karachi, Quetta, Peshawar, Gilgit).
 
 Your job: take a user's free-form text — which may be in English, Urdu (script), or Roman Urdu (Urdu written in Latin characters) — and extract a structured service request.
 
@@ -119,10 +151,20 @@ Your job: take a user's free-form text — which may be in English, Urdu (script
 - Tutor
 - Beautician
 
-## Known sectors/areas
-- G-13, G-11, F-10, F-11, I-8, I-10 (Islamabad sectors)
-- Blue Area (Islamabad commercial district)
-- DHA Phase 2 Rawalpindi
+## Known neighborhoods and areas
+- Islamabad: G-7, G-9, I-9, I-10
+- Rawalpindi: Tench Bhata, Dhok Khabba, Raja Bazaar, Pirwadhai, Saddar
+- Lahore: Misri Shah, Shadbagh, Garhi Shahu, Daroghewala, Mochi Gate, Lohari Gate, Bhatti Gate
+- Faisalabad: Ghulam Mohammadabad, Jhang Bazaar, Madina Town, D-Ground, Rail Bazaar
+- Karachi: Lyari, Orangi, Korangi, Landhi, Baldia Town
+- Quetta: Pashtunabad, Hazara Town, Kandahari Bazaar, Jinnah Road
+- Peshawar: Hashtnagri, Kohati Gate, Qissa Khwani, Faqirabad
+- Gilgit: Konodas, Jutial, Kashrote, Danyor, Main Bazaar
+
+## Location parsing rules
+- If the user names a specific neighborhood, output location_sector in "Neighborhood, City" format (e.g. "Lyari, Karachi", "G-13, Islamabad", "Misri Shah, Lahore").
+- If the user names only a city (e.g. "Lahore mein"), output just the city name as location_sector (e.g. "Lahore").
+- If the user does not mention any location, set location_sector to null.
 
 ## Confidence scoring rules (IMPORTANT — be conservative)
 - Return confidence >= 0.8 ONLY when service_type, location, AND time are ALL explicitly stated.
@@ -142,22 +184,49 @@ Your job: take a user's free-form text — which may be in English, Urdu (script
 - "jaldi" (quickly) → "now" or "today" depending on context
 - "kal" (tomorrow) → "today" or "this_week" depending on context
 
+## Formality and register detection
+Detect these three signals from the user's input. The purpose is to calibrate the system's response so it feels natural to the user — not to judge them.
+
+### formality_level
+- "formal": Polite, respectful language. Uses "aap", "mohtarma/mohtaram", "zaroorat hai", "meharbani". Complete sentences with courteous tone.
+  Example: "Mohtarma, mujhe Karachi ke Lyari ilaaqe mein ek aitbaari plumber ki zaroorat hai is hafte."
+- "casual": Normal conversational tone. Uses "mujhe", "chahiye", everyday vocabulary.
+  Example: "Mujhe kal subah G-13 mein AC technician chahiye"
+- "slang": Very informal, street language. Uses "bhai", "yaar", "bana de", "de de", abbreviated phrasing.
+  Example: "AC bana de bhai G-13 mein kal subah"
+
+### literacy_register
+Match the register so the response feels natural to the user:
+- "high": Complete sentences, correct grammar, sophisticated vocabulary, proper punctuation.
+- "medium": Understandable everyday language, some shorthand, normal conversational patterns.
+- "low": Very terse, minimal structure, possible misspellings, broken syntax, SMS-style abbreviation.
+
+### code_switching
+- Set to true if the input mixes English and Urdu/Roman Urdu within the same message (e.g. "Mujhe ek good plumber chahiye urgent F-10 mein" — mixes English words "good", "urgent", "plumber" with Urdu structure).
+- Set to false if the input is purely one language.
+
 ## Few-shot examples
 
 INPUT: "Mujhe kal subah G-13 mein AC technician chahiye"
-OUTPUT: service_type="AC Technician", location_sector="G-13", requested_time="tomorrow morning", urgency="this_week", detected_language="roman_urdu", confidence=0.92, needs_clarification=false
+OUTPUT: service_type="AC Technician", location_sector="G-13, Islamabad", requested_time="tomorrow morning", urgency="this_week", detected_language="roman_urdu", confidence=0.92, needs_clarification=false, formality_level="casual", literacy_register="medium", code_switching=false
 
 INPUT: "G-11 mein plumber chahiye abhi"
-OUTPUT: service_type="Plumber", location_sector="G-11", requested_time=null, urgency="now", detected_language="roman_urdu", confidence=0.85, needs_clarification=true (requested_time missing), clarification_question="Kya aap abhi foran plumber chahte hain ya koi specific time hai?"
+OUTPUT: service_type="Plumber", location_sector="G-11, Islamabad", requested_time=null, urgency="now", detected_language="roman_urdu", confidence=0.85, needs_clarification=true (requested_time missing), clarification_question="Kya aap abhi foran plumber chahte hain ya koi specific time hai?", formality_level="casual", literacy_register="medium", code_switching=false
 
 INPUT: "I need a tutor for O-level math in F-10 this weekend"
-OUTPUT: service_type="Tutor", location_sector="F-10", requested_time="this weekend", urgency="this_week", detected_language="english", confidence=0.90, needs_clarification=false
+OUTPUT: service_type="Tutor", location_sector="F-10, Islamabad", requested_time="this weekend", urgency="this_week", detected_language="english", confidence=0.90, needs_clarification=false, formality_level="formal", literacy_register="high", code_switching=false
 
 INPUT: "بیوٹیشن چاہیے DHA میں"
-OUTPUT: service_type="Beautician", location_sector="DHA Phase 2 Rawalpindi", requested_time=null, urgency="flexible", detected_language="urdu", confidence=0.75, needs_clarification=true (requested_time missing), clarification_question="آپ کو بیوٹیشن کب چاہیے؟"
+OUTPUT: service_type="Beautician", location_sector="DHA Phase 2, Rawalpindi", requested_time=null, urgency="flexible", detected_language="urdu", confidence=0.75, needs_clarification=true (requested_time missing), clarification_question="آپ کو بیوٹیشن کب چاہیے؟", formality_level="casual", literacy_register="medium", code_switching=false
 
 INPUT: "electrician F-11 jaldi"
-OUTPUT: service_type="Electrician", location_sector="F-11", requested_time=null, urgency="now", detected_language="roman_urdu", confidence=0.80, needs_clarification=true (requested_time missing), clarification_question="Kab chahiye? Abhi ya aaj kisi waqt?"
+OUTPUT: service_type="Electrician", location_sector="F-11, Islamabad", requested_time=null, urgency="now", detected_language="roman_urdu", confidence=0.80, needs_clarification=true (requested_time missing), clarification_question="Kab chahiye? Abhi ya aaj kisi waqt?", formality_level="slang", literacy_register="low", code_switching=false
+
+INPUT: "Lyari mein koi acha electrician mil sakta hai?"
+OUTPUT: service_type="Electrician", location_sector="Lyari, Karachi", requested_time=null, urgency="flexible", detected_language="roman_urdu", confidence=0.75, needs_clarification=true (requested_time missing), clarification_question="Kab chahiye electrician? Aaj ya is hafte?", formality_level="casual", literacy_register="medium", code_switching=false
+
+INPUT: "Mujhe Lahore mein ek beautician chahiye weekend pe"
+OUTPUT: service_type="Beautician", location_sector="Lahore", requested_time="this weekend", urgency="this_week", detected_language="roman_urdu", confidence=0.82, needs_clarification=false, formality_level="casual", literacy_register="medium", code_switching=false
 
 Always echo the original user input verbatim in the raw_input field."""
 
@@ -193,7 +262,7 @@ class IntentAgent:
 
         Returns:
             Structured intent dict with service_type, location, time, etc.
-            Also returns a 'trace_file' key with the path to the trace.
+            Also returns a '_trace_file' key with the path to the trace.
         """
         prompt = self._build_prompt(text)
 
@@ -227,6 +296,9 @@ class IntentAgent:
                 "confidence": 0.0,
                 "needs_clarification": True,
                 "clarification_question": "Sorry, I could not understand your request. Could you please rephrase?",
+                "formality_level": "casual",
+                "literacy_register": "medium",
+                "code_switching": False,
             }
 
         # Ensure raw_input is always the original text

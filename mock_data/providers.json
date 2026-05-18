@@ -1,462 +1,536 @@
 [
   {
     "id": "P0001",
-    "name": "Muhammad Irfan",
-    "category": "AC Technician",
-    "sector": "G-13",
-    "lat": 33.6358,
-    "lng": 73.0262,
-    "rating": 4.7,
-    "rating_count": 132,
-    "price_range": {
-      "min": 2000,
-      "max": 5000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-16T17:00:00+05:00",
-      "2026-05-17T09:00:00+05:00",
-      "2026-05-17T17:00:00+05:00",
-      "2026-05-17T18:00:00+05:00",
-      "2026-05-18T10:00:00+05:00",
-      "2026-05-21T18:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu",
-      "Punjabi"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0002",
-    "name": "Ahmed Raza",
-    "category": "AC Technician",
-    "sector": "G-11",
-    "lat": 33.6666,
-    "lng": 73.0209,
-    "rating": 4.5,
-    "rating_count": 89,
+    "name": "Fida Hussain Jat",
+    "category": "Plumber",
+    "sector": "G-7, Islamabad",
+    "home_city": "Islamabad",
+    "lat": 33.7072,
+    "lng": 73.0467,
+    "rating": 4.0,
+    "rating_count": 11,
     "price_range": {
       "min": 2500,
-      "max": 6000,
+      "max": 4500,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-16T10:00:00+05:00",
-      "2026-05-16T11:00:00+05:00",
-      "2026-05-16T16:00:00+05:00",
-      "2026-05-19T14:00:00+05:00",
-      "2026-05-20T16:00:00+05:00"
+      "2026-05-20T11:00:00+05:00",
+      "2026-05-21T16:00:00+05:00",
+      "2026-05-22T10:00:00+05:00",
+      "2026-05-23T10:00:00+05:00",
+      "2026-05-24T15:00:00+05:00",
+      "2026-05-26T14:00:00+05:00"
     ],
     "verified": true,
     "languages_spoken": [
       "Urdu",
       "English"
     ],
+    "bio": "Fixes water tanker connections and boring pumps. Specialized for Islamabad's water issues.",
+    "years_experience": 14,
+    "cultural_background": "Punjabi",
+    "_synthetic": true
+  },
+  {
+    "id": "P0002",
+    "name": "Sajida",
+    "category": "Beautician",
+    "sector": "I-10, Islamabad",
+    "home_city": "Islamabad",
+    "lat": 33.6396,
+    "lng": 73.0221,
+    "rating": 3.1,
+    "rating_count": 80,
+    "price_range": {
+      "min": 2000,
+      "max": 6000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T17:00:00+05:00",
+      "2026-05-21T10:00:00+05:00",
+      "2026-05-22T16:00:00+05:00",
+      "2026-05-23T16:00:00+05:00",
+      "2026-05-25T15:00:00+05:00",
+      "2026-05-27T11:00:00+05:00",
+      "2026-05-28T18:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu",
+      "Pashto"
+    ],
+    "bio": "Basic beauty services — threading, facials, waxing. Affordable rates.",
+    "years_experience": 12,
+    "cultural_background": "Punjabi",
     "_synthetic": true
   },
   {
     "id": "P0003",
-    "name": "Bilal Hussain",
+    "name": "Dost Muhammad Rajput",
     "category": "AC Technician",
-    "sector": "F-10",
-    "lat": 33.6916,
-    "lng": 73.0109,
+    "sector": "I-9, Islamabad",
+    "home_city": "Islamabad",
+    "lat": 33.6663,
+    "lng": 73.0446,
     "rating": 4.3,
-    "rating_count": 64,
+    "rating_count": 220,
     "price_range": {
-      "min": 1800,
-      "max": 4500,
+      "min": 500,
+      "max": 2500,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-16T10:00:00+05:00",
-      "2026-05-17T15:00:00+05:00",
-      "2026-05-20T14:00:00+05:00",
-      "2026-05-20T17:00:00+05:00"
+      "2026-05-20T15:00:00+05:00",
+      "2026-05-21T11:00:00+05:00",
+      "2026-05-22T11:00:00+05:00",
+      "2026-05-24T17:00:00+05:00",
+      "2026-05-25T17:00:00+05:00",
+      "2026-05-26T18:00:00+05:00",
+      "2026-05-27T14:00:00+05:00",
+      "2026-05-28T15:00:00+05:00"
     ],
-    "verified": true,
+    "verified": false,
     "languages_spoken": [
-      "Urdu"
+      "Urdu",
+      "English"
     ],
+    "bio": "1 years fixing ACs across Islamabad. Trained his son in the trade.",
+    "years_experience": 1,
+    "cultural_background": "Punjabi",
     "_synthetic": true
   },
   {
     "id": "P0004",
-    "name": "Usman Ali",
-    "category": "AC Technician",
-    "sector": "F-11",
-    "lat": 33.6868,
-    "lng": 73.0307,
-    "rating": 4.8,
-    "rating_count": 201,
+    "name": "Irfan Mughal",
+    "category": "Plumber",
+    "sector": "I-10, Islamabad",
+    "home_city": "Islamabad",
+    "lat": 33.6412,
+    "lng": 73.023,
+    "rating": 4.1,
+    "rating_count": 103,
     "price_range": {
       "min": 3000,
       "max": 7000,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-16T09:00:00+05:00",
-      "2026-05-17T17:00:00+05:00",
-      "2026-05-18T10:00:00+05:00",
-      "2026-05-19T11:00:00+05:00",
-      "2026-05-19T15:00:00+05:00",
-      "2026-05-20T16:00:00+05:00",
-      "2026-05-22T09:00:00+05:00"
+      "2026-05-20T10:00:00+05:00",
+      "2026-05-21T15:00:00+05:00",
+      "2026-05-22T18:00:00+05:00",
+      "2026-05-24T11:00:00+05:00",
+      "2026-05-25T17:00:00+05:00",
+      "2026-05-26T09:00:00+05:00"
     ],
     "verified": true,
     "languages_spoken": [
       "Urdu",
-      "English",
-      "Punjabi"
+      "Pashto"
     ],
+    "bio": "Handles everything from leaky taps to full bathroom renovation.",
+    "years_experience": 24,
+    "cultural_background": "Punjabi",
     "_synthetic": true
   },
   {
     "id": "P0005",
-    "name": "Farhan Saeed",
-    "category": "AC Technician",
-    "sector": "I-8",
-    "lat": 33.6658,
-    "lng": 73.0542,
-    "rating": 4.1,
-    "rating_count": 45,
+    "name": "Akbar",
+    "category": "Beautician",
+    "sector": "I-9, Islamabad",
+    "home_city": "Islamabad",
+    "lat": 33.6708,
+    "lng": 73.0476,
+    "rating": 4.4,
+    "rating_count": 143,
     "price_range": {
-      "min": 1500,
-      "max": 4000,
+      "min": 500,
+      "max": 4500,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-17T10:00:00+05:00",
-      "2026-05-17T16:00:00+05:00",
-      "2026-05-18T10:00:00+05:00",
-      "2026-05-18T16:00:00+05:00",
-      "2026-05-22T09:00:00+05:00"
+      "2026-05-20T09:00:00+05:00",
+      "2026-05-21T14:00:00+05:00",
+      "2026-05-22T10:00:00+05:00",
+      "2026-05-26T10:00:00+05:00",
+      "2026-05-27T18:00:00+05:00"
     ],
     "verified": false,
     "languages_spoken": [
-      "Urdu",
-      "Punjabi"
+      "Urdu"
     ],
+    "bio": "Specializes in bridal packages. Known for not overselling services.",
+    "years_experience": 8,
+    "cultural_background": null,
     "_synthetic": true
   },
   {
     "id": "P0006",
-    "name": "Kamran Shahid",
-    "category": "AC Technician",
-    "sector": "I-10",
-    "lat": 33.642,
-    "lng": 73.0196,
-    "rating": 3.9,
-    "rating_count": 33,
+    "name": "Ramzan Awan",
+    "category": "Plumber",
+    "sector": "Tench Bhata, Rawalpindi",
+    "home_city": "Rawalpindi",
+    "lat": 33.5899,
+    "lng": 73.0682,
+    "rating": 4.8,
+    "rating_count": 143,
     "price_range": {
-      "min": 2000,
-      "max": 5000,
+      "min": 1200,
+      "max": 6200,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-16T17:00:00+05:00",
-      "2026-05-18T17:00:00+05:00",
-      "2026-05-20T17:00:00+05:00",
-      "2026-05-22T17:00:00+05:00"
+      "2026-05-20T09:00:00+05:00",
+      "2026-05-23T16:00:00+05:00",
+      "2026-05-24T10:00:00+05:00",
+      "2026-05-25T14:00:00+05:00",
+      "2026-05-27T14:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu",
+      "Pashto"
+    ],
+    "bio": "Handles everything from leaky taps to full bathroom renovation.",
+    "years_experience": 11,
+    "cultural_background": "Punjabi",
+    "_synthetic": true
+  },
+  {
+    "id": "P0007",
+    "name": "Bahadur Achakzai",
+    "category": "AC Technician",
+    "sector": "Saddar, Rawalpindi",
+    "home_city": "Rawalpindi",
+    "lat": 33.5963,
+    "lng": 73.0515,
+    "rating": 3.5,
+    "rating_count": 129,
+    "price_range": {
+      "min": 1000,
+      "max": 6000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-21T17:00:00+05:00",
+      "2026-05-23T10:00:00+05:00",
+      "2026-05-25T17:00:00+05:00",
+      "2026-05-26T17:00:00+05:00",
+      "2026-05-27T10:00:00+05:00",
+      "2026-05-28T16:00:00+05:00"
     ],
     "verified": true,
     "languages_spoken": [
       "Urdu"
     ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0007",
-    "name": "Nadeem Akhtar",
-    "category": "AC Technician",
-    "sector": "Blue Area",
-    "lat": 33.7086,
-    "lng": 73.0453,
-    "rating": 4.6,
-    "rating_count": 156,
-    "price_range": {
-      "min": 3500,
-      "max": 8000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-16T16:00:00+05:00",
-      "2026-05-16T18:00:00+05:00",
-      "2026-05-18T11:00:00+05:00",
-      "2026-05-19T09:00:00+05:00",
-      "2026-05-19T16:00:00+05:00",
-      "2026-05-20T11:00:00+05:00",
-      "2026-05-20T14:00:00+05:00",
-      "2026-05-21T09:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu",
-      "English"
-    ],
+    "bio": "Handles window ACs, splits, and inverters. Won't touch centralized systems.",
+    "years_experience": 13,
+    "cultural_background": "Pashtun",
     "_synthetic": true
   },
   {
     "id": "P0008",
-    "name": "Sajid Mehmood",
+    "name": "Shahbaz Butt",
     "category": "AC Technician",
-    "sector": "G-13",
-    "lat": 33.6357,
-    "lng": 73.0312,
-    "rating": 4.4,
-    "rating_count": 78,
+    "sector": "Pirwadhai, Rawalpindi",
+    "home_city": "Rawalpindi",
+    "lat": 33.6172,
+    "lng": 73.0603,
+    "rating": 3.3,
+    "rating_count": 51,
     "price_range": {
-      "min": 2000,
-      "max": 5500,
+      "min": 1200,
+      "max": 2700,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-16T11:00:00+05:00",
-      "2026-05-16T15:00:00+05:00",
-      "2026-05-17T15:00:00+05:00",
-      "2026-05-20T15:00:00+05:00",
-      "2026-05-21T11:00:00+05:00",
-      "2026-05-21T16:00:00+05:00"
+      "2026-05-20T18:00:00+05:00",
+      "2026-05-21T17:00:00+05:00",
+      "2026-05-22T11:00:00+05:00",
+      "2026-05-23T09:00:00+05:00",
+      "2026-05-24T14:00:00+05:00",
+      "2026-05-25T18:00:00+05:00",
+      "2026-05-26T17:00:00+05:00",
+      "2026-05-28T11:00:00+05:00"
     ],
     "verified": true,
     "languages_spoken": [
       "Urdu",
-      "Punjabi"
+      "Pashto"
     ],
+    "bio": "Started in AC work but picked up electrical along the way. Does both now.",
+    "years_experience": 10,
+    "cultural_background": null,
     "_synthetic": true,
     "notes": "Also experienced in electrical wiring and switchboard repair"
   },
   {
     "id": "P0009",
-    "name": "Tariq Mahmood",
-    "category": "AC Technician",
-    "sector": "DHA Phase 2 Rawalpindi",
-    "lat": 33.5544,
-    "lng": 73.1107,
-    "rating": 4.2,
-    "rating_count": 52,
+    "name": "Mumtaz",
+    "category": "Tutor",
+    "sector": "Pirwadhai, Rawalpindi",
+    "home_city": "Rawalpindi",
+    "lat": 33.612,
+    "lng": 73.0623,
+    "rating": 4.1,
+    "rating_count": 143,
     "price_range": {
-      "min": 2500,
-      "max": 6000,
+      "min": 2000,
+      "max": 3500,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-16T16:00:00+05:00",
-      "2026-05-16T17:00:00+05:00",
-      "2026-05-17T17:00:00+05:00",
-      "2026-05-22T17:00:00+05:00",
-      "2026-05-22T18:00:00+05:00"
+      "2026-05-20T14:00:00+05:00",
+      "2026-05-21T14:00:00+05:00",
+      "2026-05-22T10:00:00+05:00",
+      "2026-05-24T17:00:00+05:00",
+      "2026-05-26T10:00:00+05:00",
+      "2026-05-27T10:00:00+05:00"
     ],
     "verified": true,
     "languages_spoken": [
       "Urdu",
-      "English"
+      "Punjabi"
     ],
+    "bio": "Retired school teacher. Still sharp. Teaches math and science to matric students.",
+    "years_experience": 13,
+    "cultural_background": "Pashtun",
     "_synthetic": true
   },
   {
     "id": "P0010",
-    "name": "Waqar Hassan",
-    "category": "AC Technician",
-    "sector": "G-11",
-    "lat": 33.6648,
-    "lng": 73.0182,
-    "rating": 4.0,
-    "rating_count": 28,
+    "name": "Gulzar Bugti",
+    "category": "Tutor",
+    "sector": "Saddar, Rawalpindi",
+    "home_city": "Rawalpindi",
+    "lat": 33.5966,
+    "lng": 73.0517,
+    "rating": 3.5,
+    "rating_count": 106,
     "price_range": {
       "min": 1500,
-      "max": 3500,
+      "max": 4500,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-17T11:00:00+05:00",
-      "2026-05-18T18:00:00+05:00",
-      "2026-05-22T16:00:00+05:00"
+      "2026-05-20T11:00:00+05:00",
+      "2026-05-21T15:00:00+05:00",
+      "2026-05-22T11:00:00+05:00",
+      "2026-05-23T16:00:00+05:00",
+      "2026-05-24T10:00:00+05:00",
+      "2026-05-25T14:00:00+05:00",
+      "2026-05-26T15:00:00+05:00",
+      "2026-05-27T16:00:00+05:00"
     ],
-    "verified": false,
+    "verified": true,
     "languages_spoken": [
-      "Urdu"
+      "Urdu",
+      "Punjabi",
+      "English"
     ],
+    "bio": "Engineering dropout. Teaches physics and math better than most degree holders.",
+    "years_experience": 15,
+    "cultural_background": "Pashtun",
     "_synthetic": true
   },
   {
     "id": "P0011",
-    "name": "Zubair Ahmad",
-    "category": "AC Technician",
-    "sector": "F-10",
-    "lat": 33.6932,
-    "lng": 73.0108,
-    "rating": 4.5,
-    "rating_count": 91,
+    "name": "Hanif Lashari",
+    "category": "Beautician",
+    "sector": "Pirwadhai, Rawalpindi",
+    "home_city": "Rawalpindi",
+    "lat": 33.617,
+    "lng": 73.0642,
+    "rating": 4.8,
+    "rating_count": 39,
     "price_range": {
-      "min": 2000,
-      "max": 5000,
+      "min": 800,
+      "max": 5800,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-16T15:00:00+05:00",
-      "2026-05-18T10:00:00+05:00",
-      "2026-05-20T17:00:00+05:00",
-      "2026-05-21T10:00:00+05:00",
-      "2026-05-21T14:00:00+05:00",
-      "2026-05-21T15:00:00+05:00"
+      "2026-05-24T14:00:00+05:00",
+      "2026-05-27T14:00:00+05:00",
+      "2026-05-28T16:00:00+05:00"
     ],
     "verified": true,
     "languages_spoken": [
       "Urdu",
       "Punjabi"
     ],
+    "bio": "Expert in hair treatments and styling. Uses mostly local products.",
+    "years_experience": 1,
+    "cultural_background": null,
     "_synthetic": true
   },
   {
     "id": "P0012",
-    "name": "Faisal Raza Khan",
+    "name": "Riaz Jat",
     "category": "AC Technician",
-    "sector": "I-8",
-    "lat": 33.6648,
-    "lng": 73.0532,
-    "rating": 3.8,
-    "rating_count": 19,
+    "sector": "Raja Bazaar, Rawalpindi",
+    "home_city": "Rawalpindi",
+    "lat": 33.598,
+    "lng": 73.0455,
+    "rating": 4.2,
+    "rating_count": 72,
     "price_range": {
-      "min": 1800,
+      "min": 3000,
+      "max": 7000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T16:00:00+05:00",
+      "2026-05-21T11:00:00+05:00",
+      "2026-05-25T11:00:00+05:00",
+      "2026-05-26T15:00:00+05:00",
+      "2026-05-27T09:00:00+05:00",
+      "2026-05-28T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "bio": "Former factory worker who switched to AC repair after the mill closed.",
+    "years_experience": 7,
+    "cultural_background": "Punjabi",
+    "_synthetic": true
+  },
+  {
+    "id": "P0013",
+    "name": "Zahoor",
+    "category": "AC Technician",
+    "sector": "Raja Bazaar, Rawalpindi",
+    "home_city": "Rawalpindi",
+    "lat": 33.6004,
+    "lng": 73.0488,
+    "rating": 4.8,
+    "rating_count": 65,
+    "price_range": {
+      "min": 1000,
       "max": 4000,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-17T11:00:00+05:00",
-      "2026-05-17T18:00:00+05:00",
-      "2026-05-19T09:00:00+05:00",
-      "2026-05-19T16:00:00+05:00"
+      "2026-05-25T14:00:00+05:00",
+      "2026-05-26T15:00:00+05:00",
+      "2026-05-27T11:00:00+05:00"
     ],
     "verified": false,
     "languages_spoken": [
       "Urdu"
     ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0013",
-    "name": "Hassan Ali Shah",
-    "category": "Plumber",
-    "sector": "G-11",
-    "lat": 33.6641,
-    "lng": 73.0211,
-    "rating": 4.6,
-    "rating_count": 110,
-    "price_range": {
-      "min": 1000,
-      "max": 3000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-17T17:00:00+05:00",
-      "2026-05-18T15:00:00+05:00",
-      "2026-05-20T14:00:00+05:00",
-      "2026-05-21T14:00:00+05:00",
-      "2026-05-21T15:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu",
-      "Punjabi"
-    ],
+    "bio": "1 years fixing ACs across Rawalpindi. Trained his son in the trade.",
+    "years_experience": 1,
+    "cultural_background": "Punjabi",
     "_synthetic": true
   },
   {
     "id": "P0014",
-    "name": "Imran Malik",
-    "category": "Plumber",
-    "sector": "F-11",
-    "lat": 33.6876,
-    "lng": 73.0312,
-    "rating": 4.3,
-    "rating_count": 67,
+    "name": "Kausar Marri",
+    "category": "Tutor",
+    "sector": "Tench Bhata, Rawalpindi",
+    "home_city": "Rawalpindi",
+    "lat": 33.5863,
+    "lng": 73.0652,
+    "rating": 3.8,
+    "rating_count": 76,
     "price_range": {
-      "min": 800,
-      "max": 2500,
+      "min": 1500,
+      "max": 4000,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-16T11:00:00+05:00",
-      "2026-05-17T17:00:00+05:00",
-      "2026-05-18T15:00:00+05:00",
-      "2026-05-19T10:00:00+05:00",
-      "2026-05-22T14:00:00+05:00",
-      "2026-05-22T15:00:00+05:00"
+      "2026-05-20T09:00:00+05:00",
+      "2026-05-22T17:00:00+05:00",
+      "2026-05-25T15:00:00+05:00",
+      "2026-05-26T10:00:00+05:00",
+      "2026-05-28T11:00:00+05:00"
     ],
-    "verified": true,
+    "verified": false,
     "languages_spoken": [
       "Urdu"
     ],
+    "bio": "Hafiz who also tutors Arabic and basic English. Popular with madrassah families.",
+    "years_experience": 7,
+    "cultural_background": null,
     "_synthetic": true
   },
   {
     "id": "P0015",
-    "name": "Junaid Sheikh",
-    "category": "Plumber",
-    "sector": "I-10",
-    "lat": 33.6416,
-    "lng": 73.0203,
-    "rating": 4.5,
-    "rating_count": 88,
+    "name": "Yaqoob Butt",
+    "category": "Beautician",
+    "sector": "Raja Bazaar, Rawalpindi",
+    "home_city": "Rawalpindi",
+    "lat": 33.5994,
+    "lng": 73.0459,
+    "rating": 3.7,
+    "rating_count": 22,
     "price_range": {
-      "min": 1200,
-      "max": 3500,
+      "min": 2000,
+      "max": 6000,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-17T16:00:00+05:00",
-      "2026-05-18T15:00:00+05:00",
-      "2026-05-19T10:00:00+05:00",
-      "2026-05-19T18:00:00+05:00",
-      "2026-05-20T15:00:00+05:00",
-      "2026-05-21T10:00:00+05:00",
-      "2026-05-21T16:00:00+05:00"
+      "2026-05-21T15:00:00+05:00",
+      "2026-05-22T17:00:00+05:00",
+      "2026-05-23T17:00:00+05:00",
+      "2026-05-24T11:00:00+05:00",
+      "2026-05-25T11:00:00+05:00",
+      "2026-05-27T14:00:00+05:00",
+      "2026-05-28T15:00:00+05:00"
     ],
-    "verified": true,
+    "verified": false,
     "languages_spoken": [
-      "Urdu",
-      "English"
+      "Urdu"
     ],
+    "bio": "Specializes in bridal packages. Known for not overselling services.",
+    "years_experience": 11,
+    "cultural_background": "Punjabi",
     "_synthetic": true
   },
   {
     "id": "P0016",
-    "name": "Kashif Nawaz",
-    "category": "Plumber",
-    "sector": "DHA Phase 2 Rawalpindi",
-    "lat": 33.5583,
-    "lng": 73.1129,
-    "rating": 4.1,
-    "rating_count": 41,
+    "name": "Ilyas",
+    "category": "Electrician",
+    "sector": "Pirwadhai, Rawalpindi",
+    "home_city": "Rawalpindi",
+    "lat": 33.6153,
+    "lng": 73.06,
+    "rating": 3.8,
+    "rating_count": 177,
     "price_range": {
-      "min": 1000,
-      "max": 3000,
+      "min": 3000,
+      "max": 8000,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-17T09:00:00+05:00",
-      "2026-05-17T10:00:00+05:00",
-      "2026-05-17T18:00:00+05:00",
-      "2026-05-18T09:00:00+05:00",
-      "2026-05-21T18:00:00+05:00"
+      "2026-05-20T09:00:00+05:00",
+      "2026-05-21T14:00:00+05:00",
+      "2026-05-22T09:00:00+05:00",
+      "2026-05-24T15:00:00+05:00",
+      "2026-05-25T14:00:00+05:00",
+      "2026-05-26T11:00:00+05:00",
+      "2026-05-27T14:00:00+05:00"
     ],
     "verified": true,
     "languages_spoken": [
       "Urdu",
-      "Punjabi"
+      "Pashto"
     ],
+    "bio": "UPS and solar panel installations are his specialty. Good with inverters.",
+    "years_experience": 11,
+    "cultural_background": null,
     "_synthetic": true
   },
   {
     "id": "P0017",
-    "name": "Liaqat Ali",
-    "category": "Plumber",
-    "sector": "G-13",
-    "lat": 33.6354,
-    "lng": 73.0276,
+    "name": "Yaqoob Bugti",
+    "category": "AC Technician",
+    "sector": "Dhok Khabba, Rawalpindi",
+    "home_city": "Rawalpindi",
+    "lat": 33.5779,
+    "lng": 73.0557,
     "rating": 2.1,
     "rating_count": 9,
     "price_range": {
@@ -465,943 +539,2670 @@
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-19T10:00:00+05:00",
-      "2026-05-19T14:00:00+05:00",
-      "2026-05-20T16:00:00+05:00"
+      "2026-05-20T18:00:00+05:00",
+      "2026-05-27T10:00:00+05:00",
+      "2026-05-28T14:00:00+05:00"
     ],
     "verified": false,
     "languages_spoken": [
       "Urdu"
     ],
+    "bio": "Shows up late, but cheap. You get what you pay for.",
+    "years_experience": 7,
+    "cultural_background": null,
     "_synthetic": true
   },
   {
     "id": "P0018",
-    "name": "Mansoor Ahmed",
-    "category": "Plumber",
-    "sector": "G-11",
-    "lat": 33.6647,
-    "lng": 73.0215,
+    "name": "Shabnam",
+    "category": "Beautician",
+    "sector": "Dhok Khabba, Rawalpindi",
+    "home_city": "Rawalpindi",
+    "lat": 33.5768,
+    "lng": 73.056,
     "rating": 4.7,
-    "rating_count": 145,
+    "rating_count": 195,
     "price_range": {
-      "min": 1500,
-      "max": 4000,
+      "min": 3000,
+      "max": 5500,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-16T14:00:00+05:00",
-      "2026-05-16T16:00:00+05:00",
-      "2026-05-16T18:00:00+05:00",
-      "2026-05-17T09:00:00+05:00",
-      "2026-05-17T10:00:00+05:00",
-      "2026-05-19T18:00:00+05:00",
-      "2026-05-20T09:00:00+05:00",
-      "2026-05-22T09:00:00+05:00"
+      "2026-05-20T11:00:00+05:00",
+      "2026-05-21T16:00:00+05:00",
+      "2026-05-22T10:00:00+05:00",
+      "2026-05-23T11:00:00+05:00",
+      "2026-05-24T14:00:00+05:00",
+      "2026-05-25T16:00:00+05:00",
+      "2026-05-26T14:00:00+05:00",
+      "2026-05-27T15:00:00+05:00"
     ],
-    "verified": true,
+    "verified": false,
     "languages_spoken": [
       "Urdu",
-      "English",
-      "Punjabi"
+      "Pashto"
     ],
+    "bio": "Basic beauty services — threading, facials, waxing. Affordable rates.",
+    "years_experience": 16,
+    "cultural_background": null,
     "_synthetic": true
   },
   {
     "id": "P0019",
-    "name": "Naeem Ullah",
-    "category": "Plumber",
-    "sector": "F-10",
-    "lat": 33.6948,
-    "lng": 73.0143,
-    "rating": 4.0,
-    "rating_count": 36,
-    "price_range": {
-      "min": 800,
-      "max": 2000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-16T15:00:00+05:00",
-      "2026-05-19T09:00:00+05:00",
-      "2026-05-19T14:00:00+05:00",
-      "2026-05-20T17:00:00+05:00"
-    ],
-    "verified": false,
-    "languages_spoken": [
-      "Urdu"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0020",
-    "name": "Omar Farooq",
-    "category": "Plumber",
-    "sector": "Blue Area",
-    "lat": 33.7093,
-    "lng": 73.051,
-    "rating": 4.4,
-    "rating_count": 73,
-    "price_range": {
-      "min": 1200,
-      "max": 3500,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-16T09:00:00+05:00",
-      "2026-05-18T09:00:00+05:00",
-      "2026-05-20T10:00:00+05:00",
-      "2026-05-20T14:00:00+05:00",
-      "2026-05-21T14:00:00+05:00",
-      "2026-05-21T17:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu",
-      "English"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0021",
-    "name": "Qaiser Abbas",
-    "category": "Plumber",
-    "sector": "I-8",
-    "lat": 33.6617,
-    "lng": 73.0553,
-    "rating": 3.9,
-    "rating_count": 25,
-    "price_range": {
-      "min": 700,
-      "max": 2000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-18T10:00:00+05:00",
-      "2026-05-21T10:00:00+05:00",
-      "2026-05-22T09:00:00+05:00",
-      "2026-05-22T10:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu",
-      "Punjabi"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0022",
-    "name": "Rizwan Chaudhry",
-    "category": "Plumber",
-    "sector": "F-11",
-    "lat": 33.6845,
-    "lng": 73.0283,
-    "rating": 4.2,
-    "rating_count": 55,
-    "price_range": {
-      "min": 1000,
-      "max": 3000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-16T09:00:00+05:00",
-      "2026-05-17T11:00:00+05:00",
-      "2026-05-18T09:00:00+05:00",
-      "2026-05-19T16:00:00+05:00",
-      "2026-05-21T17:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0023",
-    "name": "Sohail Aslam",
-    "category": "Electrician",
-    "sector": "F-10",
-    "lat": 33.6968,
-    "lng": 73.0141,
-    "rating": 4.5,
-    "rating_count": 97,
-    "price_range": {
-      "min": 1500,
-      "max": 4000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-16T17:00:00+05:00",
-      "2026-05-18T14:00:00+05:00",
-      "2026-05-20T09:00:00+05:00",
-      "2026-05-21T09:00:00+05:00",
-      "2026-05-22T16:00:00+05:00",
-      "2026-05-22T18:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu",
-      "English"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0024",
-    "name": "Tahir Abbas",
-    "category": "Electrician",
-    "sector": "F-11",
-    "lat": 33.6862,
-    "lng": 73.0274,
-    "rating": 4.3,
-    "rating_count": 62,
-    "price_range": {
-      "min": 1200,
-      "max": 3500,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-17T11:00:00+05:00",
-      "2026-05-20T10:00:00+05:00",
-      "2026-05-20T11:00:00+05:00",
-      "2026-05-22T09:00:00+05:00",
-      "2026-05-22T10:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0025",
-    "name": "Waseem Raja",
-    "category": "Electrician",
-    "sector": "I-8",
-    "lat": 33.6665,
-    "lng": 73.0536,
+    "name": "Iqbal Gujjar",
+    "category": "AC Technician",
+    "sector": "Pirwadhai, Rawalpindi",
+    "home_city": "Rawalpindi",
+    "lat": 33.6162,
+    "lng": 73.0642,
     "rating": 4.6,
-    "rating_count": 118,
+    "rating_count": 200,
     "price_range": {
-      "min": 1800,
+      "min": 3000,
       "max": 4500,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-16T10:00:00+05:00",
-      "2026-05-16T18:00:00+05:00",
-      "2026-05-17T18:00:00+05:00",
-      "2026-05-18T14:00:00+05:00",
-      "2026-05-18T18:00:00+05:00",
-      "2026-05-19T18:00:00+05:00",
-      "2026-05-22T14:00:00+05:00"
+      "2026-05-24T14:00:00+05:00",
+      "2026-05-25T15:00:00+05:00",
+      "2026-05-26T14:00:00+05:00",
+      "2026-05-28T18:00:00+05:00"
     ],
     "verified": true,
     "languages_spoken": [
       "Urdu",
       "Punjabi"
     ],
+    "bio": "Known in Pirwadhai for fixing ACs other technicians give up on.",
+    "years_experience": 14,
+    "cultural_background": "Punjabi",
     "_synthetic": true
   },
   {
-    "id": "P0026",
-    "name": "Yasir Habib",
-    "category": "Electrician",
-    "sector": "G-13",
-    "lat": 33.6323,
-    "lng": 73.0313,
-    "rating": 4.1,
-    "rating_count": 38,
+    "id": "P0020",
+    "name": "Imran",
+    "category": "Tutor",
+    "sector": "Pirwadhai, Rawalpindi",
+    "home_city": "Rawalpindi",
+    "lat": 33.6149,
+    "lng": 73.0623,
+    "rating": 4.7,
+    "rating_count": 156,
     "price_range": {
-      "min": 1000,
+      "min": 500,
+      "max": 2000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T16:00:00+05:00",
+      "2026-05-22T17:00:00+05:00",
+      "2026-05-27T15:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "bio": "Runs a small tuition center from her house in Pirwadhai. 30 students.",
+    "years_experience": 6,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0021",
+    "name": "Bushra Gujjar",
+    "category": "Tutor",
+    "sector": "Shadbagh, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5847,
+    "lng": 74.324,
+    "rating": 4.9,
+    "rating_count": 94,
+    "price_range": {
+      "min": 800,
+      "max": 5800,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T18:00:00+05:00",
+      "2026-05-21T14:00:00+05:00",
+      "2026-05-22T10:00:00+05:00",
+      "2026-05-23T10:00:00+05:00",
+      "2026-05-24T15:00:00+05:00",
+      "2026-05-25T11:00:00+05:00",
+      "2026-05-26T16:00:00+05:00",
+      "2026-05-28T18:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "bio": "Retired school teacher. Still sharp. Teaches math and science to matric students.",
+    "years_experience": 2,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0022",
+    "name": "Yaqoob",
+    "category": "AC Technician",
+    "sector": "Bhatti Gate, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5829,
+    "lng": 74.3268,
+    "rating": 3.8,
+    "rating_count": 188,
+    "price_range": {
+      "min": 1200,
+      "max": 2700,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T17:00:00+05:00",
+      "2026-05-21T09:00:00+05:00",
+      "2026-05-22T18:00:00+05:00",
+      "2026-05-23T17:00:00+05:00",
+      "2026-05-24T10:00:00+05:00",
+      "2026-05-26T16:00:00+05:00",
+      "2026-05-27T18:00:00+05:00",
+      "2026-05-28T11:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi",
+      "English"
+    ],
+    "bio": "Seasonal rush keeps him busy April through September. Winters, he does odd electrical work.",
+    "years_experience": 13,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0023",
+    "name": "Sultan",
+    "category": "Electrician",
+    "sector": "Daroghewala, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5931,
+    "lng": 74.3101,
+    "rating": 3.6,
+    "rating_count": 67,
+    "price_range": {
+      "min": 800,
+      "max": 3300,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-22T16:00:00+05:00",
+      "2026-05-26T18:00:00+05:00",
+      "2026-05-27T09:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "bio": "Handles high-tension connections that most electricians won't touch.",
+    "years_experience": 3,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0024",
+    "name": "Zulfiqar",
+    "category": "Electrician",
+    "sector": "Shadbagh, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5849,
+    "lng": 74.3241,
+    "rating": 4.0,
+    "rating_count": 53,
+    "price_range": {
+      "min": 2500,
+      "max": 5500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T18:00:00+05:00",
+      "2026-05-22T16:00:00+05:00",
+      "2026-05-23T15:00:00+05:00",
+      "2026-05-24T16:00:00+05:00",
+      "2026-05-25T17:00:00+05:00",
+      "2026-05-26T14:00:00+05:00",
+      "2026-05-27T14:00:00+05:00",
+      "2026-05-28T15:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "bio": "Learned from his father who was a lineman at WAPDA. Practical knowledge, no degree.",
+    "years_experience": 15,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0025",
+    "name": "Mumtaz Mughal",
+    "category": "Electrician",
+    "sector": "Daroghewala, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.598,
+    "lng": 74.3103,
+    "rating": 3.4,
+    "rating_count": 194,
+    "price_range": {
+      "min": 1500,
       "max": 3000,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-16T16:00:00+05:00",
-      "2026-05-19T18:00:00+05:00",
-      "2026-05-21T17:00:00+05:00",
-      "2026-05-22T15:00:00+05:00"
+      "2026-05-21T15:00:00+05:00",
+      "2026-05-22T09:00:00+05:00",
+      "2026-05-23T09:00:00+05:00",
+      "2026-05-25T11:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Punjabi",
+      "Urdu"
+    ],
+    "bio": "Started rewinding motors in a shop. Now handles full house wiring.",
+    "years_experience": 13,
+    "cultural_background": "Punjabi",
+    "_synthetic": true
+  },
+  {
+    "id": "P0026",
+    "name": "Shahbaz",
+    "category": "Plumber",
+    "sector": "Misri Shah, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5783,
+    "lng": 74.3202,
+    "rating": 3.9,
+    "rating_count": 117,
+    "price_range": {
+      "min": 500,
+      "max": 3000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-21T18:00:00+05:00",
+      "2026-05-26T10:00:00+05:00"
     ],
     "verified": true,
     "languages_spoken": [
       "Urdu"
     ],
+    "bio": "Fixes water tanker connections and boring pumps. Specialized for Lahore's water issues.",
+    "years_experience": 14,
+    "cultural_background": null,
     "_synthetic": true
   },
   {
     "id": "P0027",
-    "name": "Amir Hamza",
-    "category": "Electrician",
-    "sector": "Blue Area",
-    "lat": 33.7074,
-    "lng": 73.0496,
-    "rating": 4.8,
-    "rating_count": 189,
+    "name": "Nadeem",
+    "category": "Plumber",
+    "sector": "Mochi Gate, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5838,
+    "lng": 74.3193,
+    "rating": 4.5,
+    "rating_count": 102,
     "price_range": {
-      "min": 2500,
-      "max": 6000,
+      "min": 3000,
+      "max": 5500,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-17T09:00:00+05:00",
-      "2026-05-17T11:00:00+05:00",
-      "2026-05-18T09:00:00+05:00",
-      "2026-05-19T17:00:00+05:00",
       "2026-05-20T14:00:00+05:00",
-      "2026-05-21T11:00:00+05:00",
-      "2026-05-22T10:00:00+05:00",
-      "2026-05-22T17:00:00+05:00"
+      "2026-05-24T14:00:00+05:00",
+      "2026-05-25T10:00:00+05:00",
+      "2026-05-27T11:00:00+05:00",
+      "2026-05-28T15:00:00+05:00"
     ],
     "verified": true,
     "languages_spoken": [
-      "Urdu",
-      "English",
-      "Punjabi"
+      "Punjabi",
+      "Urdu"
     ],
+    "bio": "Former sanitary worker who learned plumbing skills on the job. Very thorough.",
+    "years_experience": 19,
+    "cultural_background": null,
     "_synthetic": true
   },
   {
     "id": "P0028",
-    "name": "Babar Khan",
-    "category": "Electrician",
-    "sector": "G-11",
-    "lat": 33.6657,
-    "lng": 73.0191,
-    "rating": 4.0,
-    "rating_count": 29,
+    "name": "Javed Butt",
+    "category": "AC Technician",
+    "sector": "Shadbagh, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.583,
+    "lng": 74.3225,
+    "rating": 4.3,
+    "rating_count": 184,
     "price_range": {
-      "min": 1000,
-      "max": 2500,
+      "min": 800,
+      "max": 5800,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-17T16:00:00+05:00",
-      "2026-05-20T11:00:00+05:00",
-      "2026-05-21T17:00:00+05:00",
-      "2026-05-22T09:00:00+05:00"
+      "2026-05-20T15:00:00+05:00",
+      "2026-05-23T14:00:00+05:00",
+      "2026-05-24T11:00:00+05:00",
+      "2026-05-26T11:00:00+05:00"
     ],
     "verified": false,
     "languages_spoken": [
-      "Urdu",
-      "Punjabi"
+      "Urdu"
     ],
+    "bio": "Learned the craft from his uncle. Gets most of his calls from repeat customers.",
+    "years_experience": 18,
+    "cultural_background": null,
     "_synthetic": true
   },
   {
     "id": "P0029",
-    "name": "Danish Butt",
-    "category": "Electrician",
-    "sector": "DHA Phase 2 Rawalpindi",
-    "lat": 33.5571,
-    "lng": 73.1133,
-    "rating": 4.4,
-    "rating_count": 71,
+    "name": "Razia",
+    "category": "Beautician",
+    "sector": "Misri Shah, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5754,
+    "lng": 74.3208,
+    "rating": 4.8,
+    "rating_count": 133,
     "price_range": {
-      "min": 1500,
-      "max": 4000,
+      "min": 3000,
+      "max": 4500,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-18T18:00:00+05:00",
-      "2026-05-19T10:00:00+05:00",
-      "2026-05-19T15:00:00+05:00",
-      "2026-05-21T10:00:00+05:00",
-      "2026-05-21T11:00:00+05:00"
+      "2026-05-25T09:00:00+05:00",
+      "2026-05-26T15:00:00+05:00"
     ],
     "verified": true,
     "languages_spoken": [
       "Urdu",
+      "Punjabi",
       "English"
     ],
+    "bio": "Trained as a plumber first, then moved to electrical. Still takes plumbing jobs.",
+    "years_experience": 6,
+    "cultural_background": null,
     "_synthetic": true,
     "notes": "Also does plumbing work — previously trained as a plumber"
   },
   {
     "id": "P0030",
-    "name": "Ehsan Elahi",
-    "category": "Electrician",
-    "sector": "I-10",
-    "lat": 33.6454,
-    "lng": 73.0217,
-    "rating": 3.7,
-    "rating_count": 15,
+    "name": "Tahira",
+    "category": "Beautician",
+    "sector": "Misri Shah, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5764,
+    "lng": 74.32,
+    "rating": 3.9,
+    "rating_count": 171,
     "price_range": {
-      "min": 800,
-      "max": 2000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-16T15:00:00+05:00",
-      "2026-05-17T17:00:00+05:00",
-      "2026-05-17T18:00:00+05:00"
-    ],
-    "verified": false,
-    "languages_spoken": [
-      "Urdu"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0031",
-    "name": "Ghulam Mustafa",
-    "category": "Electrician",
-    "sector": "F-10",
-    "lat": 33.693,
-    "lng": 73.013,
-    "rating": 4.2,
-    "rating_count": 54,
-    "price_range": {
-      "min": 1200,
-      "max": 3000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-16T09:00:00+05:00",
-      "2026-05-16T15:00:00+05:00",
-      "2026-05-17T17:00:00+05:00",
-      "2026-05-20T16:00:00+05:00",
-      "2026-05-21T16:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu",
-      "Punjabi"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0032",
-    "name": "Hamid Raza",
-    "category": "Electrician",
-    "sector": "G-13",
-    "lat": 33.6358,
-    "lng": 73.0274,
-    "rating": 4.3,
-    "rating_count": 66,
-    "price_range": {
-      "min": 1400,
+      "min": 1500,
       "max": 3500,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-16T11:00:00+05:00",
-      "2026-05-16T15:00:00+05:00",
-      "2026-05-17T18:00:00+05:00",
-      "2026-05-18T10:00:00+05:00",
-      "2026-05-18T16:00:00+05:00",
-      "2026-05-20T09:00:00+05:00"
+      "2026-05-21T16:00:00+05:00",
+      "2026-05-22T11:00:00+05:00",
+      "2026-05-23T10:00:00+05:00",
+      "2026-05-26T16:00:00+05:00",
+      "2026-05-27T16:00:00+05:00"
     ],
     "verified": true,
     "languages_spoken": [
+      "Punjabi",
       "Urdu"
     ],
+    "bio": "Started during COVID when salons were closed. Never went back to office work.",
+    "years_experience": 12,
+    "cultural_background": "Punjabi",
+    "_synthetic": true
+  },
+  {
+    "id": "P0031",
+    "name": "Iqbal Awan",
+    "category": "Tutor",
+    "sector": "Daroghewala, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5962,
+    "lng": 74.3087,
+    "rating": 4.6,
+    "rating_count": 216,
+    "price_range": {
+      "min": 3000,
+      "max": 6000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-24T09:00:00+05:00",
+      "2026-05-25T18:00:00+05:00",
+      "2026-05-28T18:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi",
+      "English"
+    ],
+    "bio": "Retired school teacher. Still sharp. Teaches math and science to matric students.",
+    "years_experience": 4,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0032",
+    "name": "Rashid Marri",
+    "category": "Electrician",
+    "sector": "Shadbagh, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5836,
+    "lng": 74.3228,
+    "rating": 4.3,
+    "rating_count": 84,
+    "price_range": {
+      "min": 2500,
+      "max": 4000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T18:00:00+05:00",
+      "2026-05-21T15:00:00+05:00",
+      "2026-05-22T11:00:00+05:00",
+      "2026-05-23T18:00:00+05:00",
+      "2026-05-24T17:00:00+05:00",
+      "2026-05-25T18:00:00+05:00",
+      "2026-05-27T17:00:00+05:00",
+      "2026-05-28T14:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Punjabi",
+      "Urdu"
+    ],
+    "bio": "Started rewinding motors in a shop. Now handles full house wiring.",
+    "years_experience": 26,
+    "cultural_background": null,
     "_synthetic": true
   },
   {
     "id": "P0033",
-    "name": "Iftikhar Ahmed",
-    "category": "Tutor",
-    "sector": "F-10",
-    "lat": 33.695,
-    "lng": 73.0108,
+    "name": "Amanullah Awan",
+    "category": "Plumber",
+    "sector": "Shadbagh, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5875,
+    "lng": 74.325,
     "rating": 4.5,
     "rating_count": 83,
     "price_range": {
       "min": 3000,
-      "max": 8000,
+      "max": 5000,
       "currency": "PKR"
     },
-    "available_slots": [
-      "2026-05-18T09:00:00+05:00",
-      "2026-05-18T18:00:00+05:00",
-      "2026-05-20T17:00:00+05:00",
-      "2026-05-21T15:00:00+05:00",
-      "2026-05-22T17:00:00+05:00"
-    ],
-    "verified": true,
+    "available_slots": [],
+    "verified": false,
     "languages_spoken": [
-      "Urdu",
-      "English"
+      "Urdu"
     ],
+    "bio": "Fully booked for the season. Try again next month.",
+    "years_experience": 11,
+    "cultural_background": "Punjabi",
     "_synthetic": true
   },
   {
     "id": "P0034",
-    "name": "Javed Iqbal",
+    "name": "Hameed",
     "category": "Tutor",
-    "sector": "F-11",
-    "lat": 33.6872,
-    "lng": 73.0313,
-    "rating": 4.7,
-    "rating_count": 134,
+    "sector": "Bhatti Gate, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5827,
+    "lng": 74.3213,
+    "rating": 3.9,
+    "rating_count": 14,
     "price_range": {
-      "min": 2500,
-      "max": 7000,
+      "min": 2000,
+      "max": 3500,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-16T17:00:00+05:00",
-      "2026-05-17T15:00:00+05:00",
-      "2026-05-18T17:00:00+05:00",
-      "2026-05-19T14:00:00+05:00",
-      "2026-05-21T11:00:00+05:00",
-      "2026-05-22T17:00:00+05:00"
+      "2026-05-27T11:00:00+05:00",
+      "2026-05-28T09:00:00+05:00"
     ],
     "verified": true,
     "languages_spoken": [
-      "Urdu",
-      "English"
+      "Punjabi",
+      "Urdu"
     ],
+    "bio": "Teaches basic computer skills — MS Office, typing, internet basics.",
+    "years_experience": 12,
+    "cultural_background": null,
     "_synthetic": true
   },
   {
     "id": "P0035",
-    "name": "Khalid Mehmood",
-    "category": "Tutor",
-    "sector": "G-13",
-    "lat": 33.6345,
-    "lng": 73.0288,
-    "rating": 4.4,
-    "rating_count": 76,
-    "price_range": {
-      "min": 2000,
-      "max": 5000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-16T14:00:00+05:00",
-      "2026-05-16T17:00:00+05:00",
-      "2026-05-21T10:00:00+05:00",
-      "2026-05-21T14:00:00+05:00",
-      "2026-05-21T17:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu",
-      "English",
-      "Punjabi"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0036",
-    "name": "Asif Rafiq",
-    "category": "Tutor",
-    "sector": "I-10",
-    "lat": 33.6404,
-    "lng": 73.0234,
-    "rating": 4.2,
-    "rating_count": 48,
-    "price_range": {
-      "min": 1500,
-      "max": 4000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-16T17:00:00+05:00",
-      "2026-05-17T18:00:00+05:00",
-      "2026-05-22T14:00:00+05:00",
-      "2026-05-22T18:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0037",
-    "name": "Mohsin Abbas",
-    "category": "Tutor",
-    "sector": "G-11",
-    "lat": 33.6636,
-    "lng": 73.0187,
+    "name": "Nazir",
+    "category": "AC Technician",
+    "sector": "Daroghewala, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5972,
+    "lng": 74.3128,
     "rating": 4.6,
-    "rating_count": 105,
-    "price_range": {
-      "min": 3000,
-      "max": 8000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-16T15:00:00+05:00",
-      "2026-05-17T09:00:00+05:00",
-      "2026-05-17T14:00:00+05:00",
-      "2026-05-17T18:00:00+05:00",
-      "2026-05-18T10:00:00+05:00",
-      "2026-05-19T14:00:00+05:00",
-      "2026-05-19T16:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu",
-      "English"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0038",
-    "name": "Noman Javed",
-    "category": "Tutor",
-    "sector": "Blue Area",
-    "lat": 33.7097,
-    "lng": 73.0502,
-    "rating": 4.8,
-    "rating_count": 167,
-    "price_range": {
-      "min": 5000,
-      "max": 12000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-16T09:00:00+05:00",
-      "2026-05-16T14:00:00+05:00",
-      "2026-05-16T16:00:00+05:00",
-      "2026-05-16T17:00:00+05:00",
-      "2026-05-20T11:00:00+05:00",
-      "2026-05-20T14:00:00+05:00",
-      "2026-05-21T10:00:00+05:00",
-      "2026-05-22T09:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu",
-      "English"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0039",
-    "name": "Pervaiz Masih",
-    "category": "Tutor",
-    "sector": "F-10",
-    "lat": 33.6961,
-    "lng": 73.0105,
-    "rating": 4.1,
-    "rating_count": 39,
-    "price_range": {
-      "min": 2000,
-      "max": 5000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-17T16:00:00+05:00",
-      "2026-05-19T17:00:00+05:00",
-      "2026-05-19T18:00:00+05:00",
-      "2026-05-22T18:00:00+05:00"
-    ],
-    "verified": false,
-    "languages_spoken": [
-      "Urdu",
-      "English",
-      "Punjabi"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0040",
-    "name": "Raheel Sharif",
-    "category": "Tutor",
-    "sector": "DHA Phase 2 Rawalpindi",
-    "lat": 33.5554,
-    "lng": 73.1094,
-    "rating": 4.3,
-    "rating_count": 59,
-    "price_range": {
-      "min": 2500,
-      "max": 6000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-16T09:00:00+05:00",
-      "2026-05-18T09:00:00+05:00",
-      "2026-05-19T09:00:00+05:00",
-      "2026-05-19T16:00:00+05:00",
-      "2026-05-22T11:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu",
-      "English"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0041",
-    "name": "Shafiq Ahmad",
-    "category": "Tutor",
-    "sector": "I-8",
-    "lat": 33.6627,
-    "lng": 73.0542,
-    "rating": 4.0,
-    "rating_count": 31,
-    "price_range": {
-      "min": 1500,
-      "max": 4000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-20T14:00:00+05:00",
-      "2026-05-21T11:00:00+05:00",
-      "2026-05-21T17:00:00+05:00",
-      "2026-05-22T11:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0042",
-    "name": "Taimoor Shah",
-    "category": "Tutor",
-    "sector": "F-11",
-    "lat": 33.6868,
-    "lng": 73.0274,
-    "rating": 4.4,
-    "rating_count": 72,
-    "price_range": {
-      "min": 2000,
-      "max": 5500,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-16T14:00:00+05:00",
-      "2026-05-17T16:00:00+05:00",
-      "2026-05-18T11:00:00+05:00",
-      "2026-05-20T11:00:00+05:00",
-      "2026-05-20T16:00:00+05:00",
-      "2026-05-21T18:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu",
-      "English"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0043",
-    "name": "Ayesha Bibi",
-    "category": "Beautician",
-    "sector": "G-11",
-    "lat": 33.6629,
-    "lng": 73.0174,
-    "rating": 4.6,
-    "rating_count": 121,
-    "price_range": {
-      "min": 2000,
-      "max": 8000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-16T14:00:00+05:00",
-      "2026-05-17T11:00:00+05:00",
-      "2026-05-19T17:00:00+05:00",
-      "2026-05-20T09:00:00+05:00",
-      "2026-05-20T10:00:00+05:00",
-      "2026-05-20T16:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu",
-      "Punjabi"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0044",
-    "name": "Fatima Zahra",
-    "category": "Beautician",
-    "sector": "DHA Phase 2 Rawalpindi",
-    "lat": 33.5533,
-    "lng": 73.112,
-    "rating": 4.8,
-    "rating_count": 198,
-    "price_range": {
-      "min": 3000,
-      "max": 12000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-16T15:00:00+05:00",
-      "2026-05-17T14:00:00+05:00",
-      "2026-05-17T18:00:00+05:00",
-      "2026-05-20T17:00:00+05:00",
-      "2026-05-21T14:00:00+05:00",
-      "2026-05-22T16:00:00+05:00",
-      "2026-05-22T17:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu",
-      "English"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0045",
-    "name": "Sana Malik",
-    "category": "Beautician",
-    "sector": "F-10",
-    "lat": 33.6934,
-    "lng": 73.0151,
-    "rating": 4.3,
-    "rating_count": 65,
-    "price_range": {
-      "min": 1500,
-      "max": 5000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-16T11:00:00+05:00",
-      "2026-05-17T18:00:00+05:00",
-      "2026-05-20T15:00:00+05:00",
-      "2026-05-20T16:00:00+05:00",
-      "2026-05-20T17:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu",
-      "English",
-      "Punjabi"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0046",
-    "name": "Hina Rashid",
-    "category": "Beautician",
-    "sector": "Blue Area",
-    "lat": 33.7107,
-    "lng": 73.0475,
-    "rating": 4.5,
-    "rating_count": 93,
-    "price_range": {
-      "min": 2500,
-      "max": 10000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-17T16:00:00+05:00",
-      "2026-05-18T09:00:00+05:00",
-      "2026-05-18T15:00:00+05:00",
-      "2026-05-20T10:00:00+05:00",
-      "2026-05-20T15:00:00+05:00",
-      "2026-05-20T16:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu",
-      "English"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0047",
-    "name": "Noor Electric",
-    "category": "Beautician",
-    "sector": "G-13",
-    "lat": 33.636,
-    "lng": 73.0279,
-    "rating": 4.1,
-    "rating_count": 42,
-    "price_range": {
-      "min": 1800,
-      "max": 6000,
-      "currency": "PKR"
-    },
-    "available_slots": [
-      "2026-05-17T09:00:00+05:00",
-      "2026-05-18T09:00:00+05:00",
-      "2026-05-19T10:00:00+05:00",
-      "2026-05-21T10:00:00+05:00",
-      "2026-05-21T11:00:00+05:00"
-    ],
-    "verified": true,
-    "languages_spoken": [
-      "Urdu"
-    ],
-    "_synthetic": true
-  },
-  {
-    "id": "P0048",
-    "name": "Rabia Aslam",
-    "category": "Beautician",
-    "sector": "F-11",
-    "lat": 33.6843,
-    "lng": 73.0284,
-    "rating": 4.4,
-    "rating_count": 58,
+    "rating_count": 141,
     "price_range": {
       "min": 2000,
       "max": 7000,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-16T09:00:00+05:00",
-      "2026-05-16T15:00:00+05:00",
-      "2026-05-19T16:00:00+05:00",
-      "2026-05-22T09:00:00+05:00"
+      "2026-05-20T10:00:00+05:00",
+      "2026-05-21T11:00:00+05:00",
+      "2026-05-22T15:00:00+05:00",
+      "2026-05-23T09:00:00+05:00",
+      "2026-05-24T10:00:00+05:00",
+      "2026-05-25T09:00:00+05:00",
+      "2026-05-27T18:00:00+05:00",
+      "2026-05-28T17:00:00+05:00"
     ],
     "verified": true,
     "languages_spoken": [
-      "Urdu",
-      "Punjabi"
+      "Urdu"
     ],
+    "bio": "Does commercial AC work for shops in Daroghewala. Residential on weekends.",
+    "years_experience": 10,
+    "cultural_background": null,
     "_synthetic": true
   },
   {
-    "id": "P0049",
-    "name": "Zainab Shah",
-    "category": "Beautician",
-    "sector": "I-10",
-    "lat": 33.6437,
-    "lng": 73.0224,
-    "rating": 4.2,
-    "rating_count": 37,
+    "id": "P0036",
+    "name": "Amanullah",
+    "category": "Electrician",
+    "sector": "Garhi Shahu, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5578,
+    "lng": 74.3458,
+    "rating": 3.3,
+    "rating_count": 161,
     "price_range": {
-      "min": 1500,
-      "max": 5000,
+      "min": 1200,
+      "max": 4200,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-16T15:00:00+05:00",
-      "2026-05-16T17:00:00+05:00",
-      "2026-05-17T16:00:00+05:00",
-      "2026-05-20T11:00:00+05:00"
+      "2026-05-23T15:00:00+05:00",
+      "2026-05-25T15:00:00+05:00",
+      "2026-05-27T18:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Punjabi",
+      "Urdu"
+    ],
+    "bio": "Moved to Lahore from Mianwali. Built up his clientele through word of mouth.",
+    "years_experience": 13,
+    "cultural_background": "Punjabi",
+    "_synthetic": true
+  },
+  {
+    "id": "P0037",
+    "name": "Noor Muhammad",
+    "category": "Electrician",
+    "sector": "Lohari Gate, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5761,
+    "lng": 74.3188,
+    "rating": 3.9,
+    "rating_count": 82,
+    "price_range": {
+      "min": 2500,
+      "max": 5500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-24T09:00:00+05:00",
+      "2026-05-25T15:00:00+05:00",
+      "2026-05-26T15:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "bio": "DAE diploma but couldn't find factory work. Freelance electrical ever since.",
+    "years_experience": 7,
+    "cultural_background": "Punjabi",
+    "_synthetic": true
+  },
+  {
+    "id": "P0038",
+    "name": "Irfan",
+    "category": "Beautician",
+    "sector": "Bhatti Gate, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5819,
+    "lng": 74.3226,
+    "rating": 4.6,
+    "rating_count": 78,
+    "price_range": {
+      "min": 1200,
+      "max": 5200,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-23T11:00:00+05:00",
+      "2026-05-24T10:00:00+05:00",
+      "2026-05-25T09:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi",
+      "English"
+    ],
+    "bio": "Specializes in bridal packages. Known for not overselling services.",
+    "years_experience": 26,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0039",
+    "name": "Shabbir Rajput",
+    "category": "Electrician",
+    "sector": "Garhi Shahu, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5577,
+    "lng": 74.3442,
+    "rating": 4.0,
+    "rating_count": 74,
+    "price_range": {
+      "min": 1500,
+      "max": 4500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T17:00:00+05:00",
+      "2026-05-21T16:00:00+05:00",
+      "2026-05-22T10:00:00+05:00",
+      "2026-05-23T10:00:00+05:00",
+      "2026-05-24T15:00:00+05:00",
+      "2026-05-25T17:00:00+05:00",
+      "2026-05-27T09:00:00+05:00"
     ],
     "verified": false,
     "languages_spoken": [
       "Urdu"
     ],
+    "bio": "Night shift electrician at a factory, does private jobs during the day.",
+    "years_experience": 13,
+    "cultural_background": "Punjabi",
     "_synthetic": true
   },
   {
-    "id": "P0050",
-    "name": "Uzma Shahid",
-    "category": "Beautician",
-    "sector": "DHA Phase 2 Rawalpindi",
-    "lat": 33.556,
-    "lng": 73.1098,
-    "rating": 4.0,
-    "rating_count": 22,
+    "id": "P0040",
+    "name": "Qadir Butt",
+    "category": "Electrician",
+    "sector": "Daroghewala, Lahore",
+    "home_city": "Lahore",
+    "lat": 31.5942,
+    "lng": 74.3115,
+    "rating": 3.0,
+    "rating_count": 148,
     "price_range": {
       "min": 1200,
+      "max": 6200,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T10:00:00+05:00",
+      "2026-05-21T14:00:00+05:00",
+      "2026-05-23T10:00:00+05:00",
+      "2026-05-24T15:00:00+05:00",
+      "2026-05-25T18:00:00+05:00",
+      "2026-05-27T09:00:00+05:00",
+      "2026-05-28T11:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi",
+      "English"
+    ],
+    "bio": "DAE diploma but couldn't find factory work. Freelance electrical ever since.",
+    "years_experience": 14,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0041",
+    "name": "Rukhsana",
+    "category": "Beautician",
+    "sector": "D-Ground, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.4247,
+    "lng": 73.091,
+    "rating": 4.8,
+    "rating_count": 76,
+    "price_range": {
+      "min": 2000,
       "max": 4000,
       "currency": "PKR"
     },
     "available_slots": [
-      "2026-05-16T15:00:00+05:00",
-      "2026-05-17T18:00:00+05:00",
-      "2026-05-18T17:00:00+05:00"
+      "2026-05-20T17:00:00+05:00",
+      "2026-05-22T14:00:00+05:00",
+      "2026-05-23T16:00:00+05:00",
+      "2026-05-25T09:00:00+05:00",
+      "2026-05-27T15:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Saraiki"
+    ],
+    "bio": "Part-time beautician, part-time school teacher. Evenings and weekends only.",
+    "years_experience": 5,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0042",
+    "name": "Yaqoob Lashari",
+    "category": "AC Technician",
+    "sector": "Ghulam Mohammadabad, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.4207,
+    "lng": 73.0809,
+    "rating": 4.1,
+    "rating_count": 213,
+    "price_range": {
+      "min": 2000,
+      "max": 4000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-22T15:00:00+05:00",
+      "2026-05-24T11:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Punjabi",
+      "Urdu"
+    ],
+    "bio": "Handles window ACs, splits, and inverters. Won't touch centralized systems.",
+    "years_experience": 2,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0043",
+    "name": "Kausar",
+    "category": "Plumber",
+    "sector": "Jhang Bazaar, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.4137,
+    "lng": 73.0752,
+    "rating": 4.4,
+    "rating_count": 139,
+    "price_range": {
+      "min": 800,
+      "max": 3800,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T17:00:00+05:00",
+      "2026-05-21T09:00:00+05:00",
+      "2026-05-22T10:00:00+05:00",
+      "2026-05-23T09:00:00+05:00",
+      "2026-05-24T18:00:00+05:00",
+      "2026-05-25T18:00:00+05:00",
+      "2026-05-27T17:00:00+05:00",
+      "2026-05-28T18:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Punjabi",
+      "Urdu"
+    ],
+    "bio": "Fixes water tanker connections and boring pumps. Specialized for Faisalabad's water issues.",
+    "years_experience": 16,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0044",
+    "name": "Robina",
+    "category": "Beautician",
+    "sector": "D-Ground, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.4224,
+    "lng": 73.0875,
+    "rating": 3.7,
+    "rating_count": 157,
+    "price_range": {
+      "min": 3000,
+      "max": 7000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-21T14:00:00+05:00",
+      "2026-05-24T17:00:00+05:00",
+      "2026-05-25T14:00:00+05:00",
+      "2026-05-26T18:00:00+05:00",
+      "2026-05-28T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "bio": "Started during COVID when salons were closed. Never went back to office work.",
+    "years_experience": 12,
+    "cultural_background": "Punjabi",
+    "_synthetic": true
+  },
+  {
+    "id": "P0045",
+    "name": "Mumtaz Khosa",
+    "category": "AC Technician",
+    "sector": "Madina Town, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.397,
+    "lng": 73.0834,
+    "rating": 4.6,
+    "rating_count": 28,
+    "price_range": {
+      "min": 2000,
+      "max": 4000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-25T17:00:00+05:00",
+      "2026-05-28T10:00:00+05:00"
     ],
     "verified": true,
     "languages_spoken": [
       "Urdu",
       "Punjabi"
     ],
+    "bio": "Self-taught from YouTube videos and years of practice. Surprisingly good.",
+    "years_experience": 9,
+    "cultural_background": "Saraiki",
+    "_synthetic": true
+  },
+  {
+    "id": "P0046",
+    "name": "Shabbir",
+    "category": "Tutor",
+    "sector": "Madina Town, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.3972,
+    "lng": 73.0866,
+    "rating": 3.2,
+    "rating_count": 134,
+    "price_range": {
+      "min": 3000,
+      "max": 5000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T09:00:00+05:00",
+      "2026-05-22T15:00:00+05:00",
+      "2026-05-25T17:00:00+05:00",
+      "2026-05-28T14:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "bio": "BA in English Literature. Tutors O-level and A-level English from home.",
+    "years_experience": 5,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0047",
+    "name": "Noor Electric & Sons",
+    "category": "Beautician",
+    "sector": "Ghulam Mohammadabad, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.4161,
+    "lng": 73.0802,
+    "rating": 3.2,
+    "rating_count": 140,
+    "price_range": {
+      "min": 2500,
+      "max": 5500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-24T10:00:00+05:00",
+      "2026-05-25T16:00:00+05:00",
+      "2026-05-28T09:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "bio": "The shop name is from her husband's electrical business. She runs beauty services from the same building.",
+    "years_experience": 9,
+    "cultural_background": "Saraiki",
+    "_synthetic": true
+  },
+  {
+    "id": "P0048",
+    "name": "Ashraf",
+    "category": "AC Technician",
+    "sector": "Jhang Bazaar, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.4139,
+    "lng": 73.0737,
+    "rating": 3.5,
+    "rating_count": 198,
+    "price_range": {
+      "min": 2000,
+      "max": 5000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T09:00:00+05:00",
+      "2026-05-21T14:00:00+05:00",
+      "2026-05-24T09:00:00+05:00",
+      "2026-05-27T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Saraiki"
+    ],
+    "bio": "Started as a helper at 14 in a shop near Jhang Bazaar. Now runs his own team.",
+    "years_experience": 13,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0049",
+    "name": "Ashraf Jat",
+    "category": "Electrician",
+    "sector": "Madina Town, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.3977,
+    "lng": 73.0856,
+    "rating": 3.1,
+    "rating_count": 194,
+    "price_range": {
+      "min": 500,
+      "max": 3500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T17:00:00+05:00",
+      "2026-05-21T10:00:00+05:00",
+      "2026-05-22T10:00:00+05:00",
+      "2026-05-23T18:00:00+05:00",
+      "2026-05-24T11:00:00+05:00",
+      "2026-05-25T09:00:00+05:00",
+      "2026-05-26T16:00:00+05:00",
+      "2026-05-28T16:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "bio": "DAE diploma but couldn't find factory work. Freelance electrical ever since.",
+    "years_experience": 7,
+    "cultural_background": "Punjabi",
+    "_synthetic": true
+  },
+  {
+    "id": "P0050",
+    "name": "Nasreen Akhtar",
+    "category": "Tutor",
+    "sector": "Jhang Bazaar, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.4156,
+    "lng": 73.0724,
+    "rating": 4.0,
+    "rating_count": 34,
+    "price_range": {
+      "min": 1200,
+      "max": 3700,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T11:00:00+05:00",
+      "2026-05-21T18:00:00+05:00",
+      "2026-05-22T11:00:00+05:00",
+      "2026-05-23T10:00:00+05:00",
+      "2026-05-25T18:00:00+05:00",
+      "2026-05-26T16:00:00+05:00",
+      "2026-05-28T18:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "bio": "Famous for stitching bridal lehengas for Lahori weddings. Also tutors Urdu literature to college girls in the evenings.",
+    "years_experience": 11,
+    "cultural_background": "Saraiki",
+    "_synthetic": true
+  },
+  {
+    "id": "P0051",
+    "name": "Dawood Khattak",
+    "category": "Tutor",
+    "sector": "Madina Town, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.3929,
+    "lng": 73.0814,
+    "rating": 3.1,
+    "rating_count": 217,
+    "price_range": {
+      "min": 800,
+      "max": 4800,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T09:00:00+05:00",
+      "2026-05-23T18:00:00+05:00",
+      "2026-05-24T18:00:00+05:00",
+      "2026-05-26T14:00:00+05:00",
+      "2026-05-27T16:00:00+05:00",
+      "2026-05-28T11:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "bio": "MA in Urdu literature. Specializes in board exam preparation.",
+    "years_experience": 17,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0052",
+    "name": "Hanif Rajput",
+    "category": "AC Technician",
+    "sector": "Ghulam Mohammadabad, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.4199,
+    "lng": 73.081,
+    "rating": 3.7,
+    "rating_count": 203,
+    "price_range": {
+      "min": 500,
+      "max": 5500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-21T15:00:00+05:00",
+      "2026-05-25T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "bio": "Known in Ghulam Mohammadabad for fixing ACs other technicians give up on.",
+    "years_experience": 15,
+    "cultural_background": "Punjabi",
+    "_synthetic": true
+  },
+  {
+    "id": "P0053",
+    "name": "Dawood",
+    "category": "Beautician",
+    "sector": "Madina Town, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.3963,
+    "lng": 73.0849,
+    "rating": 3.2,
+    "rating_count": 186,
+    "price_range": {
+      "min": 1500,
+      "max": 5500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T11:00:00+05:00",
+      "2026-05-22T16:00:00+05:00",
+      "2026-05-24T15:00:00+05:00",
+      "2026-05-25T17:00:00+05:00",
+      "2026-05-26T16:00:00+05:00",
+      "2026-05-27T14:00:00+05:00",
+      "2026-05-28T09:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu",
+      "Saraiki"
+    ],
+    "bio": "Does house calls for elderly women who can't come to a salon.",
+    "years_experience": 8,
+    "cultural_background": "Saraiki",
+    "_synthetic": true
+  },
+  {
+    "id": "P0054",
+    "name": "Shabbir Mengal",
+    "category": "Plumber",
+    "sector": "Madina Town, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.3977,
+    "lng": 73.0839,
+    "rating": 4.3,
+    "rating_count": 201,
+    "price_range": {
+      "min": 2500,
+      "max": 4500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T14:00:00+05:00",
+      "2026-05-22T17:00:00+05:00",
+      "2026-05-27T16:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Punjabi"
+    ],
+    "bio": "Reliable for emergency calls. Has been known to show up at 2 AM.",
+    "years_experience": 20,
+    "cultural_background": "Punjabi",
+    "_synthetic": true
+  },
+  {
+    "id": "P0055",
+    "name": "Nargis Marri",
+    "category": "Tutor",
+    "sector": "D-Ground, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.4257,
+    "lng": 73.0915,
+    "rating": 4.5,
+    "rating_count": 204,
+    "price_range": {
+      "min": 2500,
+      "max": 4500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T10:00:00+05:00",
+      "2026-05-22T10:00:00+05:00",
+      "2026-05-23T15:00:00+05:00",
+      "2026-05-24T15:00:00+05:00",
+      "2026-05-25T11:00:00+05:00",
+      "2026-05-26T17:00:00+05:00",
+      "2026-05-27T11:00:00+05:00",
+      "2026-05-28T18:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Saraiki"
+    ],
+    "bio": "Former government school headmaster. Strict but effective.",
+    "years_experience": 28,
+    "cultural_background": "Punjabi",
+    "_synthetic": true
+  },
+  {
+    "id": "P0056",
+    "name": "Amanullah Khattak",
+    "category": "Tutor",
+    "sector": "Ghulam Mohammadabad, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.4207,
+    "lng": 73.0773,
+    "rating": 3.4,
+    "rating_count": 25,
+    "price_range": {
+      "min": 500,
+      "max": 3000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T10:00:00+05:00",
+      "2026-05-21T09:00:00+05:00",
+      "2026-05-22T18:00:00+05:00",
+      "2026-05-23T15:00:00+05:00",
+      "2026-05-24T14:00:00+05:00",
+      "2026-05-25T18:00:00+05:00",
+      "2026-05-27T09:00:00+05:00",
+      "2026-05-28T11:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "bio": "BA in English Literature. Tutors O-level and A-level English from home.",
+    "years_experience": 6,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0057",
+    "name": "Razia Gujjar",
+    "category": "Tutor",
+    "sector": "Rail Bazaar, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.4216,
+    "lng": 73.0817,
+    "rating": 3.1,
+    "rating_count": 219,
+    "price_range": {
+      "min": 500,
+      "max": 5500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T16:00:00+05:00",
+      "2026-05-22T17:00:00+05:00",
+      "2026-05-23T14:00:00+05:00",
+      "2026-05-26T10:00:00+05:00",
+      "2026-05-27T11:00:00+05:00",
+      "2026-05-28T10:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu",
+      "Saraiki"
+    ],
+    "bio": "Hafiz who also tutors Arabic and basic English. Popular with madrassah families.",
+    "years_experience": 2,
+    "cultural_background": "Punjabi",
+    "_synthetic": true
+  },
+  {
+    "id": "P0058",
+    "name": "Nargis Dreshak",
+    "category": "Beautician",
+    "sector": "Rail Bazaar, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.4193,
+    "lng": 73.0827,
+    "rating": 3.5,
+    "rating_count": 9,
+    "price_range": {
+      "min": 800,
+      "max": 3300,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T11:00:00+05:00",
+      "2026-05-21T11:00:00+05:00",
+      "2026-05-22T11:00:00+05:00",
+      "2026-05-23T18:00:00+05:00",
+      "2026-05-24T10:00:00+05:00",
+      "2026-05-25T18:00:00+05:00",
+      "2026-05-28T18:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "bio": "Basic beauty services — threading, facials, waxing. Affordable rates.",
+    "years_experience": 17,
+    "cultural_background": "Saraiki",
+    "_synthetic": true
+  },
+  {
+    "id": "P0059",
+    "name": "Sharif Mazari",
+    "category": "Plumber",
+    "sector": "Ghulam Mohammadabad, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.4168,
+    "lng": 73.0763,
+    "rating": 4.6,
+    "rating_count": 17,
+    "price_range": {
+      "min": 2000,
+      "max": 4500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T17:00:00+05:00",
+      "2026-05-21T10:00:00+05:00",
+      "2026-05-23T16:00:00+05:00",
+      "2026-05-24T17:00:00+05:00",
+      "2026-05-25T18:00:00+05:00",
+      "2026-05-26T18:00:00+05:00",
+      "2026-05-27T10:00:00+05:00",
+      "2026-05-28T15:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "bio": "Moved from village to Faisalabad fifteen years ago. Plumbing was the first job that stuck.",
+    "years_experience": 12,
+    "cultural_background": "Saraiki",
+    "_synthetic": true
+  },
+  {
+    "id": "P0060",
+    "name": "Arshad Rajput",
+    "category": "Electrician",
+    "sector": "Rail Bazaar, Faisalabad",
+    "home_city": "Faisalabad",
+    "lat": 31.422,
+    "lng": 73.0791,
+    "rating": 3.3,
+    "rating_count": 118,
+    "price_range": {
+      "min": 500,
+      "max": 5500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T11:00:00+05:00",
+      "2026-05-23T09:00:00+05:00",
+      "2026-05-24T11:00:00+05:00",
+      "2026-05-25T09:00:00+05:00",
+      "2026-05-26T16:00:00+05:00",
+      "2026-05-28T18:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Saraiki"
+    ],
+    "bio": "Careful worker. Always tests everything twice before leaving.",
+    "years_experience": 8,
+    "cultural_background": "Punjabi",
+    "_synthetic": true
+  },
+  {
+    "id": "P0061",
+    "name": "Ghulam Farid",
+    "category": "Electrician",
+    "sector": "Orangi, Karachi",
+    "home_city": "Karachi",
+    "lat": 24.9284,
+    "lng": 66.9857,
+    "rating": 3.8,
+    "rating_count": 24,
+    "price_range": {
+      "min": 2000,
+      "max": 5000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T15:00:00+05:00",
+      "2026-05-21T18:00:00+05:00",
+      "2026-05-22T15:00:00+05:00",
+      "2026-05-23T10:00:00+05:00",
+      "2026-05-24T17:00:00+05:00",
+      "2026-05-26T15:00:00+05:00",
+      "2026-05-27T14:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Pashto"
+    ],
+    "bio": "Careful worker. Always tests everything twice before leaving.",
+    "years_experience": 5,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0062",
+    "name": "Khalil",
+    "category": "AC Technician",
+    "sector": "Landhi, Karachi",
+    "home_city": "Karachi",
+    "lat": 24.8522,
+    "lng": 67.1538,
+    "rating": 4.3,
+    "rating_count": 186,
+    "price_range": {
+      "min": 1500,
+      "max": 4000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T16:00:00+05:00",
+      "2026-05-21T16:00:00+05:00",
+      "2026-05-22T14:00:00+05:00",
+      "2026-05-24T09:00:00+05:00",
+      "2026-05-25T18:00:00+05:00",
+      "2026-05-26T11:00:00+05:00",
+      "2026-05-27T18:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Pashto"
+    ],
+    "bio": "Specializes in split AC installation. Quiet man, fast hands.",
+    "years_experience": 1,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0063",
+    "name": "Hanif",
+    "category": "Tutor",
+    "sector": "Baldia Town, Karachi",
+    "home_city": "Karachi",
+    "lat": 24.9153,
+    "lng": 66.9594,
+    "rating": 4.8,
+    "rating_count": 169,
+    "price_range": {
+      "min": 3000,
+      "max": 8000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-21T11:00:00+05:00",
+      "2026-05-22T17:00:00+05:00",
+      "2026-05-26T10:00:00+05:00",
+      "2026-05-28T09:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Sindhi"
+    ],
+    "bio": "Hafiz who also tutors Arabic and basic English. Popular with madrassah families.",
+    "years_experience": 5,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0064",
+    "name": "Mumtaz Khattak",
+    "category": "Plumber",
+    "sector": "Korangi, Karachi",
+    "home_city": "Karachi",
+    "lat": 24.836,
+    "lng": 67.1299,
+    "rating": 3.2,
+    "rating_count": 82,
+    "price_range": {
+      "min": 800,
+      "max": 4800,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-22T09:00:00+05:00",
+      "2026-05-24T09:00:00+05:00",
+      "2026-05-25T10:00:00+05:00",
+      "2026-05-26T15:00:00+05:00",
+      "2026-05-27T14:00:00+05:00",
+      "2026-05-28T09:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Pashto"
+    ],
+    "bio": "Reliable for emergency calls. Has been known to show up at 2 AM.",
+    "years_experience": 16,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0065",
+    "name": "Mushtaq",
+    "category": "Tutor",
+    "sector": "Baldia Town, Karachi",
+    "home_city": "Karachi",
+    "lat": 24.9125,
+    "lng": 66.9628,
+    "rating": 3.6,
+    "rating_count": 23,
+    "price_range": {
+      "min": 1000,
+      "max": 4000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-21T11:00:00+05:00",
+      "2026-05-22T16:00:00+05:00",
+      "2026-05-23T16:00:00+05:00",
+      "2026-05-24T17:00:00+05:00",
+      "2026-05-27T16:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Balochi"
+    ],
+    "bio": "Runs a small tuition center from her house in Baldia Town. 30 students.",
+    "years_experience": 1,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0066",
+    "name": "Zahoor Shaikh",
+    "category": "Plumber",
+    "sector": "Korangi, Karachi",
+    "home_city": "Karachi",
+    "lat": 24.8381,
+    "lng": 67.1286,
+    "rating": 4.8,
+    "rating_count": 162,
+    "price_range": {
+      "min": 1000,
+      "max": 3500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-21T10:00:00+05:00",
+      "2026-05-23T18:00:00+05:00",
+      "2026-05-24T18:00:00+05:00",
+      "2026-05-25T15:00:00+05:00",
+      "2026-05-26T09:00:00+05:00",
+      "2026-05-27T17:00:00+05:00",
+      "2026-05-28T14:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Pashto"
+    ],
+    "bio": "Former sanitary worker who learned plumbing skills on the job. Very thorough.",
+    "years_experience": 13,
+    "cultural_background": "Sindhi",
+    "_synthetic": true
+  },
+  {
+    "id": "P0067",
+    "name": "Mehr Din",
+    "category": "Electrician",
+    "sector": "Orangi, Karachi",
+    "home_city": "Karachi",
+    "lat": 24.9315,
+    "lng": 66.9813,
+    "rating": 3.4,
+    "rating_count": 146,
+    "price_range": {
+      "min": 2500,
+      "max": 6500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T14:00:00+05:00",
+      "2026-05-22T09:00:00+05:00",
+      "2026-05-23T17:00:00+05:00",
+      "2026-05-24T16:00:00+05:00",
+      "2026-05-25T11:00:00+05:00",
+      "2026-05-26T16:00:00+05:00",
+      "2026-05-27T16:00:00+05:00",
+      "2026-05-28T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "English"
+    ],
+    "bio": "Handles high-tension connections that most electricians won't touch.",
+    "years_experience": 13,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0068",
+    "name": "Aziz Siddiqui",
+    "category": "Tutor",
+    "sector": "Lyari, Karachi",
+    "home_city": "Karachi",
+    "lat": 24.8492,
+    "lng": 67.0133,
+    "rating": 3.7,
+    "rating_count": 162,
+    "price_range": {
+      "min": 1500,
+      "max": 5500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-22T17:00:00+05:00",
+      "2026-05-23T15:00:00+05:00",
+      "2026-05-24T10:00:00+05:00",
+      "2026-05-25T16:00:00+05:00",
+      "2026-05-27T16:00:00+05:00",
+      "2026-05-28T09:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu",
+      "Sindhi"
+    ],
+    "bio": "Engineering dropout. Teaches physics and math better than most degree holders.",
+    "years_experience": 12,
+    "cultural_background": "Muhajir",
+    "_synthetic": true
+  },
+  {
+    "id": "P0069",
+    "name": "Gulnaz",
+    "category": "Beautician",
+    "sector": "Lyari, Karachi",
+    "home_city": "Karachi",
+    "lat": 24.8526,
+    "lng": 67.0106,
+    "rating": 3.3,
+    "rating_count": 179,
+    "price_range": {
+      "min": 800,
+      "max": 2800,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-21T09:00:00+05:00",
+      "2026-05-23T11:00:00+05:00",
+      "2026-05-25T17:00:00+05:00",
+      "2026-05-26T18:00:00+05:00",
+      "2026-05-27T14:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Balochi"
+    ],
+    "bio": "Home-based salon in Lyari. Bridal makeup is her specialty.",
+    "years_experience": 2,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0070",
+    "name": "Zubaida",
+    "category": "Beautician",
+    "sector": "Baldia Town, Karachi",
+    "home_city": "Karachi",
+    "lat": 24.912,
+    "lng": 66.963,
+    "rating": 4.2,
+    "rating_count": 54,
+    "price_range": {
+      "min": 1500,
+      "max": 5500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-24T14:00:00+05:00",
+      "2026-05-25T16:00:00+05:00",
+      "2026-05-28T18:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu",
+      "Pashto"
+    ],
+    "bio": "Learned from her mother. Three generations of beauticians in the family.",
+    "years_experience": 10,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0071",
+    "name": "Sharif Hussaini",
+    "category": "Electrician",
+    "sector": "Jinnah Road, Quetta",
+    "home_city": "Quetta",
+    "lat": 30.1901,
+    "lng": 67.0036,
+    "rating": 3.6,
+    "rating_count": 78,
+    "price_range": {
+      "min": 800,
+      "max": 3300,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-21T10:00:00+05:00",
+      "2026-05-22T09:00:00+05:00",
+      "2026-05-23T14:00:00+05:00",
+      "2026-05-24T15:00:00+05:00",
+      "2026-05-26T14:00:00+05:00",
+      "2026-05-27T11:00:00+05:00",
+      "2026-05-28T14:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu",
+      "Balochi"
+    ],
+    "bio": "Handles high-tension connections that most electricians won't touch.",
+    "years_experience": 18,
+    "cultural_background": "Hazara",
+    "_synthetic": true
+  },
+  {
+    "id": "P0072",
+    "name": "Fatima Bibi",
+    "category": "Tutor",
+    "sector": "Hazara Town, Quetta",
+    "home_city": "Quetta",
+    "lat": 30.1593,
+    "lng": 66.9805,
+    "rating": 3.8,
+    "rating_count": 126,
+    "price_range": {
+      "min": 1200,
+      "max": 3700,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T14:00:00+05:00",
+      "2026-05-21T09:00:00+05:00",
+      "2026-05-24T17:00:00+05:00",
+      "2026-05-25T11:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Balochi"
+    ],
+    "bio": "Engineering dropout. Teaches physics and math better than most degree holders.",
+    "years_experience": 1,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0073",
+    "name": "Fida Hussain",
+    "category": "Tutor",
+    "sector": "Hazara Town, Quetta",
+    "home_city": "Quetta",
+    "lat": 30.1646,
+    "lng": 66.9782,
+    "rating": 4.8,
+    "rating_count": 90,
+    "price_range": {
+      "min": 3000,
+      "max": 5000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T11:00:00+05:00",
+      "2026-05-22T09:00:00+05:00",
+      "2026-05-23T18:00:00+05:00",
+      "2026-05-24T11:00:00+05:00",
+      "2026-05-26T15:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Pashto"
+    ],
+    "bio": "Hafiz who also tutors Arabic and basic English. Popular with madrassah families.",
+    "years_experience": 12,
+    "cultural_background": "Pashtun",
+    "_synthetic": true
+  },
+  {
+    "id": "P0074",
+    "name": "Bashir",
+    "category": "Plumber",
+    "sector": "Kandahari Bazaar, Quetta",
+    "home_city": "Quetta",
+    "lat": 30.1897,
+    "lng": 66.9964,
+    "rating": 3.2,
+    "rating_count": 176,
+    "price_range": {
+      "min": 1000,
+      "max": 4000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T14:00:00+05:00",
+      "2026-05-23T15:00:00+05:00",
+      "2026-05-24T18:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Hazaragi"
+    ],
+    "bio": "Learned plumbing in Saudi Arabia, came back and set up in Kandahari Bazaar.",
+    "years_experience": 11,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0075",
+    "name": "Zahoor Marri",
+    "category": "AC Technician",
+    "sector": "Kandahari Bazaar, Quetta",
+    "home_city": "Quetta",
+    "lat": 30.1868,
+    "lng": 66.9973,
+    "rating": 4.3,
+    "rating_count": 168,
+    "price_range": {
+      "min": 1500,
+      "max": 4000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-22T18:00:00+05:00",
+      "2026-05-23T11:00:00+05:00",
+      "2026-05-28T16:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu",
+      "Hazaragi"
+    ],
+    "bio": "Handles window ACs, splits, and inverters. Won't touch centralized systems.",
+    "years_experience": 8,
+    "cultural_background": "Baloch",
+    "_synthetic": true
+  },
+  {
+    "id": "P0076",
+    "name": "Gul Bibi",
+    "category": "Beautician",
+    "sector": "Jinnah Road, Quetta",
+    "home_city": "Quetta",
+    "lat": 30.1922,
+    "lng": 67.0035,
+    "rating": 3.1,
+    "rating_count": 149,
+    "price_range": {
+      "min": 1200,
+      "max": 5200,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-22T18:00:00+05:00",
+      "2026-05-25T10:00:00+05:00",
+      "2026-05-26T14:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Hazaragi"
+    ],
+    "bio": "Expert in hair treatments and styling. Uses mostly local products.",
+    "years_experience": 12,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0077",
+    "name": "Iqbal",
+    "category": "AC Technician",
+    "sector": "Jinnah Road, Quetta",
+    "home_city": "Quetta",
+    "lat": 30.1885,
+    "lng": 67.0011,
+    "rating": 3.8,
+    "rating_count": 214,
+    "price_range": {
+      "min": 1200,
+      "max": 5200,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-25T09:00:00+05:00",
+      "2026-05-26T10:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Pashto"
+    ],
+    "bio": "Started as a helper at 14 in a shop near Jinnah Road. Now runs his own team.",
+    "years_experience": 9,
+    "cultural_background": "Hazara",
+    "_synthetic": true
+  },
+  {
+    "id": "P0078",
+    "name": "Dost Muhammad",
+    "category": "Electrician",
+    "sector": "Pashtunabad, Quetta",
+    "home_city": "Quetta",
+    "lat": 30.1999,
+    "lng": 67.0048,
+    "rating": 3.7,
+    "rating_count": 102,
+    "price_range": {
+      "min": 2500,
+      "max": 5500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T09:00:00+05:00",
+      "2026-05-21T15:00:00+05:00",
+      "2026-05-22T11:00:00+05:00",
+      "2026-05-25T14:00:00+05:00",
+      "2026-05-26T18:00:00+05:00",
+      "2026-05-27T09:00:00+05:00",
+      "2026-05-28T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Pashto",
+      "Brahui"
+    ],
+    "bio": "DAE diploma but couldn't find factory work. Freelance electrical ever since.",
+    "years_experience": 7,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0079",
+    "name": "Fazal",
+    "category": "Plumber",
+    "sector": "Jinnah Road, Quetta",
+    "home_city": "Quetta",
+    "lat": 30.1912,
+    "lng": 67.0029,
+    "rating": 4.2,
+    "rating_count": 9,
+    "price_range": {
+      "min": 800,
+      "max": 2300,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T09:00:00+05:00",
+      "2026-05-27T14:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Pashto",
+      "Brahui"
+    ],
+    "bio": "Former sanitary worker who learned plumbing skills on the job. Very thorough.",
+    "years_experience": 20,
+    "cultural_background": "Pashtun",
+    "_synthetic": true
+  },
+  {
+    "id": "P0080",
+    "name": "Bahadur",
+    "category": "AC Technician",
+    "sector": "Jinnah Road, Quetta",
+    "home_city": "Quetta",
+    "lat": 30.1906,
+    "lng": 67.0012,
+    "rating": 4.1,
+    "rating_count": 202,
+    "price_range": {
+      "min": 2000,
+      "max": 4000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-23T15:00:00+05:00",
+      "2026-05-27T09:00:00+05:00",
+      "2026-05-28T15:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Hazaragi"
+    ],
+    "bio": "Seasonal rush keeps him busy April through September. Winters, he does odd electrical work.",
+    "years_experience": 19,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0081",
+    "name": "Amina",
+    "category": "Tutor",
+    "sector": "Kohati Gate, Peshawar",
+    "home_city": "Peshawar",
+    "lat": 34.0058,
+    "lng": 71.5676,
+    "rating": 3.3,
+    "rating_count": 142,
+    "price_range": {
+      "min": 1200,
+      "max": 3700,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T14:00:00+05:00",
+      "2026-05-21T16:00:00+05:00",
+      "2026-05-23T10:00:00+05:00",
+      "2026-05-24T16:00:00+05:00",
+      "2026-05-25T18:00:00+05:00",
+      "2026-05-26T10:00:00+05:00",
+      "2026-05-27T15:00:00+05:00",
+      "2026-05-28T14:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Pashto",
+      "Urdu",
+      "English"
+    ],
+    "bio": "College student earning her way through fees by tutoring neighborhood kids.",
+    "years_experience": 9,
+    "cultural_background": "Pashtun",
+    "_synthetic": true
+  },
+  {
+    "id": "P0082",
+    "name": "Nargis Afridi",
+    "category": "Beautician",
+    "sector": "Hashtnagri, Peshawar",
+    "home_city": "Peshawar",
+    "lat": 34.0106,
+    "lng": 71.572,
+    "rating": 4.8,
+    "rating_count": 8,
+    "price_range": {
+      "min": 1200,
+      "max": 6200,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T15:00:00+05:00",
+      "2026-05-21T16:00:00+05:00",
+      "2026-05-23T15:00:00+05:00",
+      "2026-05-24T18:00:00+05:00",
+      "2026-05-25T17:00:00+05:00",
+      "2026-05-27T16:00:00+05:00",
+      "2026-05-28T15:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Pashto",
+      "Urdu",
+      "English"
+    ],
+    "bio": "Trained at a beauty academy in Peshawar. Now works independently.",
+    "years_experience": 13,
+    "cultural_background": "Pashtun",
+    "_synthetic": true
+  },
+  {
+    "id": "P0083",
+    "name": "Liaqat",
+    "category": "AC Technician",
+    "sector": "Qissa Khwani, Peshawar",
+    "home_city": "Peshawar",
+    "lat": 34.0101,
+    "lng": 71.575,
+    "rating": 4.4,
+    "rating_count": 9,
+    "price_range": {
+      "min": 2500,
+      "max": 5000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-23T18:00:00+05:00",
+      "2026-05-25T14:00:00+05:00",
+      "2026-05-27T16:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Pashto",
+      "Urdu"
+    ],
+    "bio": "Specializes in split AC installation. Quiet man, fast hands.",
+    "years_experience": 5,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0084",
+    "name": "Manzoor Bugti",
+    "category": "Tutor",
+    "sector": "Qissa Khwani, Peshawar",
+    "home_city": "Peshawar",
+    "lat": 34.0116,
+    "lng": 71.5749,
+    "rating": 3.9,
+    "rating_count": 143,
+    "price_range": {
+      "min": 500,
+      "max": 4500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T11:00:00+05:00",
+      "2026-05-21T10:00:00+05:00",
+      "2026-05-22T09:00:00+05:00",
+      "2026-05-23T18:00:00+05:00",
+      "2026-05-25T18:00:00+05:00",
+      "2026-05-26T09:00:00+05:00",
+      "2026-05-27T14:00:00+05:00",
+      "2026-05-28T16:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Pashto",
+      "Urdu"
+    ],
+    "bio": "Retired school teacher. Still sharp. Teaches math and science to matric students.",
+    "years_experience": 15,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0085",
+    "name": "Razia Lashari",
+    "category": "Tutor",
+    "sector": "Faqirabad, Peshawar",
+    "home_city": "Peshawar",
+    "lat": 34.0171,
+    "lng": 71.5642,
+    "rating": 3.2,
+    "rating_count": 29,
+    "price_range": {
+      "min": 1200,
+      "max": 3200,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T15:00:00+05:00",
+      "2026-05-22T14:00:00+05:00",
+      "2026-05-23T14:00:00+05:00",
+      "2026-05-24T17:00:00+05:00",
+      "2026-05-25T18:00:00+05:00",
+      "2026-05-26T10:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Pashto",
+      "Urdu"
+    ],
+    "bio": "MA in Urdu literature. Specializes in board exam preparation.",
+    "years_experience": 9,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0086",
+    "name": "Parveen Lashari",
+    "category": "Beautician",
+    "sector": "Hashtnagri, Peshawar",
+    "home_city": "Peshawar",
+    "lat": 34.0096,
+    "lng": 71.5703,
+    "rating": 4.2,
+    "rating_count": 89,
+    "price_range": {
+      "min": 800,
+      "max": 4800,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-22T15:00:00+05:00",
+      "2026-05-23T09:00:00+05:00",
+      "2026-05-27T10:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Pashto",
+      "Urdu",
+      "English"
+    ],
+    "bio": "Home-based salon in Hashtnagri. Bridal makeup is her specialty.",
+    "years_experience": 5,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0087",
+    "name": "Akbar Butt",
+    "category": "AC Technician",
+    "sector": "Hashtnagri, Peshawar",
+    "home_city": "Peshawar",
+    "lat": 34.0101,
+    "lng": 71.5731,
+    "rating": 4.7,
+    "rating_count": 89,
+    "price_range": {
+      "min": 1000,
+      "max": 6000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T17:00:00+05:00",
+      "2026-05-21T15:00:00+05:00",
+      "2026-05-23T09:00:00+05:00",
+      "2026-05-25T16:00:00+05:00",
+      "2026-05-26T18:00:00+05:00",
+      "2026-05-27T16:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Pashto",
+      "Urdu"
+    ],
+    "bio": "Started as a helper at 14 in a shop near Hashtnagri. Now runs his own team.",
+    "years_experience": 1,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0088",
+    "name": "Arshad",
+    "category": "Tutor",
+    "sector": "Faqirabad, Peshawar",
+    "home_city": "Peshawar",
+    "lat": 34.0184,
+    "lng": 71.5643,
+    "rating": 3.6,
+    "rating_count": 68,
+    "price_range": {
+      "min": 800,
+      "max": 3300,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T16:00:00+05:00",
+      "2026-05-22T10:00:00+05:00",
+      "2026-05-26T09:00:00+05:00",
+      "2026-05-27T18:00:00+05:00",
+      "2026-05-28T15:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Pashto",
+      "Urdu"
+    ],
+    "bio": "College student earning her way through fees by tutoring neighborhood kids.",
+    "years_experience": 7,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0089",
+    "name": "Amanullah Gujjar",
+    "category": "Tutor",
+    "sector": "Qissa Khwani, Peshawar",
+    "home_city": "Peshawar",
+    "lat": 34.0076,
+    "lng": 71.5725,
+    "rating": 4.5,
+    "rating_count": 103,
+    "price_range": {
+      "min": 2500,
+      "max": 5500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T10:00:00+05:00",
+      "2026-05-21T18:00:00+05:00",
+      "2026-05-23T15:00:00+05:00",
+      "2026-05-24T15:00:00+05:00",
+      "2026-05-26T15:00:00+05:00",
+      "2026-05-27T11:00:00+05:00",
+      "2026-05-28T11:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Pashto",
+      "Urdu"
+    ],
+    "bio": "BA in English Literature. Tutors O-level and A-level English from home.",
+    "years_experience": 10,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0090",
+    "name": "Saleem Achakzai",
+    "category": "Tutor",
+    "sector": "Kohati Gate, Peshawar",
+    "home_city": "Peshawar",
+    "lat": 34.0046,
+    "lng": 71.5675,
+    "rating": 3.6,
+    "rating_count": 106,
+    "price_range": {
+      "min": 2500,
+      "max": 5000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-22T18:00:00+05:00",
+      "2026-05-26T14:00:00+05:00",
+      "2026-05-27T16:00:00+05:00",
+      "2026-05-28T11:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Pashto",
+      "Urdu"
+    ],
+    "bio": "Teaches basic computer skills — MS Office, typing, internet basics.",
+    "years_experience": 14,
+    "cultural_background": "Pashtun",
+    "_synthetic": true
+  },
+  {
+    "id": "P0091",
+    "name": "Gulzar",
+    "category": "Tutor",
+    "sector": "Danyor, Gilgit",
+    "home_city": "Gilgit",
+    "lat": 35.9158,
+    "lng": 74.3727,
+    "rating": 4.8,
+    "rating_count": 56,
+    "price_range": {
+      "min": 1000,
+      "max": 6000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-23T15:00:00+05:00",
+      "2026-05-27T18:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Shina"
+    ],
+    "bio": "Hafiz who also tutors Arabic and basic English. Popular with madrassah families.",
+    "years_experience": 14,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0092",
+    "name": "Akbar Mir",
+    "category": "Tutor",
+    "sector": "Konodas, Gilgit",
+    "home_city": "Gilgit",
+    "lat": 35.9229,
+    "lng": 74.3098,
+    "rating": 4.5,
+    "rating_count": 23,
+    "price_range": {
+      "min": 3000,
+      "max": 7000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T11:00:00+05:00",
+      "2026-05-22T09:00:00+05:00",
+      "2026-05-24T16:00:00+05:00",
+      "2026-05-25T17:00:00+05:00",
+      "2026-05-26T14:00:00+05:00",
+      "2026-05-28T10:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "bio": "Runs a small tuition center from her house in Konodas. 30 students.",
+    "years_experience": 6,
+    "cultural_background": "Gilgiti",
+    "_synthetic": true
+  },
+  {
+    "id": "P0093",
+    "name": "Yaqoob Shah",
+    "category": "AC Technician",
+    "sector": "Kashrote, Gilgit",
+    "home_city": "Gilgit",
+    "lat": 35.9218,
+    "lng": 74.3146,
+    "rating": 3.7,
+    "rating_count": 11,
+    "price_range": {
+      "min": 1500,
+      "max": 4500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-22T15:00:00+05:00",
+      "2026-05-25T16:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Burushaski"
+    ],
+    "bio": "Started as a helper at 14 in a shop near Kashrote. Now runs his own team.",
+    "years_experience": 3,
+    "cultural_background": "Gilgiti",
+    "_synthetic": true
+  },
+  {
+    "id": "P0094",
+    "name": "Tariq",
+    "category": "Electrician",
+    "sector": "Danyor, Gilgit",
+    "home_city": "Gilgit",
+    "lat": 35.9147,
+    "lng": 74.3741,
+    "rating": 3.0,
+    "rating_count": 92,
+    "price_range": {
+      "min": 1000,
+      "max": 6000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-22T14:00:00+05:00",
+      "2026-05-23T17:00:00+05:00",
+      "2026-05-24T11:00:00+05:00",
+      "2026-05-25T17:00:00+05:00",
+      "2026-05-27T11:00:00+05:00",
+      "2026-05-28T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Shina"
+    ],
+    "bio": "Started rewinding motors in a shop. Now handles full house wiring.",
+    "years_experience": 18,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0095",
+    "name": "Gul Sher Shah",
+    "category": "Tutor",
+    "sector": "Konodas, Gilgit",
+    "home_city": "Gilgit",
+    "lat": 35.9224,
+    "lng": 74.3103,
+    "rating": 4.1,
+    "rating_count": 209,
+    "price_range": {
+      "min": 1000,
+      "max": 3500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-21T16:00:00+05:00",
+      "2026-05-22T17:00:00+05:00",
+      "2026-05-27T18:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu",
+      "Shina"
+    ],
+    "bio": "Engineering dropout. Teaches physics and math better than most degree holders.",
+    "years_experience": 12,
+    "cultural_background": "Gilgiti",
+    "_synthetic": true
+  },
+  {
+    "id": "P0096",
+    "name": "Dawood Mughal",
+    "category": "Electrician",
+    "sector": "Main Bazaar, Gilgit",
+    "home_city": "Gilgit",
+    "lat": 35.9194,
+    "lng": 74.3097,
+    "rating": 3.2,
+    "rating_count": 83,
+    "price_range": {
+      "min": 2000,
+      "max": 7000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-21T11:00:00+05:00",
+      "2026-05-23T18:00:00+05:00",
+      "2026-05-24T18:00:00+05:00",
+      "2026-05-26T17:00:00+05:00",
+      "2026-05-27T11:00:00+05:00",
+      "2026-05-28T11:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Shina",
+      "English"
+    ],
+    "bio": "UPS and solar panel installations are his specialty. Good with inverters.",
+    "years_experience": 1,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0097",
+    "name": "Muhammad Aslam",
+    "category": "Tutor",
+    "sector": "Kashrote, Gilgit",
+    "home_city": "Gilgit",
+    "lat": 35.9168,
+    "lng": 74.3139,
+    "rating": 3.8,
+    "rating_count": 130,
+    "price_range": {
+      "min": 3000,
+      "max": 6000,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T15:00:00+05:00",
+      "2026-05-23T09:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu"
+    ],
+    "bio": "College student earning her way through fees by tutoring neighborhood kids.",
+    "years_experience": 13,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0098",
+    "name": "Rashid",
+    "category": "Tutor",
+    "sector": "Kashrote, Gilgit",
+    "home_city": "Gilgit",
+    "lat": 35.9173,
+    "lng": 74.3137,
+    "rating": 4.5,
+    "rating_count": 215,
+    "price_range": {
+      "min": 500,
+      "max": 5500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T15:00:00+05:00",
+      "2026-05-21T10:00:00+05:00",
+      "2026-05-22T18:00:00+05:00",
+      "2026-05-23T09:00:00+05:00",
+      "2026-05-25T16:00:00+05:00",
+      "2026-05-26T18:00:00+05:00"
+    ],
+    "verified": false,
+    "languages_spoken": [
+      "Urdu",
+      "Shina",
+      "English"
+    ],
+    "bio": "Teaches basic computer skills — MS Office, typing, internet basics.",
+    "years_experience": 17,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0099",
+    "name": "Parveen",
+    "category": "Beautician",
+    "sector": "Konodas, Gilgit",
+    "home_city": "Gilgit",
+    "lat": 35.9227,
+    "lng": 74.3064,
+    "rating": 4.1,
+    "rating_count": 141,
+    "price_range": {
+      "min": 1000,
+      "max": 3500,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-21T15:00:00+05:00",
+      "2026-05-23T11:00:00+05:00",
+      "2026-05-24T09:00:00+05:00",
+      "2026-05-27T11:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Shina"
+    ],
+    "bio": "Learned from her mother. Three generations of beauticians in the family.",
+    "years_experience": 14,
+    "cultural_background": null,
+    "_synthetic": true
+  },
+  {
+    "id": "P0100",
+    "name": "Ashraf Marri",
+    "category": "Plumber",
+    "sector": "Jutial, Gilgit",
+    "home_city": "Gilgit",
+    "lat": 35.9229,
+    "lng": 74.3189,
+    "rating": 4.2,
+    "rating_count": 101,
+    "price_range": {
+      "min": 800,
+      "max": 3800,
+      "currency": "PKR"
+    },
+    "available_slots": [
+      "2026-05-20T14:00:00+05:00",
+      "2026-05-22T17:00:00+05:00",
+      "2026-05-23T16:00:00+05:00",
+      "2026-05-24T10:00:00+05:00",
+      "2026-05-25T18:00:00+05:00",
+      "2026-05-26T10:00:00+05:00",
+      "2026-05-28T17:00:00+05:00"
+    ],
+    "verified": true,
+    "languages_spoken": [
+      "Urdu",
+      "Shina",
+      "English"
+    ],
+    "bio": "His wife handles the phone calls and scheduling. He just shows up and fixes things.",
+    "years_experience": 1,
+    "cultural_background": null,
     "_synthetic": true
   }
 ]

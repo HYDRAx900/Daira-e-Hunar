@@ -1,5 +1,5 @@
 """
-Centralized configuration for the ServiceWala backend.
+Centralized configuration for the Daira-e-Hunar backend.
 Reads from environment variables (loaded via .env file).
 """
 
