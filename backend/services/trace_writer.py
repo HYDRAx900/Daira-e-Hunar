@@ -103,3 +103,168 @@ def _build_summary(parsed: dict) -> str:
         f"Parsed {request_desc} request -> {stype} in {sector}, "
         f"{time}, confidence {conf:.2f}"
     )
+
+
+# ── Discovery Agent trace ────────────────────────────────────────────────────
+
+def write_discovery_trace(
+    intent_input: dict,
+    filter_applied: dict,
+    candidates_returned: list,
+    fallback_used: bool,
+    fallback_reason: str | None,
+    no_candidates_reason: str | None,
+) -> str:
+    """
+    Write a trace file for a Discovery Agent invocation.
+
+    Args:
+        intent_input:         The parsed intent dict from Intent Agent.
+        filter_applied:       Dict describing the filter (city, service_type).
+        candidates_returned:  List of provider dicts that matched.
+        fallback_used:        Whether the search was broadened.
+        fallback_reason:      Why fallback was triggered (if applicable).
+        no_candidates_reason: Reason if zero candidates found.
+
+    Returns:
+        Relative path to the trace file.
+    """
+    TRACE_DIR.mkdir(parents=True, exist_ok=True)
+
+    timestamp = datetime.now(timezone.utc)
+    ts_str = timestamp.strftime("%Y%m%dT%H%M%SZ")
+    filename = f"discovery_{ts_str}.json"
+
+    summary = _build_discovery_summary(
+        filter_applied, len(candidates_returned), fallback_used, fallback_reason
+    )
+
+    trace_data = {
+        "trace_type": "discovery_agent",
+        "timestamp": timestamp.isoformat(),
+        "input": {
+            "service_type": intent_input.get("service_type"),
+            "location_sector": intent_input.get("location_sector"),
+            "home_city": intent_input.get("home_city"),
+        },
+        "filter_applied": filter_applied,
+        "candidates_returned": len(candidates_returned),
+        "candidate_ids": [c["id"] for c in candidates_returned],
+        "fallback_used": fallback_used,
+        "fallback_reason": fallback_reason,
+        "no_candidates_reason": no_candidates_reason,
+        "summary": summary,
+    }
+
+    trace_path = TRACE_DIR / filename
+    with open(trace_path, "w", encoding="utf-8") as f:
+        json.dump(trace_data, f, indent=2, ensure_ascii=False)
+
+    return f"trace/{filename}"
+
+
+def _build_discovery_summary(
+    filter_applied: dict,
+    count: int,
+    fallback_used: bool,
+    fallback_reason: str | None,
+) -> str:
+    """
+    One-line summary for discovery trace.
+
+    Examples:
+        "Found 4 AC Technicians in Lahore (no fallback)"
+        "[FALLBACK] No Tutor in Islamabad; broadened nationwide, found 29"
+    """
+    stype = filter_applied.get("service_type", "unknown")
+    city = filter_applied.get("city", "unknown")
+
+    if fallback_used:
+        return (
+            f"[FALLBACK] No {stype} in {city}; "
+            f"{fallback_reason or 'broadened nationwide'}, found {count}"
+        )
+    return f"Found {count} {stype}s in {city} (no fallback)"
+
+
+# ── Ranking Agent trace ──────────────────────────────────────────────────────
+
+def write_ranking_trace(
+    intent_input: dict,
+    candidates_with_distances: list,
+    prompt_sent: str,
+    raw_llm_response: str,
+    parsed_output: dict,
+    model_name: str,
+    latency_ms: float,
+) -> str:
+    """
+    Write a trace file for a Ranking Agent invocation.
+
+    Args:
+        intent_input:               The parsed intent dict.
+        candidates_with_distances:  Candidate payloads with distance_km.
+        prompt_sent:                Full prompt string sent to the LLM.
+        raw_llm_response:           Raw text response from the LLM.
+        parsed_output:              The structured ranking result dict.
+        model_name:                 Model identifier.
+        latency_ms:                 Round-trip latency in milliseconds.
+
+    Returns:
+        Relative path to the trace file.
+    """
+    TRACE_DIR.mkdir(parents=True, exist_ok=True)
+
+    timestamp = datetime.now(timezone.utc)
+    ts_str = timestamp.strftime("%Y%m%dT%H%M%SZ")
+    filename = f"ranking_{ts_str}.json"
+
+    summary = _build_ranking_summary(parsed_output, len(candidates_with_distances))
+
+    trace_data = {
+        "trace_type": "ranking_agent",
+        "timestamp": timestamp.isoformat(),
+        "model": model_name,
+        "latency_ms": round(latency_ms, 1),
+        "input": {
+            "user_text": intent_input.get("raw_input"),
+            "service_type": intent_input.get("service_type"),
+            "location_sector": intent_input.get("location_sector"),
+            "detected_language": intent_input.get("detected_language"),
+            "formality_level": intent_input.get("formality_level"),
+        },
+        "candidates_with_distances": candidates_with_distances,
+        "prompt_sent_to_llm": prompt_sent,
+        "raw_llm_response": raw_llm_response,
+        "parsed_output": parsed_output,
+        "summary": summary,
+    }
+
+    trace_path = TRACE_DIR / filename
+    with open(trace_path, "w", encoding="utf-8") as f:
+        json.dump(trace_data, f, indent=2, ensure_ascii=False)
+
+    return f"trace/{filename}"
+
+
+def _build_ranking_summary(parsed: dict, candidate_count: int) -> str:
+    """
+    One-line summary for ranking trace.
+
+    Examples:
+        "Ranked 4 candidates -> top 3: P0021(0.92), P0024(0.85), P0019(0.78) | 1 rejected"
+    """
+    top = parsed.get("top_3", [])
+    rejected = parsed.get("rejected", [])
+
+    if not top:
+        return f"No ranking produced from {candidate_count} candidates"
+
+    top_str = ", ".join(
+        f"{p.get('provider_id', '?')}({p.get('score', 0):.2f})" for p in top
+    )
+    return (
+        f"Ranked {candidate_count} candidates -> "
+        f"top {len(top)}: {top_str} | {len(rejected)} rejected"
+    )
+

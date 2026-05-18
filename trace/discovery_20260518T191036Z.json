@@ -1,0 +1,22 @@
+{
+  "trace_type": "discovery_agent",
+  "timestamp": "2026-05-18T19:10:36.457453+00:00",
+  "input": {
+    "service_type": "Plumber",
+    "location_sector": "Karachi",
+    "home_city": "Karachi"
+  },
+  "filter_applied": {
+    "city": "Karachi",
+    "service_type": "Plumber"
+  },
+  "candidates_returned": 2,
+  "candidate_ids": [
+    "P0064",
+    "P0066"
+  ],
+  "fallback_used": false,
+  "fallback_reason": null,
+  "no_candidates_reason": null,
+  "summary": "Found 2 Plumbers in Karachi (no fallback)"
+}

@@ -1,0 +1,22 @@
+{
+  "trace_type": "discovery_agent",
+  "timestamp": "2026-05-18T19:11:53.333461+00:00",
+  "input": {
+    "service_type": "Electrician",
+    "location_sector": "Quetta",
+    "home_city": null
+  },
+  "filter_applied": {
+    "city": "Quetta",
+    "service_type": "Electrician"
+  },
+  "candidates_returned": 2,
+  "candidate_ids": [
+    "P0071",
+    "P0078"
+  ],
+  "fallback_used": false,
+  "fallback_reason": null,
+  "no_candidates_reason": null,
+  "summary": "Found 2 Electricians in Quetta (no fallback)"
+}

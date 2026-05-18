@@ -1,0 +1,90 @@
+{
+  "trace_type": "ranking_agent",
+  "timestamp": "2026-05-18T19:12:00.338643+00:00",
+  "model": "gemini-2.5-flash",
+  "latency_ms": 7005.2,
+  "input": {
+    "user_text": "Pashto bolne wala electrician chahiye Quetta mein",
+    "service_type": "Electrician",
+    "location_sector": "Quetta",
+    "detected_language": "roman_urdu",
+    "formality_level": "casual"
+  },
+  "candidates_with_distances": [
+    {
+      "provider_id": "P0071",
+      "name": "Sharif Hussaini",
+      "category": "Electrician",
+      "sector": "Jinnah Road, Quetta",
+      "rating": 3.6,
+      "rating_count": 78,
+      "price_range": {
+        "min": 800,
+        "max": 3300,
+        "currency": "PKR"
+      },
+      "available_slot_count": 7,
+      "next_available_slots": [
+        "2026-05-21T10:00:00+05:00",
+        "2026-05-22T09:00:00+05:00",
+        "2026-05-23T14:00:00+05:00"
+      ],
+      "verified": false,
+      "languages_spoken": [
+        "Urdu",
+        "Balochi"
+      ],
+      "bio": "Handles high-tension connections that most electricians won't touch.",
+      "years_experience": 18,
+      "cultural_background": "Hazara",
+      "distance_km": 3.0
+    },
+    {
+      "provider_id": "P0078",
+      "name": "Dost Muhammad",
+      "category": "Electrician",
+      "sector": "Pashtunabad, Quetta",
+      "rating": 3.7,
+      "rating_count": 102,
+      "price_range": {
+        "min": 2500,
+        "max": 5500,
+        "currency": "PKR"
+      },
+      "available_slot_count": 7,
+      "next_available_slots": [
+        "2026-05-20T09:00:00+05:00",
+        "2026-05-21T15:00:00+05:00",
+        "2026-05-22T11:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu",
+        "Pashto",
+        "Brahui"
+      ],
+      "bio": "DAE diploma but couldn't find factory work. Freelance electrical ever since.",
+      "years_experience": 7,
+      "cultural_background": null,
+      "distance_km": 3.6
+    }
+  ],
+  "prompt_sent_to_llm": "You are the Ranking Agent for Daira-e-Hunar, a service marketplace for Pakistan's informal economy. Your job: given a user's service request and a list of candidate providers, rank the providers and explain WHY each one is recommended or rejected.\n\n## Your output\nReturn up to 3 ranked providers in the `top_3` list, ordered by suitability (best first). If fewer than 3 candidates exist, return fewer — do NOT pad with duplicates or fabricate providers. Put all remaining candidates in the `rejected` list with a short reason.\n\n## PILLAR 1: TONE MIRRORING (CRITICAL)\nWrite ALL reasoning text in the SAME language and formality level the user used:\n- If detected_language=\"roman_urdu\" and formality_level=\"slang\" → write reasoning in casual Roman Urdu with slang (use \"yaar\", \"bhai\", \"behtareen\", \"acha\" etc.)\n- If detected_language=\"roman_urdu\" and formality_level=\"casual\" → write reasoning in normal Roman Urdu\n- If detected_language=\"roman_urdu\" and formality_level=\"formal\" → write reasoning in polite Roman Urdu (use \"aap\", \"behtar\")\n- If detected_language=\"urdu\" and formality_level=\"formal\" → write reasoning in formal Urdu script\n- If detected_language=\"urdu\" and formality_level=\"casual\" → write reasoning in conversational Urdu script\n- If detected_language=\"english\" → write reasoning in English\n- If code_switching=true → mirror the English/Urdu mix in your reasoning\n\nExamples:\n- Slang Roman Urdu: \"Yaar ye banda sab se qareeb hai, sirf 2 km door. Rating bhi 4.5 hai aur 12 saal ka tajurba hai. AC split ka kaam karta hai, kal subah ke liye slot bhi khali hai.\"\n- Formal Urdu script: \"یہ فراہم کنندہ آپ کے علاقے سے صرف ۲ کلومیٹر کے فاصلے پر ہیں۔ ان کی درجہ بندی ۴.۵ ہے اور ۱۲ سال کا تجربہ رکھتے ہیں۔ کل صبح کے لیے وقت دستیاب ہے۔\"\n- English: \"This provider is only 2 km away with a 4.5 rating and 12 years of experience. They specialize in split AC installation and have a slot available tomorrow morning.\"\n\n## PILLAR 2: READ THE BIO\nThe `bio` field carries human signal that ratings don't. Reference specific bio details when they inform the ranking:\n- A provider whose bio mentions specialization in the requested service type is a strength.\n- A provider whose bio implies a DIFFERENT specialty than their listed category is a RED FLAG. For example, a \"Tutor\" whose bio is about \"stitching bridal lehengas\" should be deprioritized and the mismatch should be flagged in the reasoning.\n- Bio details about reliability, family tradition, or specific expertise are worth mentioning.\n\n## PILLAR 3: LANGUAGE & REGIONAL COMPATIBILITY\nWhen a provider's `languages_spoken` overlaps with the user's likely language (inferred from detected_language), or when the provider is from the same locality as the user's requested area, you may note this as a practical communication or local-knowledge advantage.\n- NEVER frame this as ethnicity matching. Talk about language and locality, not ethnicity.\n- If the user explicitly stated a language preference (e.g. \"Pashto bolne wala chahiye\"), honor it as a HARD preference and surface it prominently in the reasoning. Deprioritize providers who don't speak the requested language.\n\n## PILLAR 4: CONSISTENCY REASONING\nIf `requested_time` and `urgency` appear inconsistent:\n- \"kal subah\" (tomorrow morning) + urgency=\"this_week\" → the specific signal \"kal subah\" is more precise; use tomorrow morning as the actual constraint.\n- Mention the reconciliation briefly in the reasoning (e.g. \"User ne 'kal subah' kaha, is liye kal ka slot check kiya\").\n\n## PILLAR 5: GROUNDED REASONING\nEach reasoning paragraph MUST be 2-4 sentences. Name SPECIFIC facts:\n- Distance in km (use the distance_km field provided)\n- Rating and rating_count\n- Number of available slots and specific slot times when relevant\n- Bio details that matter\n- Price range\n- Verified status\nNo generic platitudes. No performative empathy. Concrete and grounded.\n\n## Scoring guidelines\n- Distance: closer is better, but not the only factor\n- Rating: weight higher ratings, but also consider rating_count (a 4.8 with 5 reviews is less reliable than a 4.3 with 150 reviews)\n- Availability: providers with slots matching the user's requested_time score higher\n- Bio relevance: bio matching the service type is a plus; bio mismatching is a penalty\n- Verified: slight bonus for verified providers\n- Price: reasonable price ranges preferred; very cheap + low rating = red flag\n- Language: matching the user's language is a practical advantage\n\n## Input format\nYou will receive:\n- The user's original request and parsed intent fields\n- A list of candidate providers with their details and pre-computed distance_km\n\nRank them and explain your reasoning.\n\n---\n\n## User Intent\n```json\n{\n  \"raw_input\": \"Pashto bolne wala electrician chahiye Quetta mein\",\n  \"service_type\": \"Electrician\",\n  \"location_sector\": \"Quetta\",\n  \"requested_time\": null,\n  \"urgency\": \"flexible\",\n  \"detected_language\": \"roman_urdu\",\n  \"formality_level\": \"casual\",\n  \"literacy_register\": \"medium\",\n  \"code_switching\": false,\n  \"constraints\": {\n    \"gender_preference\": null,\n    \"budget_max_pkr\": null\n  }\n}\n```\n\n## Candidate Providers\n```json\n[\n  {\n    \"provider_id\": \"P0071\",\n    \"name\": \"Sharif Hussaini\",\n    \"category\": \"Electrician\",\n    \"sector\": \"Jinnah Road, Quetta\",\n    \"rating\": 3.6,\n    \"rating_count\": 78,\n    \"price_range\": {\n      \"min\": 800,\n      \"max\": 3300,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 7,\n    \"next_available_slots\": [\n      \"2026-05-21T10:00:00+05:00\",\n      \"2026-05-22T09:00:00+05:00\",\n      \"2026-05-23T14:00:00+05:00\"\n    ],\n    \"verified\": false,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Balochi\"\n    ],\n    \"bio\": \"Handles high-tension connections that most electricians won't touch.\",\n    \"years_experience\": 18,\n    \"cultural_background\": \"Hazara\",\n    \"distance_km\": 3.0\n  },\n  {\n    \"provider_id\": \"P0078\",\n    \"name\": \"Dost Muhammad\",\n    \"category\": \"Electrician\",\n    \"sector\": \"Pashtunabad, Quetta\",\n    \"rating\": 3.7,\n    \"rating_count\": 102,\n    \"price_range\": {\n      \"min\": 2500,\n      \"max\": 5500,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 7,\n    \"next_available_slots\": [\n      \"2026-05-20T09:00:00+05:00\",\n      \"2026-05-21T15:00:00+05:00\",\n      \"2026-05-22T11:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Pashto\",\n      \"Brahui\"\n    ],\n    \"bio\": \"DAE diploma but couldn't find factory work. Freelance electrical ever since.\",\n    \"years_experience\": 7,\n    \"cultural_background\": null,\n    \"distance_km\": 3.6\n  }\n]\n```",
+  "raw_llm_response": "{\n  \"top_3\": [\n    {\n      \"provider_id\": \"P0078\",\n      \"score\": 0.9,\n      \"reasoning\": \"Aapne Pashto bolne wala electrician manga tha, aur Dost Muhammad Pashto bolte hain. Inki rating 3.7 hai aur 102 reviews hain, jo kafi achi baat hai. Ye verified bhi hain aur Quetta mein sirf 3.6 km door hain. Inke paas DAE diploma bhi hai aur kafi saal ka tajurba bhi hai.\"\n    }\n  ],\n  \"rejected\": [\n    {\n      \"provider_id\": \"P0071\",\n      \"reason\": \"Ye Pashto nahi bolte, jabke user ne Pashto bolne wala electrician manga tha.\"\n    }\n  ]\n}",
+  "parsed_output": {
+    "top_3": [
+      {
+        "provider_id": "P0078",
+        "score": 0.9,
+        "reasoning": "Aapne Pashto bolne wala electrician manga tha, aur Dost Muhammad Pashto bolte hain. Inki rating 3.7 hai aur 102 reviews hain, jo kafi achi baat hai. Ye verified bhi hain aur Quetta mein sirf 3.6 km door hain. Inke paas DAE diploma bhi hai aur kafi saal ka tajurba bhi hai."
+      }
+    ],
+    "rejected": [
+      {
+        "provider_id": "P0071",
+        "reason": "Ye Pashto nahi bolte, jabke user ne Pashto bolne wala electrician manga tha."
+      }
+    ]
+  },
+  "summary": "Ranked 2 candidates -> top 1: P0078(0.90) | 1 rejected"
+}

@@ -1,0 +1,115 @@
+{
+  "trace_type": "ranking_agent",
+  "timestamp": "2026-05-18T19:11:35.881747+00:00",
+  "model": "gemini-2.5-flash",
+  "latency_ms": 8122.3,
+  "input": {
+    "user_text": "مہربانی فرما کر لاہور میں ایک اچھا پلمبر بتائیں اس ہفتے کے لیے",
+    "service_type": "Plumber",
+    "location_sector": "Lahore",
+    "detected_language": "urdu",
+    "formality_level": "formal"
+  },
+  "candidates_with_distances": [
+    {
+      "provider_id": "P0026",
+      "name": "Shahbaz",
+      "category": "Plumber",
+      "sector": "Misri Shah, Lahore",
+      "rating": 3.9,
+      "rating_count": 117,
+      "price_range": {
+        "min": 500,
+        "max": 3000,
+        "currency": "PKR"
+      },
+      "available_slot_count": 2,
+      "next_available_slots": [
+        "2026-05-21T18:00:00+05:00",
+        "2026-05-26T10:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu"
+      ],
+      "bio": "Fixes water tanker connections and boring pumps. Specialized for Lahore's water issues.",
+      "years_experience": 14,
+      "cultural_background": null,
+      "distance_km": 7.4
+    },
+    {
+      "provider_id": "P0027",
+      "name": "Nadeem",
+      "category": "Plumber",
+      "sector": "Mochi Gate, Lahore",
+      "rating": 4.5,
+      "rating_count": 102,
+      "price_range": {
+        "min": 3000,
+        "max": 5500,
+        "currency": "PKR"
+      },
+      "available_slot_count": 5,
+      "next_available_slots": [
+        "2026-05-20T14:00:00+05:00",
+        "2026-05-24T14:00:00+05:00",
+        "2026-05-25T10:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Punjabi",
+        "Urdu"
+      ],
+      "bio": "Former sanitary worker who learned plumbing skills on the job. Very thorough.",
+      "years_experience": 19,
+      "cultural_background": null,
+      "distance_km": 8.0
+    },
+    {
+      "provider_id": "P0033",
+      "name": "Amanullah Awan",
+      "category": "Plumber",
+      "sector": "Shadbagh, Lahore",
+      "rating": 4.5,
+      "rating_count": 83,
+      "price_range": {
+        "min": 3000,
+        "max": 5000,
+        "currency": "PKR"
+      },
+      "available_slot_count": 0,
+      "next_available_slots": [],
+      "verified": false,
+      "languages_spoken": [
+        "Urdu"
+      ],
+      "bio": "Fully booked for the season. Try again next month.",
+      "years_experience": 11,
+      "cultural_background": "Punjabi",
+      "distance_km": 8.1
+    }
+  ],
+  "prompt_sent_to_llm": "You are the Ranking Agent for Daira-e-Hunar, a service marketplace for Pakistan's informal economy. Your job: given a user's service request and a list of candidate providers, rank the providers and explain WHY each one is recommended or rejected.\n\n## Your output\nReturn up to 3 ranked providers in the `top_3` list, ordered by suitability (best first). If fewer than 3 candidates exist, return fewer — do NOT pad with duplicates or fabricate providers. Put all remaining candidates in the `rejected` list with a short reason.\n\n## PILLAR 1: TONE MIRRORING (CRITICAL)\nWrite ALL reasoning text in the SAME language and formality level the user used:\n- If detected_language=\"roman_urdu\" and formality_level=\"slang\" → write reasoning in casual Roman Urdu with slang (use \"yaar\", \"bhai\", \"behtareen\", \"acha\" etc.)\n- If detected_language=\"roman_urdu\" and formality_level=\"casual\" → write reasoning in normal Roman Urdu\n- If detected_language=\"roman_urdu\" and formality_level=\"formal\" → write reasoning in polite Roman Urdu (use \"aap\", \"behtar\")\n- If detected_language=\"urdu\" and formality_level=\"formal\" → write reasoning in formal Urdu script\n- If detected_language=\"urdu\" and formality_level=\"casual\" → write reasoning in conversational Urdu script\n- If detected_language=\"english\" → write reasoning in English\n- If code_switching=true → mirror the English/Urdu mix in your reasoning\n\nExamples:\n- Slang Roman Urdu: \"Yaar ye banda sab se qareeb hai, sirf 2 km door. Rating bhi 4.5 hai aur 12 saal ka tajurba hai. AC split ka kaam karta hai, kal subah ke liye slot bhi khali hai.\"\n- Formal Urdu script: \"یہ فراہم کنندہ آپ کے علاقے سے صرف ۲ کلومیٹر کے فاصلے پر ہیں۔ ان کی درجہ بندی ۴.۵ ہے اور ۱۲ سال کا تجربہ رکھتے ہیں۔ کل صبح کے لیے وقت دستیاب ہے۔\"\n- English: \"This provider is only 2 km away with a 4.5 rating and 12 years of experience. They specialize in split AC installation and have a slot available tomorrow morning.\"\n\n## PILLAR 2: READ THE BIO\nThe `bio` field carries human signal that ratings don't. Reference specific bio details when they inform the ranking:\n- A provider whose bio mentions specialization in the requested service type is a strength.\n- A provider whose bio implies a DIFFERENT specialty than their listed category is a RED FLAG. For example, a \"Tutor\" whose bio is about \"stitching bridal lehengas\" should be deprioritized and the mismatch should be flagged in the reasoning.\n- Bio details about reliability, family tradition, or specific expertise are worth mentioning.\n\n## PILLAR 3: LANGUAGE & REGIONAL COMPATIBILITY\nWhen a provider's `languages_spoken` overlaps with the user's likely language (inferred from detected_language), or when the provider is from the same locality as the user's requested area, you may note this as a practical communication or local-knowledge advantage.\n- NEVER frame this as ethnicity matching. Talk about language and locality, not ethnicity.\n- If the user explicitly stated a language preference (e.g. \"Pashto bolne wala chahiye\"), honor it as a HARD preference and surface it prominently in the reasoning. Deprioritize providers who don't speak the requested language.\n\n## PILLAR 4: CONSISTENCY REASONING\nIf `requested_time` and `urgency` appear inconsistent:\n- \"kal subah\" (tomorrow morning) + urgency=\"this_week\" → the specific signal \"kal subah\" is more precise; use tomorrow morning as the actual constraint.\n- Mention the reconciliation briefly in the reasoning (e.g. \"User ne 'kal subah' kaha, is liye kal ka slot check kiya\").\n\n## PILLAR 5: GROUNDED REASONING\nEach reasoning paragraph MUST be 2-4 sentences. Name SPECIFIC facts:\n- Distance in km (use the distance_km field provided)\n- Rating and rating_count\n- Number of available slots and specific slot times when relevant\n- Bio details that matter\n- Price range\n- Verified status\nNo generic platitudes. No performative empathy. Concrete and grounded.\n\n## Scoring guidelines\n- Distance: closer is better, but not the only factor\n- Rating: weight higher ratings, but also consider rating_count (a 4.8 with 5 reviews is less reliable than a 4.3 with 150 reviews)\n- Availability: providers with slots matching the user's requested_time score higher\n- Bio relevance: bio matching the service type is a plus; bio mismatching is a penalty\n- Verified: slight bonus for verified providers\n- Price: reasonable price ranges preferred; very cheap + low rating = red flag\n- Language: matching the user's language is a practical advantage\n\n## Input format\nYou will receive:\n- The user's original request and parsed intent fields\n- A list of candidate providers with their details and pre-computed distance_km\n\nRank them and explain your reasoning.\n\n---\n\n## User Intent\n```json\n{\n  \"raw_input\": \"مہربانی فرما کر لاہور میں ایک اچھا پلمبر بتائیں اس ہفتے کے لیے\",\n  \"service_type\": \"Plumber\",\n  \"location_sector\": \"Lahore\",\n  \"requested_time\": \"this week\",\n  \"urgency\": \"this_week\",\n  \"detected_language\": \"urdu\",\n  \"formality_level\": \"formal\",\n  \"literacy_register\": \"high\",\n  \"code_switching\": false,\n  \"constraints\": {\n    \"gender_preference\": null,\n    \"budget_max_pkr\": null\n  }\n}\n```\n\n## Candidate Providers\n```json\n[\n  {\n    \"provider_id\": \"P0026\",\n    \"name\": \"Shahbaz\",\n    \"category\": \"Plumber\",\n    \"sector\": \"Misri Shah, Lahore\",\n    \"rating\": 3.9,\n    \"rating_count\": 117,\n    \"price_range\": {\n      \"min\": 500,\n      \"max\": 3000,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 2,\n    \"next_available_slots\": [\n      \"2026-05-21T18:00:00+05:00\",\n      \"2026-05-26T10:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\"\n    ],\n    \"bio\": \"Fixes water tanker connections and boring pumps. Specialized for Lahore's water issues.\",\n    \"years_experience\": 14,\n    \"cultural_background\": null,\n    \"distance_km\": 7.4\n  },\n  {\n    \"provider_id\": \"P0027\",\n    \"name\": \"Nadeem\",\n    \"category\": \"Plumber\",\n    \"sector\": \"Mochi Gate, Lahore\",\n    \"rating\": 4.5,\n    \"rating_count\": 102,\n    \"price_range\": {\n      \"min\": 3000,\n      \"max\": 5500,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 5,\n    \"next_available_slots\": [\n      \"2026-05-20T14:00:00+05:00\",\n      \"2026-05-24T14:00:00+05:00\",\n      \"2026-05-25T10:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Punjabi\",\n      \"Urdu\"\n    ],\n    \"bio\": \"Former sanitary worker who learned plumbing skills on the job. Very thorough.\",\n    \"years_experience\": 19,\n    \"cultural_background\": null,\n    \"distance_km\": 8.0\n  },\n  {\n    \"provider_id\": \"P0033\",\n    \"name\": \"Amanullah Awan\",\n    \"category\": \"Plumber\",\n    \"sector\": \"Shadbagh, Lahore\",\n    \"rating\": 4.5,\n    \"rating_count\": 83,\n    \"price_range\": {\n      \"min\": 3000,\n      \"max\": 5000,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 0,\n    \"next_available_slots\": [],\n    \"verified\": false,\n    \"languages_spoken\": [\n      \"Urdu\"\n    ],\n    \"bio\": \"Fully booked for the season. Try again next month.\",\n    \"years_experience\": 11,\n    \"cultural_background\": \"Punjabi\",\n    \"distance_km\": 8.1\n  }\n]\n```",
+  "raw_llm_response": "{\n  \"top_3\": [\n    {\n      \"provider_id\": \"P0027\",\n      \"score\": 0.9,\n      \"reasoning\": \"ندیم صاحب کی درجہ بندی ۴.۵ ہے اور انہیں ۱۰۲ صارفین نے ریٹ کیا ہے۔ وہ آپ سے صرف ۸.۰ کلومیٹر کے فاصلے پر ہیں اور ان کے پاس اس ہفتے کے لیے کئی سلاٹس دستیاب ہیں۔ ان کا بائیو بتاتا ہے کہ وہ ایک سابق سینیٹری ورکر ہیں جنہوں نے کام کے دوران پلمبنگ کی مہارت حاصل کی، جو ان کے تجربے کو ظاہر کرتا ہے۔\"\n    },\n    {\n      \"provider_id\": \"P0026\",\n      \"score\": 0.75,\n      \"reasoning\": \"شہباز صاحب آپ سے ۷.۴ کلومیٹر کے فاصلے پر ہیں اور ان کی درجہ بندی ۳.۹ ہے جسے ۱۱۷ صارفین نے دیا ہے۔ ان کی قیمتیں ۵۰۰ سے ۳۰۰۰ روپے کے درمیان ہیں جو کہ مناسب ہیں۔ ان کے بائیو کے مطابق، وہ لاہور کے پانی کے مسائل کے لیے خصوصی مہارت رکھتے ہیں اور اس ہفتے کے لیے ان کے پاس دو سلاٹس دستیاب ہیں۔\"\n    }\n  ],\n  \"rejected\": [\n    {\n      \"provider_id\": \"P0033\",\n      \"reason\": \"اس فراہم کنندہ کے پاس اس ہفتے کے لیے کوئی دستیاب سلاٹ نہیں ہے۔\"\n    }\n  ]\n}",
+  "parsed_output": {
+    "top_3": [
+      {
+        "provider_id": "P0027",
+        "score": 0.9,
+        "reasoning": "ندیم صاحب کی درجہ بندی ۴.۵ ہے اور انہیں ۱۰۲ صارفین نے ریٹ کیا ہے۔ وہ آپ سے صرف ۸.۰ کلومیٹر کے فاصلے پر ہیں اور ان کے پاس اس ہفتے کے لیے کئی سلاٹس دستیاب ہیں۔ ان کا بائیو بتاتا ہے کہ وہ ایک سابق سینیٹری ورکر ہیں جنہوں نے کام کے دوران پلمبنگ کی مہارت حاصل کی، جو ان کے تجربے کو ظاہر کرتا ہے۔"
+      },
+      {
+        "provider_id": "P0026",
+        "score": 0.75,
+        "reasoning": "شہباز صاحب آپ سے ۷.۴ کلومیٹر کے فاصلے پر ہیں اور ان کی درجہ بندی ۳.۹ ہے جسے ۱۱۷ صارفین نے دیا ہے۔ ان کی قیمتیں ۵۰۰ سے ۳۰۰۰ روپے کے درمیان ہیں جو کہ مناسب ہیں۔ ان کے بائیو کے مطابق، وہ لاہور کے پانی کے مسائل کے لیے خصوصی مہارت رکھتے ہیں اور اس ہفتے کے لیے ان کے پاس دو سلاٹس دستیاب ہیں۔"
+      }
+    ],
+    "rejected": [
+      {
+        "provider_id": "P0033",
+        "reason": "اس فراہم کنندہ کے پاس اس ہفتے کے لیے کوئی دستیاب سلاٹ نہیں ہے۔"
+      }
+    ]
+  },
+  "summary": "Ranked 3 candidates -> top 2: P0027(0.90), P0026(0.75) | 1 rejected"
+}

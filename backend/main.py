@@ -1,8 +1,8 @@
 """
 Daira-e-Hunar API — FastAPI backend for the AI Service Orchestrator.
 
-Exposes a single POST /request endpoint that will chain four ADK agents
-(Intent → Discovery → Ranking → Action) in later phases.
+Exposes a single POST /request endpoint that chains three ADK agents:
+Intent -> Discovery -> Ranking.
 
 Run with:
     uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
@@ -20,13 +20,15 @@ from typing import Optional
 
 from backend.config import HOST, PORT
 from backend.agents.intent_agent import IntentAgent
+from backend.agents.discovery_agent import DiscoveryAgent
+from backend.agents.ranking_agent import RankingAgent
 
 # ── App setup ────────────────────────────────────────────────────────────────
 
 app = FastAPI(
     title="Daira-e-Hunar API",
     description="Daira-e-Hunar — AI Service Orchestrator for Pakistan's Informal Economy",
-    version="0.3.0",
+    version="0.4.0",
 )
 
 # Allow all origins — needed for Flutter web during development
@@ -41,6 +43,8 @@ app.add_middleware(
 # ── Agent instances ──────────────────────────────────────────────────────────
 
 intent_agent = IntentAgent()
+discovery_agent = DiscoveryAgent()
+ranking_agent = RankingAgent()
 
 
 # ── Request / Response models ────────────────────────────────────────────────
@@ -52,11 +56,13 @@ class ServiceRequest(BaseModel):
 
 
 class ServiceResponse(BaseModel):
-    """Response containing parsed intent and trace file path."""
+    """Response containing the full agent pipeline results."""
     status: str
     message: str
     intent: Optional[dict] = None
-    trace_file: Optional[str] = None
+    discovery: Optional[dict] = None
+    ranking: Optional[dict] = None
+    trace_files: Optional[dict] = None
 
 
 # ── Endpoints ────────────────────────────────────────────────────────────────
@@ -64,7 +70,7 @@ class ServiceResponse(BaseModel):
 @app.get("/health")
 async def health_check():
     """Simple health check for connectivity testing."""
-    return {"status": "ok", "service": "Daira-e-Hunar API", "version": "0.3.0"}
+    return {"status": "ok", "service": "Daira-e-Hunar API", "version": "0.4.0"}
 
 
 @app.post("/request", response_model=ServiceResponse)
@@ -73,27 +79,59 @@ async def handle_request(request: ServiceRequest):
     Main endpoint — accepts a natural-language service request and
     orchestrates the agent pipeline.
 
-    Phase 1: Intent Agent only (parses NL → structured intent).
-    Phases 2–3 will wire up Discovery → Ranking → Action.
+    Pipeline: Intent -> Discovery -> Ranking.
+    If Discovery returns zero candidates, Ranking is skipped.
     """
-    try:
-        result = await intent_agent.run(request.query)
+    trace_files = {}
 
-        # Extract trace_file from result (added by IntentAgent, not part of LLM schema)
-        trace_file = result.pop("_trace_file", None)
+    try:
+        # ── Stage 1: Intent Agent ────────────────────────────────────
+        intent_result = await intent_agent.run(request.query)
+        trace_files["intent"] = intent_result.pop("_trace_file", None)
+
+        # ── Stage 2: Discovery Agent ─────────────────────────────────
+        discovery_result = await discovery_agent.run(intent_result)
+        trace_files["discovery"] = discovery_result.pop("_trace_file", None)
+
+        # Strip full provider dicts from response (too large) — keep IDs
+        candidates = discovery_result.get("candidates", [])
+        discovery_summary = {
+            "total_found": discovery_result["total_found"],
+            "city_searched": discovery_result["city_searched"],
+            "fallback_used": discovery_result["fallback_used"],
+            "fallback_reason": discovery_result.get("fallback_reason"),
+            "no_candidates_reason": discovery_result.get("no_candidates_reason"),
+            "candidate_ids": [c["id"] for c in candidates],
+        }
+
+        # ── Stage 3: Ranking Agent (skip if no candidates) ───────────
+        ranking_result = None
+        if candidates:
+            ranking_result = await ranking_agent.run(candidates, intent_result)
+            trace_files["ranking"] = ranking_result.pop("_trace_file", None)
+            message = "Pipeline complete: Intent -> Discovery -> Ranking."
+        else:
+            message = (
+                "Pipeline partial: Intent -> Discovery (no candidates found). "
+                "Ranking skipped."
+            )
 
         return ServiceResponse(
             status="ok",
-            message="Intent parsed successfully.",
-            intent=result,
-            trace_file=trace_file,
+            message=message,
+            intent=intent_result,
+            discovery=discovery_summary,
+            ranking=ranking_result,
+            trace_files=trace_files,
         )
     except Exception as e:
         return ServiceResponse(
             status="error",
-            message=f"Intent Agent failed: {str(e)}",
+            message=f"Pipeline failed: {str(e)}",
             intent=None,
-            trace_file=None,
+            discovery=None,
+            ranking=None,
+            trace_files=trace_files if trace_files else None,
         )
 
 

@@ -268,15 +268,27 @@ class IntentAgent:
 
         start_time = time.time()
 
-        response = self.client.models.generate_content(
-            model=self.model_name,
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                response_mime_type="application/json",
-                response_schema=IntentResult,
-                temperature=0.2,  # low temp for consistent parsing
-            ),
-        )
+        # ── LLM call with retry on 429/503 ───────────────────────────────
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                response = self.client.models.generate_content(
+                    model=self.model_name,
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        response_mime_type="application/json",
+                        response_schema=IntentResult,
+                        temperature=0.2,  # low temp for consistent parsing
+                    ),
+                )
+                break
+            except Exception as e:
+                error_str = str(e)
+                if ("429" in error_str or "503" in error_str) and attempt < max_retries - 1:
+                    wait_time = (attempt + 1) * 5
+                    time.sleep(wait_time)
+                    continue
+                raise
 
         latency_ms = (time.time() - start_time) * 1000
         raw_response_text = response.text
