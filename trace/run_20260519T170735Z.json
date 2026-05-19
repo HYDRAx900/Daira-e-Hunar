@@ -1,0 +1,35 @@
+{
+  "run_id": "run_20260519T170735Z",
+  "user_query": "I need an AC technician",
+  "mode": "agentic",
+  "started_at": "2026-05-19T17:07:35.276251+00:00",
+  "stages": [
+    {
+      "agent": "intent",
+      "trace_file": "trace/intent.json",
+      "success": true,
+      "latency_ms": 0.0
+    },
+    {
+      "agent": "discovery",
+      "trace_file": "trace/discovery.json",
+      "success": true,
+      "latency_ms": 0.0
+    },
+    {
+      "agent": "ranking",
+      "trace_file": "trace/ranking.json",
+      "success": true,
+      "latency_ms": 0.0
+    },
+    {
+      "agent": "action",
+      "trace_file": "trace/action.json",
+      "success": true,
+      "latency_ms": 0.0
+    }
+  ],
+  "final_status": "confirmed",
+  "final_provider_id": "P0003",
+  "summary": "AGENTIC RUN run_20260519T170735Z | query: 'I need an AC technician' | status: confirmed | provider: P0003 | latency: 0.0ms | 4 stages OK"
+}

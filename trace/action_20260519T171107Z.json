@@ -1,0 +1,76 @@
+{
+  "trace_type": "action_agent",
+  "timestamp": "2026-05-19T17:11:07.161815+00:00",
+  "latency_ms": 9.2,
+  "input": {
+    "intent": {
+      "service_type": "Tutor",
+      "location_sector": "Islamabad",
+      "requested_time": "today",
+      "urgency": "today",
+      "constraints": {
+        "gender_preference": null,
+        "budget_max_pkr": null
+      },
+      "raw_input": "I desperately need a tutor in Islamabad today",
+      "detected_language": "english",
+      "confidence": 0.9,
+      "needs_clarification": false,
+      "clarification_question": null,
+      "formality_level": "casual",
+      "literacy_register": "high",
+      "code_switching": false
+    },
+    "selected_provider": {
+      "id": "P0020",
+      "name": "Imran",
+      "category": "Tutor",
+      "sector": "Pirwadhai, Rawalpindi",
+      "home_city": "Rawalpindi",
+      "lat": 33.6149,
+      "lng": 73.0623,
+      "rating": 4.7,
+      "rating_count": 156,
+      "price_range": {
+        "min": 500,
+        "max": 2000,
+        "currency": "PKR"
+      },
+      "available_slots": [
+        "2026-05-20T16:00:00+05:00",
+        "2026-05-22T17:00:00+05:00",
+        "2026-05-27T15:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu",
+        "Punjabi"
+      ],
+      "bio": "Runs a small tuition center from her house in Pirwadhai. 30 students.",
+      "years_experience": 6,
+      "cultural_background": null,
+      "_synthetic": true
+    }
+  },
+  "slot_chosen": "2026-05-20T16:00:00+05:00",
+  "race_check_result": true,
+  "confirmation_prompt": "No LLM Client",
+  "raw_llm_response": "{}",
+  "parsed_output": {
+    "status": "confirmed",
+    "booking_id": "B1CD1B9E2",
+    "provider_id": "P0020",
+    "provider_name": "Imran",
+    "scheduled_datetime": "2026-05-20T16:00:00+05:00",
+    "confirmation_message": "Booking confirmed.",
+    "confirmation_language": "english",
+    "time_negotiated": false,
+    "followups_scheduled": [
+      "F909D09FA",
+      "FDA6B1ADE"
+    ],
+    "receipt_path": "trace/receipt_B1CD1B9E2.txt",
+    "error_reason": null
+  },
+  "summary": "ACTION booking_id=B1CD1B9E2 | provider=P0020 | slot=2026-05-20T16:00:00+05:00 | status=confirmed | negotiated=false"
+}

@@ -1,0 +1,23 @@
+{
+  "run_id": "run_20260519T170736Z",
+  "user_query": "unknown input",
+  "mode": "agentic",
+  "started_at": "2026-05-19T17:07:36.926376+00:00",
+  "stages": [
+    {
+      "agent": "intent",
+      "trace_file": "trace/intent.json",
+      "success": false,
+      "latency_ms": 0.0
+    },
+    {
+      "agent": "action",
+      "trace_file": "trace/action.json",
+      "success": true,
+      "latency_ms": 0.0
+    }
+  ],
+  "final_status": "needs_clarification",
+  "final_provider_id": null,
+  "summary": "AGENTIC RUN run_20260519T170736Z | query: 'unknown input' | status: needs_clarification | provider: none | latency: 0.0ms | 2 stages OK"
+}

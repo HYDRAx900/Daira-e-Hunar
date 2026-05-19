@@ -1,0 +1,23 @@
+{
+  "run_id": "run_20260519T170912Z",
+  "user_query": "asdfghjkl potato moon",
+  "mode": "agentic",
+  "started_at": "2026-05-19T17:09:12.285054+00:00",
+  "stages": [
+    {
+      "agent": "intent",
+      "trace_file": "trace/intent_20260519T170916Z.json",
+      "success": false,
+      "latency_ms": 4697.144508361816
+    },
+    {
+      "agent": "action",
+      "trace_file": "trace/action_20260519T170916Z.json",
+      "success": true,
+      "latency_ms": 0.0
+    }
+  ],
+  "final_status": "needs_clarification",
+  "final_provider_id": null,
+  "summary": "AGENTIC RUN run_20260519T170912Z | query: 'asdfghjkl potato moon' | status: needs_clarification | provider: none | latency: 4697.1ms | 2 stages OK"
+}

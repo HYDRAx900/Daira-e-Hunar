@@ -1,0 +1,10 @@
+BOOKING RECEIPT: BB4343D0D
+========================================
+Provider: Dost Muhammad Rajput (P0003)
+Time: 2026-05-21T11:00:00+05:00
+Negotiated: False
+----------------------------------------
+Message sent to user:
+Booking confirmed.
+----------------------------------------
+Followups scheduled: F89238924, FF7C86CB9

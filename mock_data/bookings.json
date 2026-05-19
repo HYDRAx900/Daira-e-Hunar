@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "booking_id": "BF9D3873C",
+    "provider_id": "P0003",
+    "provider_name": "Dost Muhammad Rajput",
+    "scheduled_datetime": "2026-05-21T11:00:00+05:00",
+    "time_negotiated": false,
+    "created_at": "2026-05-19T17:09:10.249383+00:00"
+  },
+  {
+    "booking_id": "B1CD1B9E2",
+    "provider_id": "P0020",
+    "provider_name": "Imran",
+    "scheduled_datetime": "2026-05-20T16:00:00+05:00",
+    "time_negotiated": false,
+    "created_at": "2026-05-19T17:11:07.158803+00:00"
+  }
+]

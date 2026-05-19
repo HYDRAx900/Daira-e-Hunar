@@ -1,0 +1,35 @@
+{
+  "run_id": "run_20260519T170859Z",
+  "user_query": "Mujhe kal subah G-13 mein AC technician chahiye",
+  "mode": "agentic",
+  "started_at": "2026-05-19T17:08:59.623674+00:00",
+  "stages": [
+    {
+      "agent": "intent",
+      "trace_file": "trace/intent_20260519T170904Z.json",
+      "success": true,
+      "latency_ms": 4402.776718139648
+    },
+    {
+      "agent": "discovery",
+      "trace_file": "trace/discovery_20260519T170904Z.json",
+      "success": true,
+      "latency_ms": 2.2592544555664062
+    },
+    {
+      "agent": "ranking",
+      "trace_file": "trace/ranking_20260519T170910Z.json",
+      "success": true,
+      "latency_ms": 6206.860065460205
+    },
+    {
+      "agent": "action",
+      "trace_file": "trace/action_20260519T170910Z.json",
+      "success": true,
+      "latency_ms": 18.407344818115234
+    }
+  ],
+  "final_status": "confirmed",
+  "final_provider_id": "P0003",
+  "summary": "AGENTIC RUN run_20260519T170859Z | query: 'Mujhe kal subah G-13 mein AC technician chahiye' | status: confirmed | provider: P0003 | latency: 10630.3ms | 4 stages OK"
+}

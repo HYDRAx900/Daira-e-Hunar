@@ -1,0 +1,29 @@
+{
+  "run_id": "run_20260519T170738Z",
+  "user_query": "I need a beautician in Quetta",
+  "mode": "agentic",
+  "started_at": "2026-05-19T17:07:38.619857+00:00",
+  "stages": [
+    {
+      "agent": "intent",
+      "trace_file": "trace/intent.json",
+      "success": true,
+      "latency_ms": 0.0
+    },
+    {
+      "agent": "discovery",
+      "trace_file": "trace/discovery.json",
+      "success": false,
+      "latency_ms": 0.0
+    },
+    {
+      "agent": "action",
+      "trace_file": "trace/action.json",
+      "success": true,
+      "latency_ms": 0.0
+    }
+  ],
+  "final_status": "no_provider",
+  "final_provider_id": null,
+  "summary": "AGENTIC RUN run_20260519T170738Z | query: 'I need a beautician in Quetta' | status: no_provider | provider: none | latency: 0.0ms | 3 stages OK"
+}

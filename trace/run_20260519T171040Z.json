@@ -1,0 +1,35 @@
+{
+  "run_id": "run_20260519T171040Z",
+  "user_query": "I desperately need a tutor in Islamabad today",
+  "mode": "agentic",
+  "started_at": "2026-05-19T17:10:40.446635+00:00",
+  "stages": [
+    {
+      "agent": "intent",
+      "trace_file": "trace/intent_20260519T171044Z.json",
+      "success": true,
+      "latency_ms": 4197.482347488403
+    },
+    {
+      "agent": "discovery",
+      "trace_file": "trace/discovery_20260519T171044Z.json",
+      "success": true,
+      "latency_ms": 1.0294914245605469
+    },
+    {
+      "agent": "ranking",
+      "trace_file": "trace/ranking_20260519T171107Z.json",
+      "success": true,
+      "latency_ms": 22507.456064224243
+    },
+    {
+      "agent": "action",
+      "trace_file": "trace/action_20260519T171107Z.json",
+      "success": true,
+      "latency_ms": 12.048006057739258
+    }
+  ],
+  "final_status": "confirmed",
+  "final_provider_id": "P0020",
+  "summary": "AGENTIC RUN run_20260519T171040Z | query: 'I desperately need a tutor in Islamabad today' | status: confirmed | provider: P0020 | latency: 26718.0ms | 4 stages OK"
+}

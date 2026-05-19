@@ -1,0 +1,44 @@
+{
+  "trace_type": "action_agent",
+  "timestamp": "2026-05-19T17:09:16.982199+00:00",
+  "latency_ms": 0.0,
+  "input": {
+    "intent": {
+      "service_type": null,
+      "location_sector": null,
+      "requested_time": null,
+      "urgency": "flexible",
+      "constraints": {
+        "gender_preference": null,
+        "budget_max_pkr": null
+      },
+      "raw_input": "asdfghjkl potato moon",
+      "detected_language": "english",
+      "confidence": 0.1,
+      "needs_clarification": true,
+      "clarification_question": "What service are you looking for?",
+      "formality_level": "casual",
+      "literacy_register": "low",
+      "code_switching": false
+    },
+    "selected_provider": null
+  },
+  "slot_chosen": null,
+  "race_check_result": null,
+  "confirmation_prompt": null,
+  "raw_llm_response": null,
+  "parsed_output": {
+    "status": "needs_clarification",
+    "booking_id": null,
+    "provider_id": null,
+    "provider_name": null,
+    "scheduled_datetime": null,
+    "confirmation_message": null,
+    "confirmation_language": null,
+    "time_negotiated": false,
+    "followups_scheduled": [],
+    "receipt_path": null,
+    "error_reason": "Intent needs clarification"
+  },
+  "summary": "ACTION booking_id=none | provider=none | slot=none | status=needs_clarification | negotiated=false"
+}

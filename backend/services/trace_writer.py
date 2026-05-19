@@ -268,3 +268,88 @@ def _build_ranking_summary(parsed: dict, candidate_count: int) -> str:
         f"top {len(top)}: {top_str} | {len(rejected)} rejected"
     )
 
+
+# ── Action Agent trace ───────────────────────────────────────────────────────
+
+def write_action_trace(
+    intent_input: dict,
+    selected_provider: dict | None,
+    slot_chosen: str | None,
+    race_check_result: bool | None,
+    confirmation_prompt: str | None,
+    raw_llm_response: str | None,
+    parsed_booking_result: dict,
+    latency_ms: float,
+) -> str:
+    """
+    Write a trace file for an Action Agent invocation.
+
+    Returns:
+        Relative path to the trace file.
+    """
+    TRACE_DIR.mkdir(parents=True, exist_ok=True)
+
+    timestamp = datetime.now(timezone.utc)
+    ts_str = timestamp.strftime("%Y%m%dT%H%M%SZ")
+    filename = f"action_{ts_str}.json"
+
+    # Build summary
+    b_id = parsed_booking_result.get("booking_id") or "none"
+    p_id = parsed_booking_result.get("provider_id") or "none"
+    slot = parsed_booking_result.get("scheduled_datetime") or "none"
+    status = parsed_booking_result.get("status", "unknown")
+    negotiated = parsed_booking_result.get("time_negotiated", False)
+    summary = f"ACTION booking_id={b_id} | provider={p_id} | slot={slot} | status={status} | negotiated={str(negotiated).lower()}"
+
+    trace_data = {
+        "trace_type": "action_agent",
+        "timestamp": timestamp.isoformat(),
+        "latency_ms": round(latency_ms, 1),
+        "input": {
+            "intent": intent_input,
+            "selected_provider": selected_provider,
+        },
+        "slot_chosen": slot_chosen,
+        "race_check_result": race_check_result,
+        "confirmation_prompt": confirmation_prompt,
+        "raw_llm_response": raw_llm_response,
+        "parsed_output": parsed_booking_result,
+        "summary": summary,
+    }
+
+    trace_path = TRACE_DIR / filename
+    with open(trace_path, "w", encoding="utf-8") as f:
+        json.dump(trace_data, f, indent=2, ensure_ascii=False)
+
+    return f"trace/{filename}"
+
+
+# ── Run trace (Orchestrator) ─────────────────────────────────────────────────
+
+def write_run_trace(workplan: dict) -> str:
+    """
+    Write a trace file for an end-to-end Orchestrator run.
+
+    Returns:
+        Relative path to the trace file.
+    """
+    TRACE_DIR.mkdir(parents=True, exist_ok=True)
+    
+    run_id = workplan.get("run_id", "unknown_run")
+    filename = f"{run_id}.json"
+    
+    query = workplan.get("user_query", "")
+    status = workplan.get("final_status", "unknown")
+    provider = workplan.get("final_provider_id") or "none"
+    stages = workplan.get("stages", [])
+    total_latency = sum(stage.get("latency_ms", 0.0) for stage in stages)
+    
+    summary = f"AGENTIC RUN {run_id} | query: '{query}' | status: {status} | provider: {provider} | latency: {round(total_latency, 1)}ms | {len(stages)} stages OK"
+    workplan["summary"] = summary
+    
+    trace_path = TRACE_DIR / filename
+    with open(trace_path, "w", encoding="utf-8") as f:
+        json.dump(workplan, f, indent=2, ensure_ascii=False)
+
+    return f"trace/{filename}"
+

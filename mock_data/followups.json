@@ -1,0 +1,26 @@
+[
+  {
+    "followup_id": "FF09372BE",
+    "booking_id": "BF9D3873C",
+    "type": "reminder",
+    "trigger_time": "2026-05-21T10:00:00+05:00"
+  },
+  {
+    "followup_id": "F05FBFB93",
+    "booking_id": "BF9D3873C",
+    "type": "rating_prompt",
+    "trigger_time": "2026-05-21T13:00:00+05:00"
+  },
+  {
+    "followup_id": "F909D09FA",
+    "booking_id": "B1CD1B9E2",
+    "type": "reminder",
+    "trigger_time": "2026-05-20T15:00:00+05:00"
+  },
+  {
+    "followup_id": "FDA6B1ADE",
+    "booking_id": "B1CD1B9E2",
+    "type": "rating_prompt",
+    "trigger_time": "2026-05-20T18:00:00+05:00"
+  }
+]

@@ -1,0 +1,951 @@
+{
+  "trace_type": "ranking_agent",
+  "timestamp": "2026-05-19T17:11:07.146366+00:00",
+  "model": "gemini-2.5-flash",
+  "latency_ms": 22498.8,
+  "input": {
+    "user_text": "I desperately need a tutor in Islamabad today",
+    "service_type": "Tutor",
+    "location_sector": "Islamabad",
+    "detected_language": "english",
+    "formality_level": "casual"
+  },
+  "candidates_with_distances": [
+    {
+      "provider_id": "P0009",
+      "name": "Mumtaz",
+      "category": "Tutor",
+      "sector": "Pirwadhai, Rawalpindi",
+      "rating": 4.1,
+      "rating_count": 143,
+      "price_range": {
+        "min": 2000,
+        "max": 3500,
+        "currency": "PKR"
+      },
+      "available_slot_count": 6,
+      "next_available_slots": [
+        "2026-05-20T14:00:00+05:00",
+        "2026-05-21T14:00:00+05:00",
+        "2026-05-22T10:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu",
+        "Punjabi"
+      ],
+      "bio": "Retired school teacher. Still sharp. Teaches math and science to matric students.",
+      "years_experience": 13,
+      "cultural_background": "Pashtun",
+      "distance_km": 8.2
+    },
+    {
+      "provider_id": "P0010",
+      "name": "Gulzar Bugti",
+      "category": "Tutor",
+      "sector": "Saddar, Rawalpindi",
+      "rating": 3.5,
+      "rating_count": 106,
+      "price_range": {
+        "min": 1500,
+        "max": 4500,
+        "currency": "PKR"
+      },
+      "available_slot_count": 8,
+      "next_available_slots": [
+        "2026-05-20T11:00:00+05:00",
+        "2026-05-21T15:00:00+05:00",
+        "2026-05-22T11:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu",
+        "Punjabi",
+        "English"
+      ],
+      "bio": "Engineering dropout. Teaches physics and math better than most degree holders.",
+      "years_experience": 15,
+      "cultural_background": "Pashtun",
+      "distance_km": 9.8
+    },
+    {
+      "provider_id": "P0014",
+      "name": "Kausar Marri",
+      "category": "Tutor",
+      "sector": "Tench Bhata, Rawalpindi",
+      "rating": 3.8,
+      "rating_count": 76,
+      "price_range": {
+        "min": 1500,
+        "max": 4000,
+        "currency": "PKR"
+      },
+      "available_slot_count": 5,
+      "next_available_slots": [
+        "2026-05-20T09:00:00+05:00",
+        "2026-05-22T17:00:00+05:00",
+        "2026-05-25T15:00:00+05:00"
+      ],
+      "verified": false,
+      "languages_spoken": [
+        "Urdu"
+      ],
+      "bio": "Hafiz who also tutors Arabic and basic English. Popular with madrassah families.",
+      "years_experience": 7,
+      "cultural_background": null,
+      "distance_km": 11.0
+    },
+    {
+      "provider_id": "P0020",
+      "name": "Imran",
+      "category": "Tutor",
+      "sector": "Pirwadhai, Rawalpindi",
+      "rating": 4.7,
+      "rating_count": 156,
+      "price_range": {
+        "min": 500,
+        "max": 2000,
+        "currency": "PKR"
+      },
+      "available_slot_count": 3,
+      "next_available_slots": [
+        "2026-05-20T16:00:00+05:00",
+        "2026-05-22T17:00:00+05:00",
+        "2026-05-27T15:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu",
+        "Punjabi"
+      ],
+      "bio": "Runs a small tuition center from her house in Pirwadhai. 30 students.",
+      "years_experience": 6,
+      "cultural_background": null,
+      "distance_km": 7.8
+    },
+    {
+      "provider_id": "P0021",
+      "name": "Bushra Gujjar",
+      "category": "Tutor",
+      "sector": "Shadbagh, Lahore",
+      "rating": 4.9,
+      "rating_count": 94,
+      "price_range": {
+        "min": 800,
+        "max": 5800,
+        "currency": "PKR"
+      },
+      "available_slot_count": 8,
+      "next_available_slots": [
+        "2026-05-20T18:00:00+05:00",
+        "2026-05-21T14:00:00+05:00",
+        "2026-05-22T10:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu",
+        "Punjabi"
+      ],
+      "bio": "Retired school teacher. Still sharp. Teaches math and science to matric students.",
+      "years_experience": 2,
+      "cultural_background": null,
+      "distance_km": 262.3
+    },
+    {
+      "provider_id": "P0031",
+      "name": "Iqbal Awan",
+      "category": "Tutor",
+      "sector": "Daroghewala, Lahore",
+      "rating": 4.6,
+      "rating_count": 216,
+      "price_range": {
+        "min": 3000,
+        "max": 6000,
+        "currency": "PKR"
+      },
+      "available_slot_count": 3,
+      "next_available_slots": [
+        "2026-05-24T09:00:00+05:00",
+        "2026-05-25T18:00:00+05:00",
+        "2026-05-28T18:00:00+05:00"
+      ],
+      "verified": false,
+      "languages_spoken": [
+        "Urdu",
+        "Punjabi",
+        "English"
+      ],
+      "bio": "Retired school teacher. Still sharp. Teaches math and science to matric students.",
+      "years_experience": 4,
+      "cultural_background": null,
+      "distance_km": 260.5
+    },
+    {
+      "provider_id": "P0034",
+      "name": "Hameed",
+      "category": "Tutor",
+      "sector": "Bhatti Gate, Lahore",
+      "rating": 3.9,
+      "rating_count": 14,
+      "price_range": {
+        "min": 2000,
+        "max": 3500,
+        "currency": "PKR"
+      },
+      "available_slot_count": 2,
+      "next_available_slots": [
+        "2026-05-27T11:00:00+05:00",
+        "2026-05-28T09:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Punjabi",
+        "Urdu"
+      ],
+      "bio": "Teaches basic computer skills — MS Office, typing, internet basics.",
+      "years_experience": 12,
+      "cultural_background": null,
+      "distance_km": 262.4
+    },
+    {
+      "provider_id": "P0046",
+      "name": "Shabbir",
+      "category": "Tutor",
+      "sector": "Madina Town, Faisalabad",
+      "rating": 3.2,
+      "rating_count": 134,
+      "price_range": {
+        "min": 3000,
+        "max": 5000,
+        "currency": "PKR"
+      },
+      "available_slot_count": 4,
+      "next_available_slots": [
+        "2026-05-20T09:00:00+05:00",
+        "2026-05-22T15:00:00+05:00",
+        "2026-05-25T17:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu"
+      ],
+      "bio": "BA in English Literature. Tutors O-level and A-level English from home.",
+      "years_experience": 5,
+      "cultural_background": null,
+      "distance_km": 254.4
+    },
+    {
+      "provider_id": "P0050",
+      "name": "Nasreen Akhtar",
+      "category": "Tutor",
+      "sector": "Jhang Bazaar, Faisalabad",
+      "rating": 4.0,
+      "rating_count": 34,
+      "price_range": {
+        "min": 1200,
+        "max": 3700,
+        "currency": "PKR"
+      },
+      "available_slot_count": 7,
+      "next_available_slots": [
+        "2026-05-20T11:00:00+05:00",
+        "2026-05-21T18:00:00+05:00",
+        "2026-05-22T11:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu",
+        "Punjabi"
+      ],
+      "bio": "Famous for stitching bridal lehengas for Lahori weddings. Also tutors Urdu literature to college girls in the evenings.",
+      "years_experience": 11,
+      "cultural_background": "Saraiki",
+      "distance_km": 252.3
+    },
+    {
+      "provider_id": "P0051",
+      "name": "Dawood Khattak",
+      "category": "Tutor",
+      "sector": "Madina Town, Faisalabad",
+      "rating": 3.1,
+      "rating_count": 217,
+      "price_range": {
+        "min": 800,
+        "max": 4800,
+        "currency": "PKR"
+      },
+      "available_slot_count": 6,
+      "next_available_slots": [
+        "2026-05-20T09:00:00+05:00",
+        "2026-05-23T18:00:00+05:00",
+        "2026-05-24T18:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu",
+        "Punjabi"
+      ],
+      "bio": "MA in Urdu literature. Specializes in board exam preparation.",
+      "years_experience": 17,
+      "cultural_background": null,
+      "distance_km": 254.8
+    },
+    {
+      "provider_id": "P0055",
+      "name": "Nargis Marri",
+      "category": "Tutor",
+      "sector": "D-Ground, Faisalabad",
+      "rating": 4.5,
+      "rating_count": 204,
+      "price_range": {
+        "min": 2500,
+        "max": 4500,
+        "currency": "PKR"
+      },
+      "available_slot_count": 8,
+      "next_available_slots": [
+        "2026-05-20T10:00:00+05:00",
+        "2026-05-22T10:00:00+05:00",
+        "2026-05-23T15:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu",
+        "Saraiki"
+      ],
+      "bio": "Former government school headmaster. Strict but effective.",
+      "years_experience": 28,
+      "cultural_background": "Punjabi",
+      "distance_km": 251.2
+    },
+    {
+      "provider_id": "P0056",
+      "name": "Amanullah Khattak",
+      "category": "Tutor",
+      "sector": "Ghulam Mohammadabad, Faisalabad",
+      "rating": 3.4,
+      "rating_count": 25,
+      "price_range": {
+        "min": 500,
+        "max": 3000,
+        "currency": "PKR"
+      },
+      "available_slot_count": 8,
+      "next_available_slots": [
+        "2026-05-20T10:00:00+05:00",
+        "2026-05-21T09:00:00+05:00",
+        "2026-05-22T18:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu"
+      ],
+      "bio": "BA in English Literature. Tutors O-level and A-level English from home.",
+      "years_experience": 6,
+      "cultural_background": null,
+      "distance_km": 251.7
+    },
+    {
+      "provider_id": "P0057",
+      "name": "Razia Gujjar",
+      "category": "Tutor",
+      "sector": "Rail Bazaar, Faisalabad",
+      "rating": 3.1,
+      "rating_count": 219,
+      "price_range": {
+        "min": 500,
+        "max": 5500,
+        "currency": "PKR"
+      },
+      "available_slot_count": 6,
+      "next_available_slots": [
+        "2026-05-20T16:00:00+05:00",
+        "2026-05-22T17:00:00+05:00",
+        "2026-05-23T14:00:00+05:00"
+      ],
+      "verified": false,
+      "languages_spoken": [
+        "Urdu",
+        "Saraiki"
+      ],
+      "bio": "Hafiz who also tutors Arabic and basic English. Popular with madrassah families.",
+      "years_experience": 2,
+      "cultural_background": "Punjabi",
+      "distance_km": 251.6
+    },
+    {
+      "provider_id": "P0063",
+      "name": "Hanif",
+      "category": "Tutor",
+      "sector": "Baldia Town, Karachi",
+      "rating": 4.8,
+      "rating_count": 169,
+      "price_range": {
+        "min": 3000,
+        "max": 8000,
+        "currency": "PKR"
+      },
+      "available_slot_count": 4,
+      "next_available_slots": [
+        "2026-05-21T11:00:00+05:00",
+        "2026-05-22T17:00:00+05:00",
+        "2026-05-26T10:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu",
+        "Sindhi"
+      ],
+      "bio": "Hafiz who also tutors Arabic and basic English. Popular with madrassah families.",
+      "years_experience": 5,
+      "cultural_background": null,
+      "distance_km": 1139.3
+    },
+    {
+      "provider_id": "P0065",
+      "name": "Mushtaq",
+      "category": "Tutor",
+      "sector": "Baldia Town, Karachi",
+      "rating": 3.6,
+      "rating_count": 23,
+      "price_range": {
+        "min": 1000,
+        "max": 4000,
+        "currency": "PKR"
+      },
+      "available_slot_count": 5,
+      "next_available_slots": [
+        "2026-05-21T11:00:00+05:00",
+        "2026-05-22T16:00:00+05:00",
+        "2026-05-23T16:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu",
+        "Balochi"
+      ],
+      "bio": "Runs a small tuition center from her house in Baldia Town. 30 students.",
+      "years_experience": 1,
+      "cultural_background": null,
+      "distance_km": 1139.4
+    },
+    {
+      "provider_id": "P0068",
+      "name": "Aziz Siddiqui",
+      "category": "Tutor",
+      "sector": "Lyari, Karachi",
+      "rating": 3.7,
+      "rating_count": 162,
+      "price_range": {
+        "min": 1500,
+        "max": 5500,
+        "currency": "PKR"
+      },
+      "available_slot_count": 6,
+      "next_available_slots": [
+        "2026-05-22T17:00:00+05:00",
+        "2026-05-23T15:00:00+05:00",
+        "2026-05-24T10:00:00+05:00"
+      ],
+      "verified": false,
+      "languages_spoken": [
+        "Urdu",
+        "Sindhi"
+      ],
+      "bio": "Engineering dropout. Teaches physics and math better than most degree holders.",
+      "years_experience": 12,
+      "cultural_background": "Muhajir",
+      "distance_km": 1143.0
+    },
+    {
+      "provider_id": "P0072",
+      "name": "Fatima Bibi",
+      "category": "Tutor",
+      "sector": "Hazara Town, Quetta",
+      "rating": 3.8,
+      "rating_count": 126,
+      "price_range": {
+        "min": 1200,
+        "max": 3700,
+        "currency": "PKR"
+      },
+      "available_slot_count": 4,
+      "next_available_slots": [
+        "2026-05-20T14:00:00+05:00",
+        "2026-05-21T09:00:00+05:00",
+        "2026-05-24T17:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu",
+        "Balochi"
+      ],
+      "bio": "Engineering dropout. Teaches physics and math better than most degree holders.",
+      "years_experience": 1,
+      "cultural_background": null,
+      "distance_km": 693.7
+    },
+    {
+      "provider_id": "P0073",
+      "name": "Fida Hussain",
+      "category": "Tutor",
+      "sector": "Hazara Town, Quetta",
+      "rating": 4.8,
+      "rating_count": 90,
+      "price_range": {
+        "min": 3000,
+        "max": 5000,
+        "currency": "PKR"
+      },
+      "available_slot_count": 5,
+      "next_available_slots": [
+        "2026-05-20T11:00:00+05:00",
+        "2026-05-22T09:00:00+05:00",
+        "2026-05-23T18:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu",
+        "Pashto"
+      ],
+      "bio": "Hafiz who also tutors Arabic and basic English. Popular with madrassah families.",
+      "years_experience": 12,
+      "cultural_background": "Pashtun",
+      "distance_km": 693.6
+    },
+    {
+      "provider_id": "P0081",
+      "name": "Amina",
+      "category": "Tutor",
+      "sector": "Kohati Gate, Peshawar",
+      "rating": 3.3,
+      "rating_count": 142,
+      "price_range": {
+        "min": 1200,
+        "max": 3700,
+        "currency": "PKR"
+      },
+      "available_slot_count": 8,
+      "next_available_slots": [
+        "2026-05-20T14:00:00+05:00",
+        "2026-05-21T16:00:00+05:00",
+        "2026-05-23T10:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Pashto",
+        "Urdu",
+        "English"
+      ],
+      "bio": "College student earning her way through fees by tutoring neighborhood kids.",
+      "years_experience": 9,
+      "cultural_background": "Pashtun",
+      "distance_km": 141.3
+    },
+    {
+      "provider_id": "P0084",
+      "name": "Manzoor Bugti",
+      "category": "Tutor",
+      "sector": "Qissa Khwani, Peshawar",
+      "rating": 3.9,
+      "rating_count": 143,
+      "price_range": {
+        "min": 500,
+        "max": 4500,
+        "currency": "PKR"
+      },
+      "available_slot_count": 8,
+      "next_available_slots": [
+        "2026-05-20T11:00:00+05:00",
+        "2026-05-21T10:00:00+05:00",
+        "2026-05-22T09:00:00+05:00"
+      ],
+      "verified": false,
+      "languages_spoken": [
+        "Pashto",
+        "Urdu"
+      ],
+      "bio": "Retired school teacher. Still sharp. Teaches math and science to matric students.",
+      "years_experience": 15,
+      "cultural_background": null,
+      "distance_km": 140.8
+    },
+    {
+      "provider_id": "P0085",
+      "name": "Razia Lashari",
+      "category": "Tutor",
+      "sector": "Faqirabad, Peshawar",
+      "rating": 3.2,
+      "rating_count": 29,
+      "price_range": {
+        "min": 1200,
+        "max": 3200,
+        "currency": "PKR"
+      },
+      "available_slot_count": 6,
+      "next_available_slots": [
+        "2026-05-20T15:00:00+05:00",
+        "2026-05-22T14:00:00+05:00",
+        "2026-05-23T14:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Pashto",
+        "Urdu"
+      ],
+      "bio": "MA in Urdu literature. Specializes in board exam preparation.",
+      "years_experience": 9,
+      "cultural_background": null,
+      "distance_km": 141.9
+    },
+    {
+      "provider_id": "P0088",
+      "name": "Arshad",
+      "category": "Tutor",
+      "sector": "Faqirabad, Peshawar",
+      "rating": 3.6,
+      "rating_count": 68,
+      "price_range": {
+        "min": 800,
+        "max": 3300,
+        "currency": "PKR"
+      },
+      "available_slot_count": 5,
+      "next_available_slots": [
+        "2026-05-20T16:00:00+05:00",
+        "2026-05-22T10:00:00+05:00",
+        "2026-05-26T09:00:00+05:00"
+      ],
+      "verified": false,
+      "languages_spoken": [
+        "Pashto",
+        "Urdu"
+      ],
+      "bio": "College student earning her way through fees by tutoring neighborhood kids.",
+      "years_experience": 7,
+      "cultural_background": null,
+      "distance_km": 141.9
+    },
+    {
+      "provider_id": "P0089",
+      "name": "Amanullah Gujjar",
+      "category": "Tutor",
+      "sector": "Qissa Khwani, Peshawar",
+      "rating": 4.5,
+      "rating_count": 103,
+      "price_range": {
+        "min": 2500,
+        "max": 5500,
+        "currency": "PKR"
+      },
+      "available_slot_count": 7,
+      "next_available_slots": [
+        "2026-05-20T10:00:00+05:00",
+        "2026-05-21T18:00:00+05:00",
+        "2026-05-23T15:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Pashto",
+        "Urdu"
+      ],
+      "bio": "BA in English Literature. Tutors O-level and A-level English from home.",
+      "years_experience": 10,
+      "cultural_background": null,
+      "distance_km": 140.9
+    },
+    {
+      "provider_id": "P0090",
+      "name": "Saleem Achakzai",
+      "category": "Tutor",
+      "sector": "Kohati Gate, Peshawar",
+      "rating": 3.6,
+      "rating_count": 106,
+      "price_range": {
+        "min": 2500,
+        "max": 5000,
+        "currency": "PKR"
+      },
+      "available_slot_count": 4,
+      "next_available_slots": [
+        "2026-05-22T18:00:00+05:00",
+        "2026-05-26T14:00:00+05:00",
+        "2026-05-27T16:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Pashto",
+        "Urdu"
+      ],
+      "bio": "Teaches basic computer skills — MS Office, typing, internet basics.",
+      "years_experience": 14,
+      "cultural_background": "Pashtun",
+      "distance_km": 141.3
+    },
+    {
+      "provider_id": "P0091",
+      "name": "Gulzar",
+      "category": "Tutor",
+      "sector": "Danyor, Gilgit",
+      "rating": 4.8,
+      "rating_count": 56,
+      "price_range": {
+        "min": 1000,
+        "max": 6000,
+        "currency": "PKR"
+      },
+      "available_slot_count": 2,
+      "next_available_slots": [
+        "2026-05-23T15:00:00+05:00",
+        "2026-05-27T18:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu",
+        "Shina"
+      ],
+      "bio": "Hafiz who also tutors Arabic and basic English. Popular with madrassah families.",
+      "years_experience": 14,
+      "cultural_background": null,
+      "distance_km": 276.0
+    },
+    {
+      "provider_id": "P0092",
+      "name": "Akbar Mir",
+      "category": "Tutor",
+      "sector": "Konodas, Gilgit",
+      "rating": 4.5,
+      "rating_count": 23,
+      "price_range": {
+        "min": 3000,
+        "max": 7000,
+        "currency": "PKR"
+      },
+      "available_slot_count": 6,
+      "next_available_slots": [
+        "2026-05-20T11:00:00+05:00",
+        "2026-05-22T09:00:00+05:00",
+        "2026-05-24T16:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu"
+      ],
+      "bio": "Runs a small tuition center from her house in Konodas. 30 students.",
+      "years_experience": 6,
+      "cultural_background": "Gilgiti",
+      "distance_km": 274.3
+    },
+    {
+      "provider_id": "P0095",
+      "name": "Gul Sher Shah",
+      "category": "Tutor",
+      "sector": "Konodas, Gilgit",
+      "rating": 4.1,
+      "rating_count": 209,
+      "price_range": {
+        "min": 1000,
+        "max": 3500,
+        "currency": "PKR"
+      },
+      "available_slot_count": 3,
+      "next_available_slots": [
+        "2026-05-21T16:00:00+05:00",
+        "2026-05-22T17:00:00+05:00",
+        "2026-05-27T18:00:00+05:00"
+      ],
+      "verified": false,
+      "languages_spoken": [
+        "Urdu",
+        "Shina"
+      ],
+      "bio": "Engineering dropout. Teaches physics and math better than most degree holders.",
+      "years_experience": 12,
+      "cultural_background": "Gilgiti",
+      "distance_km": 274.2
+    },
+    {
+      "provider_id": "P0097",
+      "name": "Muhammad Aslam",
+      "category": "Tutor",
+      "sector": "Kashrote, Gilgit",
+      "rating": 3.8,
+      "rating_count": 130,
+      "price_range": {
+        "min": 3000,
+        "max": 6000,
+        "currency": "PKR"
+      },
+      "available_slot_count": 2,
+      "next_available_slots": [
+        "2026-05-20T15:00:00+05:00",
+        "2026-05-23T09:00:00+05:00"
+      ],
+      "verified": true,
+      "languages_spoken": [
+        "Urdu"
+      ],
+      "bio": "College student earning her way through fees by tutoring neighborhood kids.",
+      "years_experience": 13,
+      "cultural_background": null,
+      "distance_km": 273.8
+    },
+    {
+      "provider_id": "P0098",
+      "name": "Rashid",
+      "category": "Tutor",
+      "sector": "Kashrote, Gilgit",
+      "rating": 4.5,
+      "rating_count": 215,
+      "price_range": {
+        "min": 500,
+        "max": 5500,
+        "currency": "PKR"
+      },
+      "available_slot_count": 6,
+      "next_available_slots": [
+        "2026-05-20T15:00:00+05:00",
+        "2026-05-21T10:00:00+05:00",
+        "2026-05-22T18:00:00+05:00"
+      ],
+      "verified": false,
+      "languages_spoken": [
+        "Urdu",
+        "Shina",
+        "English"
+      ],
+      "bio": "Teaches basic computer skills — MS Office, typing, internet basics.",
+      "years_experience": 17,
+      "cultural_background": null,
+      "distance_km": 273.9
+    }
+  ],
+  "prompt_sent_to_llm": "You are the Ranking Agent for Daira-e-Hunar, a service marketplace for Pakistan's informal economy. Your job: given a user's service request and a list of candidate providers, rank the providers and explain WHY each one is recommended or rejected.\n\n## Your output\nReturn up to 3 ranked providers in the `top_3` list, ordered by suitability (best first). If fewer than 3 candidates exist, return fewer — do NOT pad with duplicates or fabricate providers. Put all remaining candidates in the `rejected` list with a short reason.\n\n## PILLAR 1: TONE MIRRORING (CRITICAL)\nWrite ALL reasoning text in the SAME language and formality level the user used:\n- If detected_language=\"roman_urdu\" and formality_level=\"slang\" → write reasoning in casual Roman Urdu with slang (use \"yaar\", \"bhai\", \"behtareen\", \"acha\" etc.)\n- If detected_language=\"roman_urdu\" and formality_level=\"casual\" → write reasoning in normal Roman Urdu\n- If detected_language=\"roman_urdu\" and formality_level=\"formal\" → write reasoning in polite Roman Urdu (use \"aap\", \"behtar\")\n- If detected_language=\"urdu\" and formality_level=\"formal\" → write reasoning in formal Urdu script\n- If detected_language=\"urdu\" and formality_level=\"casual\" → write reasoning in conversational Urdu script\n- If detected_language=\"english\" → write reasoning in English\n- If code_switching=true → mirror the English/Urdu mix in your reasoning\n\nExamples:\n- Slang Roman Urdu: \"Yaar ye banda sab se qareeb hai, sirf 2 km door. Rating bhi 4.5 hai aur 12 saal ka tajurba hai. AC split ka kaam karta hai, kal subah ke liye slot bhi khali hai.\"\n- Formal Urdu script: \"یہ فراہم کنندہ آپ کے علاقے سے صرف ۲ کلومیٹر کے فاصلے پر ہیں۔ ان کی درجہ بندی ۴.۵ ہے اور ۱۲ سال کا تجربہ رکھتے ہیں۔ کل صبح کے لیے وقت دستیاب ہے۔\"\n- English: \"This provider is only 2 km away with a 4.5 rating and 12 years of experience. They specialize in split AC installation and have a slot available tomorrow morning.\"\n\n## PILLAR 2: READ THE BIO\nThe `bio` field carries human signal that ratings don't. Reference specific bio details when they inform the ranking:\n- A provider whose bio mentions specialization in the requested service type is a strength.\n- A provider whose bio implies a DIFFERENT specialty than their listed category is a RED FLAG. For example, a \"Tutor\" whose bio is about \"stitching bridal lehengas\" should be deprioritized and the mismatch should be flagged in the reasoning.\n- Bio details about reliability, family tradition, or specific expertise are worth mentioning.\n\n## PILLAR 3: LANGUAGE & REGIONAL COMPATIBILITY\nWhen a provider's `languages_spoken` overlaps with the user's likely language (inferred from detected_language), or when the provider is from the same locality as the user's requested area, you may note this as a practical communication or local-knowledge advantage.\n- NEVER frame this as ethnicity matching. Talk about language and locality, not ethnicity.\n- If the user explicitly stated a language preference (e.g. \"Pashto bolne wala chahiye\"), honor it as a HARD preference and surface it prominently in the reasoning. Deprioritize providers who don't speak the requested language.\n\n## PILLAR 4: CONSISTENCY REASONING\nIf `requested_time` and `urgency` appear inconsistent:\n- \"kal subah\" (tomorrow morning) + urgency=\"this_week\" → the specific signal \"kal subah\" is more precise; use tomorrow morning as the actual constraint.\n- Mention the reconciliation briefly in the reasoning (e.g. \"User ne 'kal subah' kaha, is liye kal ka slot check kiya\").\n\n## PILLAR 5: GROUNDED REASONING\nEach reasoning paragraph MUST be 2-4 sentences. Name SPECIFIC facts:\n- Distance in km (use the distance_km field provided)\n- Rating and rating_count\n- Number of available slots and specific slot times when relevant\n- Bio details that matter\n- Price range\n- Verified status\nNo generic platitudes. No performative empathy. Concrete and grounded.\n\n## Scoring guidelines\n- Distance: closer is better, but not the only factor\n- Rating: weight higher ratings, but also consider rating_count (a 4.8 with 5 reviews is less reliable than a 4.3 with 150 reviews)\n- Availability: providers with slots matching the user's requested_time score higher\n- Bio relevance: bio matching the service type is a plus; bio mismatching is a penalty\n- Verified: slight bonus for verified providers\n- Price: reasonable price ranges preferred; very cheap + low rating = red flag\n- Language: matching the user's language is a practical advantage\n\n## Input format\nYou will receive:\n- The user's original request and parsed intent fields\n- A list of candidate providers with their details and pre-computed distance_km\n\nRank them and explain your reasoning.\n\n---\n\n## User Intent\n```json\n{\n  \"raw_input\": \"I desperately need a tutor in Islamabad today\",\n  \"service_type\": \"Tutor\",\n  \"location_sector\": \"Islamabad\",\n  \"requested_time\": \"today\",\n  \"urgency\": \"today\",\n  \"detected_language\": \"english\",\n  \"formality_level\": \"casual\",\n  \"literacy_register\": \"high\",\n  \"code_switching\": false,\n  \"constraints\": {\n    \"gender_preference\": null,\n    \"budget_max_pkr\": null\n  }\n}\n```\n\n## Candidate Providers\n```json\n[\n  {\n    \"provider_id\": \"P0009\",\n    \"name\": \"Mumtaz\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Pirwadhai, Rawalpindi\",\n    \"rating\": 4.1,\n    \"rating_count\": 143,\n    \"price_range\": {\n      \"min\": 2000,\n      \"max\": 3500,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 6,\n    \"next_available_slots\": [\n      \"2026-05-20T14:00:00+05:00\",\n      \"2026-05-21T14:00:00+05:00\",\n      \"2026-05-22T10:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Punjabi\"\n    ],\n    \"bio\": \"Retired school teacher. Still sharp. Teaches math and science to matric students.\",\n    \"years_experience\": 13,\n    \"cultural_background\": \"Pashtun\",\n    \"distance_km\": 8.2\n  },\n  {\n    \"provider_id\": \"P0010\",\n    \"name\": \"Gulzar Bugti\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Saddar, Rawalpindi\",\n    \"rating\": 3.5,\n    \"rating_count\": 106,\n    \"price_range\": {\n      \"min\": 1500,\n      \"max\": 4500,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 8,\n    \"next_available_slots\": [\n      \"2026-05-20T11:00:00+05:00\",\n      \"2026-05-21T15:00:00+05:00\",\n      \"2026-05-22T11:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Punjabi\",\n      \"English\"\n    ],\n    \"bio\": \"Engineering dropout. Teaches physics and math better than most degree holders.\",\n    \"years_experience\": 15,\n    \"cultural_background\": \"Pashtun\",\n    \"distance_km\": 9.8\n  },\n  {\n    \"provider_id\": \"P0014\",\n    \"name\": \"Kausar Marri\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Tench Bhata, Rawalpindi\",\n    \"rating\": 3.8,\n    \"rating_count\": 76,\n    \"price_range\": {\n      \"min\": 1500,\n      \"max\": 4000,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 5,\n    \"next_available_slots\": [\n      \"2026-05-20T09:00:00+05:00\",\n      \"2026-05-22T17:00:00+05:00\",\n      \"2026-05-25T15:00:00+05:00\"\n    ],\n    \"verified\": false,\n    \"languages_spoken\": [\n      \"Urdu\"\n    ],\n    \"bio\": \"Hafiz who also tutors Arabic and basic English. Popular with madrassah families.\",\n    \"years_experience\": 7,\n    \"cultural_background\": null,\n    \"distance_km\": 11.0\n  },\n  {\n    \"provider_id\": \"P0020\",\n    \"name\": \"Imran\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Pirwadhai, Rawalpindi\",\n    \"rating\": 4.7,\n    \"rating_count\": 156,\n    \"price_range\": {\n      \"min\": 500,\n      \"max\": 2000,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 3,\n    \"next_available_slots\": [\n      \"2026-05-20T16:00:00+05:00\",\n      \"2026-05-22T17:00:00+05:00\",\n      \"2026-05-27T15:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Punjabi\"\n    ],\n    \"bio\": \"Runs a small tuition center from her house in Pirwadhai. 30 students.\",\n    \"years_experience\": 6,\n    \"cultural_background\": null,\n    \"distance_km\": 7.8\n  },\n  {\n    \"provider_id\": \"P0021\",\n    \"name\": \"Bushra Gujjar\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Shadbagh, Lahore\",\n    \"rating\": 4.9,\n    \"rating_count\": 94,\n    \"price_range\": {\n      \"min\": 800,\n      \"max\": 5800,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 8,\n    \"next_available_slots\": [\n      \"2026-05-20T18:00:00+05:00\",\n      \"2026-05-21T14:00:00+05:00\",\n      \"2026-05-22T10:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Punjabi\"\n    ],\n    \"bio\": \"Retired school teacher. Still sharp. Teaches math and science to matric students.\",\n    \"years_experience\": 2,\n    \"cultural_background\": null,\n    \"distance_km\": 262.3\n  },\n  {\n    \"provider_id\": \"P0031\",\n    \"name\": \"Iqbal Awan\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Daroghewala, Lahore\",\n    \"rating\": 4.6,\n    \"rating_count\": 216,\n    \"price_range\": {\n      \"min\": 3000,\n      \"max\": 6000,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 3,\n    \"next_available_slots\": [\n      \"2026-05-24T09:00:00+05:00\",\n      \"2026-05-25T18:00:00+05:00\",\n      \"2026-05-28T18:00:00+05:00\"\n    ],\n    \"verified\": false,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Punjabi\",\n      \"English\"\n    ],\n    \"bio\": \"Retired school teacher. Still sharp. Teaches math and science to matric students.\",\n    \"years_experience\": 4,\n    \"cultural_background\": null,\n    \"distance_km\": 260.5\n  },\n  {\n    \"provider_id\": \"P0034\",\n    \"name\": \"Hameed\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Bhatti Gate, Lahore\",\n    \"rating\": 3.9,\n    \"rating_count\": 14,\n    \"price_range\": {\n      \"min\": 2000,\n      \"max\": 3500,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 2,\n    \"next_available_slots\": [\n      \"2026-05-27T11:00:00+05:00\",\n      \"2026-05-28T09:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Punjabi\",\n      \"Urdu\"\n    ],\n    \"bio\": \"Teaches basic computer skills — MS Office, typing, internet basics.\",\n    \"years_experience\": 12,\n    \"cultural_background\": null,\n    \"distance_km\": 262.4\n  },\n  {\n    \"provider_id\": \"P0046\",\n    \"name\": \"Shabbir\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Madina Town, Faisalabad\",\n    \"rating\": 3.2,\n    \"rating_count\": 134,\n    \"price_range\": {\n      \"min\": 3000,\n      \"max\": 5000,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 4,\n    \"next_available_slots\": [\n      \"2026-05-20T09:00:00+05:00\",\n      \"2026-05-22T15:00:00+05:00\",\n      \"2026-05-25T17:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\"\n    ],\n    \"bio\": \"BA in English Literature. Tutors O-level and A-level English from home.\",\n    \"years_experience\": 5,\n    \"cultural_background\": null,\n    \"distance_km\": 254.4\n  },\n  {\n    \"provider_id\": \"P0050\",\n    \"name\": \"Nasreen Akhtar\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Jhang Bazaar, Faisalabad\",\n    \"rating\": 4.0,\n    \"rating_count\": 34,\n    \"price_range\": {\n      \"min\": 1200,\n      \"max\": 3700,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 7,\n    \"next_available_slots\": [\n      \"2026-05-20T11:00:00+05:00\",\n      \"2026-05-21T18:00:00+05:00\",\n      \"2026-05-22T11:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Punjabi\"\n    ],\n    \"bio\": \"Famous for stitching bridal lehengas for Lahori weddings. Also tutors Urdu literature to college girls in the evenings.\",\n    \"years_experience\": 11,\n    \"cultural_background\": \"Saraiki\",\n    \"distance_km\": 252.3\n  },\n  {\n    \"provider_id\": \"P0051\",\n    \"name\": \"Dawood Khattak\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Madina Town, Faisalabad\",\n    \"rating\": 3.1,\n    \"rating_count\": 217,\n    \"price_range\": {\n      \"min\": 800,\n      \"max\": 4800,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 6,\n    \"next_available_slots\": [\n      \"2026-05-20T09:00:00+05:00\",\n      \"2026-05-23T18:00:00+05:00\",\n      \"2026-05-24T18:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Punjabi\"\n    ],\n    \"bio\": \"MA in Urdu literature. Specializes in board exam preparation.\",\n    \"years_experience\": 17,\n    \"cultural_background\": null,\n    \"distance_km\": 254.8\n  },\n  {\n    \"provider_id\": \"P0055\",\n    \"name\": \"Nargis Marri\",\n    \"category\": \"Tutor\",\n    \"sector\": \"D-Ground, Faisalabad\",\n    \"rating\": 4.5,\n    \"rating_count\": 204,\n    \"price_range\": {\n      \"min\": 2500,\n      \"max\": 4500,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 8,\n    \"next_available_slots\": [\n      \"2026-05-20T10:00:00+05:00\",\n      \"2026-05-22T10:00:00+05:00\",\n      \"2026-05-23T15:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Saraiki\"\n    ],\n    \"bio\": \"Former government school headmaster. Strict but effective.\",\n    \"years_experience\": 28,\n    \"cultural_background\": \"Punjabi\",\n    \"distance_km\": 251.2\n  },\n  {\n    \"provider_id\": \"P0056\",\n    \"name\": \"Amanullah Khattak\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Ghulam Mohammadabad, Faisalabad\",\n    \"rating\": 3.4,\n    \"rating_count\": 25,\n    \"price_range\": {\n      \"min\": 500,\n      \"max\": 3000,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 8,\n    \"next_available_slots\": [\n      \"2026-05-20T10:00:00+05:00\",\n      \"2026-05-21T09:00:00+05:00\",\n      \"2026-05-22T18:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\"\n    ],\n    \"bio\": \"BA in English Literature. Tutors O-level and A-level English from home.\",\n    \"years_experience\": 6,\n    \"cultural_background\": null,\n    \"distance_km\": 251.7\n  },\n  {\n    \"provider_id\": \"P0057\",\n    \"name\": \"Razia Gujjar\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Rail Bazaar, Faisalabad\",\n    \"rating\": 3.1,\n    \"rating_count\": 219,\n    \"price_range\": {\n      \"min\": 500,\n      \"max\": 5500,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 6,\n    \"next_available_slots\": [\n      \"2026-05-20T16:00:00+05:00\",\n      \"2026-05-22T17:00:00+05:00\",\n      \"2026-05-23T14:00:00+05:00\"\n    ],\n    \"verified\": false,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Saraiki\"\n    ],\n    \"bio\": \"Hafiz who also tutors Arabic and basic English. Popular with madrassah families.\",\n    \"years_experience\": 2,\n    \"cultural_background\": \"Punjabi\",\n    \"distance_km\": 251.6\n  },\n  {\n    \"provider_id\": \"P0063\",\n    \"name\": \"Hanif\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Baldia Town, Karachi\",\n    \"rating\": 4.8,\n    \"rating_count\": 169,\n    \"price_range\": {\n      \"min\": 3000,\n      \"max\": 8000,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 4,\n    \"next_available_slots\": [\n      \"2026-05-21T11:00:00+05:00\",\n      \"2026-05-22T17:00:00+05:00\",\n      \"2026-05-26T10:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Sindhi\"\n    ],\n    \"bio\": \"Hafiz who also tutors Arabic and basic English. Popular with madrassah families.\",\n    \"years_experience\": 5,\n    \"cultural_background\": null,\n    \"distance_km\": 1139.3\n  },\n  {\n    \"provider_id\": \"P0065\",\n    \"name\": \"Mushtaq\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Baldia Town, Karachi\",\n    \"rating\": 3.6,\n    \"rating_count\": 23,\n    \"price_range\": {\n      \"min\": 1000,\n      \"max\": 4000,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 5,\n    \"next_available_slots\": [\n      \"2026-05-21T11:00:00+05:00\",\n      \"2026-05-22T16:00:00+05:00\",\n      \"2026-05-23T16:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Balochi\"\n    ],\n    \"bio\": \"Runs a small tuition center from her house in Baldia Town. 30 students.\",\n    \"years_experience\": 1,\n    \"cultural_background\": null,\n    \"distance_km\": 1139.4\n  },\n  {\n    \"provider_id\": \"P0068\",\n    \"name\": \"Aziz Siddiqui\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Lyari, Karachi\",\n    \"rating\": 3.7,\n    \"rating_count\": 162,\n    \"price_range\": {\n      \"min\": 1500,\n      \"max\": 5500,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 6,\n    \"next_available_slots\": [\n      \"2026-05-22T17:00:00+05:00\",\n      \"2026-05-23T15:00:00+05:00\",\n      \"2026-05-24T10:00:00+05:00\"\n    ],\n    \"verified\": false,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Sindhi\"\n    ],\n    \"bio\": \"Engineering dropout. Teaches physics and math better than most degree holders.\",\n    \"years_experience\": 12,\n    \"cultural_background\": \"Muhajir\",\n    \"distance_km\": 1143.0\n  },\n  {\n    \"provider_id\": \"P0072\",\n    \"name\": \"Fatima Bibi\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Hazara Town, Quetta\",\n    \"rating\": 3.8,\n    \"rating_count\": 126,\n    \"price_range\": {\n      \"min\": 1200,\n      \"max\": 3700,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 4,\n    \"next_available_slots\": [\n      \"2026-05-20T14:00:00+05:00\",\n      \"2026-05-21T09:00:00+05:00\",\n      \"2026-05-24T17:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Balochi\"\n    ],\n    \"bio\": \"Engineering dropout. Teaches physics and math better than most degree holders.\",\n    \"years_experience\": 1,\n    \"cultural_background\": null,\n    \"distance_km\": 693.7\n  },\n  {\n    \"provider_id\": \"P0073\",\n    \"name\": \"Fida Hussain\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Hazara Town, Quetta\",\n    \"rating\": 4.8,\n    \"rating_count\": 90,\n    \"price_range\": {\n      \"min\": 3000,\n      \"max\": 5000,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 5,\n    \"next_available_slots\": [\n      \"2026-05-20T11:00:00+05:00\",\n      \"2026-05-22T09:00:00+05:00\",\n      \"2026-05-23T18:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Pashto\"\n    ],\n    \"bio\": \"Hafiz who also tutors Arabic and basic English. Popular with madrassah families.\",\n    \"years_experience\": 12,\n    \"cultural_background\": \"Pashtun\",\n    \"distance_km\": 693.6\n  },\n  {\n    \"provider_id\": \"P0081\",\n    \"name\": \"Amina\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Kohati Gate, Peshawar\",\n    \"rating\": 3.3,\n    \"rating_count\": 142,\n    \"price_range\": {\n      \"min\": 1200,\n      \"max\": 3700,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 8,\n    \"next_available_slots\": [\n      \"2026-05-20T14:00:00+05:00\",\n      \"2026-05-21T16:00:00+05:00\",\n      \"2026-05-23T10:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Pashto\",\n      \"Urdu\",\n      \"English\"\n    ],\n    \"bio\": \"College student earning her way through fees by tutoring neighborhood kids.\",\n    \"years_experience\": 9,\n    \"cultural_background\": \"Pashtun\",\n    \"distance_km\": 141.3\n  },\n  {\n    \"provider_id\": \"P0084\",\n    \"name\": \"Manzoor Bugti\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Qissa Khwani, Peshawar\",\n    \"rating\": 3.9,\n    \"rating_count\": 143,\n    \"price_range\": {\n      \"min\": 500,\n      \"max\": 4500,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 8,\n    \"next_available_slots\": [\n      \"2026-05-20T11:00:00+05:00\",\n      \"2026-05-21T10:00:00+05:00\",\n      \"2026-05-22T09:00:00+05:00\"\n    ],\n    \"verified\": false,\n    \"languages_spoken\": [\n      \"Pashto\",\n      \"Urdu\"\n    ],\n    \"bio\": \"Retired school teacher. Still sharp. Teaches math and science to matric students.\",\n    \"years_experience\": 15,\n    \"cultural_background\": null,\n    \"distance_km\": 140.8\n  },\n  {\n    \"provider_id\": \"P0085\",\n    \"name\": \"Razia Lashari\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Faqirabad, Peshawar\",\n    \"rating\": 3.2,\n    \"rating_count\": 29,\n    \"price_range\": {\n      \"min\": 1200,\n      \"max\": 3200,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 6,\n    \"next_available_slots\": [\n      \"2026-05-20T15:00:00+05:00\",\n      \"2026-05-22T14:00:00+05:00\",\n      \"2026-05-23T14:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Pashto\",\n      \"Urdu\"\n    ],\n    \"bio\": \"MA in Urdu literature. Specializes in board exam preparation.\",\n    \"years_experience\": 9,\n    \"cultural_background\": null,\n    \"distance_km\": 141.9\n  },\n  {\n    \"provider_id\": \"P0088\",\n    \"name\": \"Arshad\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Faqirabad, Peshawar\",\n    \"rating\": 3.6,\n    \"rating_count\": 68,\n    \"price_range\": {\n      \"min\": 800,\n      \"max\": 3300,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 5,\n    \"next_available_slots\": [\n      \"2026-05-20T16:00:00+05:00\",\n      \"2026-05-22T10:00:00+05:00\",\n      \"2026-05-26T09:00:00+05:00\"\n    ],\n    \"verified\": false,\n    \"languages_spoken\": [\n      \"Pashto\",\n      \"Urdu\"\n    ],\n    \"bio\": \"College student earning her way through fees by tutoring neighborhood kids.\",\n    \"years_experience\": 7,\n    \"cultural_background\": null,\n    \"distance_km\": 141.9\n  },\n  {\n    \"provider_id\": \"P0089\",\n    \"name\": \"Amanullah Gujjar\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Qissa Khwani, Peshawar\",\n    \"rating\": 4.5,\n    \"rating_count\": 103,\n    \"price_range\": {\n      \"min\": 2500,\n      \"max\": 5500,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 7,\n    \"next_available_slots\": [\n      \"2026-05-20T10:00:00+05:00\",\n      \"2026-05-21T18:00:00+05:00\",\n      \"2026-05-23T15:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Pashto\",\n      \"Urdu\"\n    ],\n    \"bio\": \"BA in English Literature. Tutors O-level and A-level English from home.\",\n    \"years_experience\": 10,\n    \"cultural_background\": null,\n    \"distance_km\": 140.9\n  },\n  {\n    \"provider_id\": \"P0090\",\n    \"name\": \"Saleem Achakzai\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Kohati Gate, Peshawar\",\n    \"rating\": 3.6,\n    \"rating_count\": 106,\n    \"price_range\": {\n      \"min\": 2500,\n      \"max\": 5000,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 4,\n    \"next_available_slots\": [\n      \"2026-05-22T18:00:00+05:00\",\n      \"2026-05-26T14:00:00+05:00\",\n      \"2026-05-27T16:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Pashto\",\n      \"Urdu\"\n    ],\n    \"bio\": \"Teaches basic computer skills — MS Office, typing, internet basics.\",\n    \"years_experience\": 14,\n    \"cultural_background\": \"Pashtun\",\n    \"distance_km\": 141.3\n  },\n  {\n    \"provider_id\": \"P0091\",\n    \"name\": \"Gulzar\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Danyor, Gilgit\",\n    \"rating\": 4.8,\n    \"rating_count\": 56,\n    \"price_range\": {\n      \"min\": 1000,\n      \"max\": 6000,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 2,\n    \"next_available_slots\": [\n      \"2026-05-23T15:00:00+05:00\",\n      \"2026-05-27T18:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Shina\"\n    ],\n    \"bio\": \"Hafiz who also tutors Arabic and basic English. Popular with madrassah families.\",\n    \"years_experience\": 14,\n    \"cultural_background\": null,\n    \"distance_km\": 276.0\n  },\n  {\n    \"provider_id\": \"P0092\",\n    \"name\": \"Akbar Mir\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Konodas, Gilgit\",\n    \"rating\": 4.5,\n    \"rating_count\": 23,\n    \"price_range\": {\n      \"min\": 3000,\n      \"max\": 7000,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 6,\n    \"next_available_slots\": [\n      \"2026-05-20T11:00:00+05:00\",\n      \"2026-05-22T09:00:00+05:00\",\n      \"2026-05-24T16:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\"\n    ],\n    \"bio\": \"Runs a small tuition center from her house in Konodas. 30 students.\",\n    \"years_experience\": 6,\n    \"cultural_background\": \"Gilgiti\",\n    \"distance_km\": 274.3\n  },\n  {\n    \"provider_id\": \"P0095\",\n    \"name\": \"Gul Sher Shah\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Konodas, Gilgit\",\n    \"rating\": 4.1,\n    \"rating_count\": 209,\n    \"price_range\": {\n      \"min\": 1000,\n      \"max\": 3500,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 3,\n    \"next_available_slots\": [\n      \"2026-05-21T16:00:00+05:00\",\n      \"2026-05-22T17:00:00+05:00\",\n      \"2026-05-27T18:00:00+05:00\"\n    ],\n    \"verified\": false,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Shina\"\n    ],\n    \"bio\": \"Engineering dropout. Teaches physics and math better than most degree holders.\",\n    \"years_experience\": 12,\n    \"cultural_background\": \"Gilgiti\",\n    \"distance_km\": 274.2\n  },\n  {\n    \"provider_id\": \"P0097\",\n    \"name\": \"Muhammad Aslam\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Kashrote, Gilgit\",\n    \"rating\": 3.8,\n    \"rating_count\": 130,\n    \"price_range\": {\n      \"min\": 3000,\n      \"max\": 6000,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 2,\n    \"next_available_slots\": [\n      \"2026-05-20T15:00:00+05:00\",\n      \"2026-05-23T09:00:00+05:00\"\n    ],\n    \"verified\": true,\n    \"languages_spoken\": [\n      \"Urdu\"\n    ],\n    \"bio\": \"College student earning her way through fees by tutoring neighborhood kids.\",\n    \"years_experience\": 13,\n    \"cultural_background\": null,\n    \"distance_km\": 273.8\n  },\n  {\n    \"provider_id\": \"P0098\",\n    \"name\": \"Rashid\",\n    \"category\": \"Tutor\",\n    \"sector\": \"Kashrote, Gilgit\",\n    \"rating\": 4.5,\n    \"rating_count\": 215,\n    \"price_range\": {\n      \"min\": 500,\n      \"max\": 5500,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 6,\n    \"next_available_slots\": [\n      \"2026-05-20T15:00:00+05:00\",\n      \"2026-05-21T10:00:00+05:00\",\n      \"2026-05-22T18:00:00+05:00\"\n    ],\n    \"verified\": false,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"Shina\",\n      \"English\"\n    ],\n    \"bio\": \"Teaches basic computer skills — MS Office, typing, internet basics.\",\n    \"years_experience\": 17,\n    \"cultural_background\": null,\n    \"distance_km\": 273.9\n  }\n]\n```",
+  "raw_llm_response": "{\n  \"top_3\": [\n    {\n      \"provider_id\": \"P0020\",\n      \"score\": 0.95,\n      \"reasoning\": \"Imran is an excellent choice for a tutor today. She is the closest at only 7.8 km, has a very high rating of 4.7 from 156 reviews, and is available today at 4 PM. Her price range of 500-2000 PKR is also very affordable, and her bio confirms she runs a tuition center.\"\n    },\n    {\n      \"provider_id\": \"P0009\",\n      \"score\": 0.88,\n      \"reasoning\": \"Mumtaz is a strong candidate, available today at 2 PM. He is only 8.2 km away and has a good rating of 4.1 from 143 reviews. His bio as a retired school teacher who teaches math and science makes him highly relevant for tutoring.\"\n    },\n    {\n      \"provider_id\": \"P0010\",\n      \"score\": 0.80,\n      \"reasoning\": \"Gulzar Bugti is available today at 11 AM and speaks English, which is a plus. He's 9.8 km away with a 3.5 rating from 106 reviews. His bio highlights his expertise in physics and math, making him a suitable option.\"\n    }\n  ],\n  \"rejected\": [\n    {\n      \"provider_id\": \"P0014\",\n      \"reason\": \"Kausar Marri's bio is specialized in Arabic and basic English, which might not align with a general tutoring request, and he is not verified.\"\n    },\n    {\n      \"provider_id\": \"P0021\",\n      \"reason\": \"Too far (262.3 km).\"\n    },\n    {\n      \"provider_id\": \"P0031\",\n      \"reason\": \"No available slots today.\"\n    },\n    {\n      \"provider_id\": \"P0034\",\n      \"reason\": \"No available slots today.\"\n    },\n    {\n      \"provider_id\": \"P0046\",\n      \"reason\": \"Too far (254.4 km).\"\n    },\n    {\n      \"provider_id\": \"P0050\",\n      \"reason\": \"Too far (252.3 km).\"\n    },\n    {\n      \"provider_id\": \"P0051\",\n      \"reason\": \"Too far (254.8 km).\"\n    },\n    {\n      \"provider_id\": \"P0055\",\n      \"reason\": \"Too far (251.2 km).\"\n    },\n    {\n      \"provider_id\": \"P0056\",\n      \"reason\": \"Too far (251.7 km).\"\n    },\n    {\n      \"provider_id\": \"P0057\",\n      \"reason\": \"Too far (251.6 km).\"\n    },\n    {\n      \"provider_id\": \"P0063\",\n      \"reason\": \"No available slots today and too far (1139.3 km).\"\n    },\n    {\n      \"provider_id\": \"P0065\",\n      \"reason\": \"No available slots today and too far (1139.4 km).\"\n    },\n    {\n      \"provider_id\": \"P0068\",\n      \"reason\": \"No available slots today and too far (1143.0 km).\"\n    },\n    {\n      \"provider_id\": \"P0072\",\n      \"reason\": \"Too far (693.7 km).\"\n    },\n    {\n      \"provider_id\": \"P0073\",\n      \"reason\": \"Too far (693.6 km).\"\n    },\n    {\n      \"provider_id\": \"P0081\",\n      \"reason\": \"Too far (141.3 km).\"\n    },\n    {\n      \"provider_id\": \"P0084\",\n      \"reason\": \"Too far (140.8 km).\"\n    },\n    {\n      \"provider_id\": \"P0085\",\n      \"reason\": \"Too far (141.9 km).\"\n    },\n    {\n      \"provider_id\": \"P0088\",\n      \"reason\": \"Too far (141.9 km).\"\n    },\n    {\n      \"provider_id\": \"P0089\",\n      \"reason\": \"Too far (140.9 km).\"\n    },\n    {\n      \"provider_id\": \"P0090\",\n      \"reason\": \"No available slots today and too far (141.3 km).\"\n    },\n    {\n      \"provider_id\": \"P0091\",\n      \"reason\": \"No available slots today and too far (276.0 km).\"\n    },\n    {\n      \"provider_id\": \"P0092\",\n      \"reason\": \"Too far (274.3 km).\"\n    },\n    {\n      \"provider_id\": \"P0095\",\n      \"reason\": \"No available slots today and too far (274.2 km).\"\n    },\n    {\n      \"provider_id\": \"P0097\",\n      \"reason\": \"Too far (273.8 km).\"\n    },\n    {\n      \"provider_id\": \"P0098\",\n      \"reason\": \"Too far (273.9 km).\"\n    }\n  ]\n}",
+  "parsed_output": {
+    "top_3": [
+      {
+        "provider_id": "P0020",
+        "score": 0.95,
+        "reasoning": "Imran is an excellent choice for a tutor today. She is the closest at only 7.8 km, has a very high rating of 4.7 from 156 reviews, and is available today at 4 PM. Her price range of 500-2000 PKR is also very affordable, and her bio confirms she runs a tuition center."
+      },
+      {
+        "provider_id": "P0009",
+        "score": 0.88,
+        "reasoning": "Mumtaz is a strong candidate, available today at 2 PM. He is only 8.2 km away and has a good rating of 4.1 from 143 reviews. His bio as a retired school teacher who teaches math and science makes him highly relevant for tutoring."
+      },
+      {
+        "provider_id": "P0010",
+        "score": 0.8,
+        "reasoning": "Gulzar Bugti is available today at 11 AM and speaks English, which is a plus. He's 9.8 km away with a 3.5 rating from 106 reviews. His bio highlights his expertise in physics and math, making him a suitable option."
+      }
+    ],
+    "rejected": [
+      {
+        "provider_id": "P0014",
+        "reason": "Kausar Marri's bio is specialized in Arabic and basic English, which might not align with a general tutoring request, and he is not verified."
+      },
+      {
+        "provider_id": "P0021",
+        "reason": "Too far (262.3 km)."
+      },
+      {
+        "provider_id": "P0031",
+        "reason": "No available slots today."
+      },
+      {
+        "provider_id": "P0034",
+        "reason": "No available slots today."
+      },
+      {
+        "provider_id": "P0046",
+        "reason": "Too far (254.4 km)."
+      },
+      {
+        "provider_id": "P0050",
+        "reason": "Too far (252.3 km)."
+      },
+      {
+        "provider_id": "P0051",
+        "reason": "Too far (254.8 km)."
+      },
+      {
+        "provider_id": "P0055",
+        "reason": "Too far (251.2 km)."
+      },
+      {
+        "provider_id": "P0056",
+        "reason": "Too far (251.7 km)."
+      },
+      {
+        "provider_id": "P0057",
+        "reason": "Too far (251.6 km)."
+      },
+      {
+        "provider_id": "P0063",
+        "reason": "No available slots today and too far (1139.3 km)."
+      },
+      {
+        "provider_id": "P0065",
+        "reason": "No available slots today and too far (1139.4 km)."
+      },
+      {
+        "provider_id": "P0068",
+        "reason": "No available slots today and too far (1143.0 km)."
+      },
+      {
+        "provider_id": "P0072",
+        "reason": "Too far (693.7 km)."
+      },
+      {
+        "provider_id": "P0073",
+        "reason": "Too far (693.6 km)."
+      },
+      {
+        "provider_id": "P0081",
+        "reason": "Too far (141.3 km)."
+      },
+      {
+        "provider_id": "P0084",
+        "reason": "Too far (140.8 km)."
+      },
+      {
+        "provider_id": "P0085",
+        "reason": "Too far (141.9 km)."
+      },
+      {
+        "provider_id": "P0088",
+        "reason": "Too far (141.9 km)."
+      },
+      {
+        "provider_id": "P0089",
+        "reason": "Too far (140.9 km)."
+      },
+      {
+        "provider_id": "P0090",
+        "reason": "No available slots today and too far (141.3 km)."
+      },
+      {
+        "provider_id": "P0091",
+        "reason": "No available slots today and too far (276.0 km)."
+      },
+      {
+        "provider_id": "P0092",
+        "reason": "Too far (274.3 km)."
+      },
+      {
+        "provider_id": "P0095",
+        "reason": "No available slots today and too far (274.2 km)."
+      },
+      {
+        "provider_id": "P0097",
+        "reason": "Too far (273.8 km)."
+      },
+      {
+        "provider_id": "P0098",
+        "reason": "Too far (273.9 km)."
+      }
+    ]
+  },
+  "summary": "Ranked 29 candidates -> top 3: P0020(0.95), P0009(0.88), P0010(0.80) | 26 rejected"
+}

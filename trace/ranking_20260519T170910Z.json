@@ -1,0 +1,56 @@
+{
+  "trace_type": "ranking_agent",
+  "timestamp": "2026-05-19T17:09:10.235570+00:00",
+  "model": "gemini-2.5-flash",
+  "latency_ms": 6206.4,
+  "input": {
+    "user_text": "Mujhe kal subah G-13 mein AC technician chahiye",
+    "service_type": "AC Technician",
+    "location_sector": "G-13, Islamabad",
+    "detected_language": "roman_urdu",
+    "formality_level": "casual"
+  },
+  "candidates_with_distances": [
+    {
+      "provider_id": "P0003",
+      "name": "Dost Muhammad Rajput",
+      "category": "AC Technician",
+      "sector": "I-9, Islamabad",
+      "rating": 4.3,
+      "rating_count": 220,
+      "price_range": {
+        "min": 500,
+        "max": 2500,
+        "currency": "PKR"
+      },
+      "available_slot_count": 8,
+      "next_available_slots": [
+        "2026-05-20T15:00:00+05:00",
+        "2026-05-21T11:00:00+05:00",
+        "2026-05-22T11:00:00+05:00"
+      ],
+      "verified": false,
+      "languages_spoken": [
+        "Urdu",
+        "English"
+      ],
+      "bio": "1 years fixing ACs across Islamabad. Trained his son in the trade.",
+      "years_experience": 1,
+      "cultural_background": "Punjabi",
+      "distance_km": null
+    }
+  ],
+  "prompt_sent_to_llm": "You are the Ranking Agent for Daira-e-Hunar, a service marketplace for Pakistan's informal economy. Your job: given a user's service request and a list of candidate providers, rank the providers and explain WHY each one is recommended or rejected.\n\n## Your output\nReturn up to 3 ranked providers in the `top_3` list, ordered by suitability (best first). If fewer than 3 candidates exist, return fewer — do NOT pad with duplicates or fabricate providers. Put all remaining candidates in the `rejected` list with a short reason.\n\n## PILLAR 1: TONE MIRRORING (CRITICAL)\nWrite ALL reasoning text in the SAME language and formality level the user used:\n- If detected_language=\"roman_urdu\" and formality_level=\"slang\" → write reasoning in casual Roman Urdu with slang (use \"yaar\", \"bhai\", \"behtareen\", \"acha\" etc.)\n- If detected_language=\"roman_urdu\" and formality_level=\"casual\" → write reasoning in normal Roman Urdu\n- If detected_language=\"roman_urdu\" and formality_level=\"formal\" → write reasoning in polite Roman Urdu (use \"aap\", \"behtar\")\n- If detected_language=\"urdu\" and formality_level=\"formal\" → write reasoning in formal Urdu script\n- If detected_language=\"urdu\" and formality_level=\"casual\" → write reasoning in conversational Urdu script\n- If detected_language=\"english\" → write reasoning in English\n- If code_switching=true → mirror the English/Urdu mix in your reasoning\n\nExamples:\n- Slang Roman Urdu: \"Yaar ye banda sab se qareeb hai, sirf 2 km door. Rating bhi 4.5 hai aur 12 saal ka tajurba hai. AC split ka kaam karta hai, kal subah ke liye slot bhi khali hai.\"\n- Formal Urdu script: \"یہ فراہم کنندہ آپ کے علاقے سے صرف ۲ کلومیٹر کے فاصلے پر ہیں۔ ان کی درجہ بندی ۴.۵ ہے اور ۱۲ سال کا تجربہ رکھتے ہیں۔ کل صبح کے لیے وقت دستیاب ہے۔\"\n- English: \"This provider is only 2 km away with a 4.5 rating and 12 years of experience. They specialize in split AC installation and have a slot available tomorrow morning.\"\n\n## PILLAR 2: READ THE BIO\nThe `bio` field carries human signal that ratings don't. Reference specific bio details when they inform the ranking:\n- A provider whose bio mentions specialization in the requested service type is a strength.\n- A provider whose bio implies a DIFFERENT specialty than their listed category is a RED FLAG. For example, a \"Tutor\" whose bio is about \"stitching bridal lehengas\" should be deprioritized and the mismatch should be flagged in the reasoning.\n- Bio details about reliability, family tradition, or specific expertise are worth mentioning.\n\n## PILLAR 3: LANGUAGE & REGIONAL COMPATIBILITY\nWhen a provider's `languages_spoken` overlaps with the user's likely language (inferred from detected_language), or when the provider is from the same locality as the user's requested area, you may note this as a practical communication or local-knowledge advantage.\n- NEVER frame this as ethnicity matching. Talk about language and locality, not ethnicity.\n- If the user explicitly stated a language preference (e.g. \"Pashto bolne wala chahiye\"), honor it as a HARD preference and surface it prominently in the reasoning. Deprioritize providers who don't speak the requested language.\n\n## PILLAR 4: CONSISTENCY REASONING\nIf `requested_time` and `urgency` appear inconsistent:\n- \"kal subah\" (tomorrow morning) + urgency=\"this_week\" → the specific signal \"kal subah\" is more precise; use tomorrow morning as the actual constraint.\n- Mention the reconciliation briefly in the reasoning (e.g. \"User ne 'kal subah' kaha, is liye kal ka slot check kiya\").\n\n## PILLAR 5: GROUNDED REASONING\nEach reasoning paragraph MUST be 2-4 sentences. Name SPECIFIC facts:\n- Distance in km (use the distance_km field provided)\n- Rating and rating_count\n- Number of available slots and specific slot times when relevant\n- Bio details that matter\n- Price range\n- Verified status\nNo generic platitudes. No performative empathy. Concrete and grounded.\n\n## Scoring guidelines\n- Distance: closer is better, but not the only factor\n- Rating: weight higher ratings, but also consider rating_count (a 4.8 with 5 reviews is less reliable than a 4.3 with 150 reviews)\n- Availability: providers with slots matching the user's requested_time score higher\n- Bio relevance: bio matching the service type is a plus; bio mismatching is a penalty\n- Verified: slight bonus for verified providers\n- Price: reasonable price ranges preferred; very cheap + low rating = red flag\n- Language: matching the user's language is a practical advantage\n\n## Input format\nYou will receive:\n- The user's original request and parsed intent fields\n- A list of candidate providers with their details and pre-computed distance_km\n\nRank them and explain your reasoning.\n\n---\n\n## User Intent\n```json\n{\n  \"raw_input\": \"Mujhe kal subah G-13 mein AC technician chahiye\",\n  \"service_type\": \"AC Technician\",\n  \"location_sector\": \"G-13, Islamabad\",\n  \"requested_time\": \"tomorrow morning\",\n  \"urgency\": \"this_week\",\n  \"detected_language\": \"roman_urdu\",\n  \"formality_level\": \"casual\",\n  \"literacy_register\": \"medium\",\n  \"code_switching\": false,\n  \"constraints\": {\n    \"gender_preference\": null,\n    \"budget_max_pkr\": null\n  }\n}\n```\n\n## Candidate Providers\n```json\n[\n  {\n    \"provider_id\": \"P0003\",\n    \"name\": \"Dost Muhammad Rajput\",\n    \"category\": \"AC Technician\",\n    \"sector\": \"I-9, Islamabad\",\n    \"rating\": 4.3,\n    \"rating_count\": 220,\n    \"price_range\": {\n      \"min\": 500,\n      \"max\": 2500,\n      \"currency\": \"PKR\"\n    },\n    \"available_slot_count\": 8,\n    \"next_available_slots\": [\n      \"2026-05-20T15:00:00+05:00\",\n      \"2026-05-21T11:00:00+05:00\",\n      \"2026-05-22T11:00:00+05:00\"\n    ],\n    \"verified\": false,\n    \"languages_spoken\": [\n      \"Urdu\",\n      \"English\"\n    ],\n    \"bio\": \"1 years fixing ACs across Islamabad. Trained his son in the trade.\",\n    \"years_experience\": 1,\n    \"cultural_background\": \"Punjabi\",\n    \"distance_km\": null\n  }\n]\n```",
+  "raw_llm_response": "{\n  \"top_3\": [\n    {\n      \"provider_id\": \"P0003\",\n      \"score\": 0.85,\n      \"reasoning\": \"Dost Muhammad Rajput AC technician hain aur inki rating 4.3 hai, jo 220 reviews par based hai. Ye kal subah 11 baje available hain, jo aapki 'kal subah' ki request se match karta hai. Bhale hi inka experience 1 saal ka hai, inki bio AC fixing ke mutabiq hai aur inki high rating inki reliability show karti hai. Ye I-9 se hain.\"\n    }\n  ],\n  \"rejected\": []\n}",
+  "parsed_output": {
+    "top_3": [
+      {
+        "provider_id": "P0003",
+        "score": 0.85,
+        "reasoning": "Dost Muhammad Rajput AC technician hain aur inki rating 4.3 hai, jo 220 reviews par based hai. Ye kal subah 11 baje available hain, jo aapki 'kal subah' ki request se match karta hai. Bhale hi inka experience 1 saal ka hai, inki bio AC fixing ke mutabiq hai aur inki high rating inki reliability show karti hai. Ye I-9 se hain."
+      }
+    ],
+    "rejected": []
+  },
+  "summary": "Ranked 1 candidates -> top 1: P0003(0.85) | 0 rejected"
+}

@@ -1,0 +1,23 @@
+{
+  "run_id": "run_20260519T171023Z",
+  "user_query": "I need a tutor in Gilgit",
+  "mode": "agentic",
+  "started_at": "2026-05-19T17:10:23.917162+00:00",
+  "stages": [
+    {
+      "agent": "intent",
+      "trace_file": "trace/intent_20260519T171026Z.json",
+      "success": false,
+      "latency_ms": 2983.1628799438477
+    },
+    {
+      "agent": "action",
+      "trace_file": "trace/action_20260519T171026Z.json",
+      "success": true,
+      "latency_ms": 0.0
+    }
+  ],
+  "final_status": "needs_clarification",
+  "final_provider_id": null,
+  "summary": "AGENTIC RUN run_20260519T171023Z | query: 'I need a tutor in Gilgit' | status: needs_clarification | provider: none | latency: 2983.2ms | 2 stages OK"
+}

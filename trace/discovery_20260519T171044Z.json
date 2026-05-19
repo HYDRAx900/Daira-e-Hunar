@@ -1,0 +1,49 @@
+{
+  "trace_type": "discovery_agent",
+  "timestamp": "2026-05-19T17:10:44.645147+00:00",
+  "input": {
+    "service_type": "Tutor",
+    "location_sector": "Islamabad",
+    "home_city": null
+  },
+  "filter_applied": {
+    "city": "Islamabad",
+    "service_type": "Tutor"
+  },
+  "candidates_returned": 29,
+  "candidate_ids": [
+    "P0009",
+    "P0010",
+    "P0014",
+    "P0020",
+    "P0021",
+    "P0031",
+    "P0034",
+    "P0046",
+    "P0050",
+    "P0051",
+    "P0055",
+    "P0056",
+    "P0057",
+    "P0063",
+    "P0065",
+    "P0068",
+    "P0072",
+    "P0073",
+    "P0081",
+    "P0084",
+    "P0085",
+    "P0088",
+    "P0089",
+    "P0090",
+    "P0091",
+    "P0092",
+    "P0095",
+    "P0097",
+    "P0098"
+  ],
+  "fallback_used": true,
+  "fallback_reason": "No Tutor found in Islamabad; broadened to nationwide",
+  "no_candidates_reason": null,
+  "summary": "[FALLBACK] No Tutor in Islamabad; No Tutor found in Islamabad; broadened to nationwide, found 29"
+}

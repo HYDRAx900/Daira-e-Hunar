@@ -1,0 +1,81 @@
+{
+  "trace_type": "action_agent",
+  "timestamp": "2026-05-19T17:09:10.251197+00:00",
+  "latency_ms": 15.6,
+  "input": {
+    "intent": {
+      "service_type": "AC Technician",
+      "location_sector": "G-13, Islamabad",
+      "requested_time": "tomorrow morning",
+      "urgency": "this_week",
+      "constraints": {
+        "gender_preference": null,
+        "budget_max_pkr": null
+      },
+      "raw_input": "Mujhe kal subah G-13 mein AC technician chahiye",
+      "detected_language": "roman_urdu",
+      "confidence": 0.92,
+      "needs_clarification": false,
+      "clarification_question": null,
+      "formality_level": "casual",
+      "literacy_register": "medium",
+      "code_switching": false
+    },
+    "selected_provider": {
+      "id": "P0003",
+      "name": "Dost Muhammad Rajput",
+      "category": "AC Technician",
+      "sector": "I-9, Islamabad",
+      "home_city": "Islamabad",
+      "lat": 33.6663,
+      "lng": 73.0446,
+      "rating": 4.3,
+      "rating_count": 220,
+      "price_range": {
+        "min": 500,
+        "max": 2500,
+        "currency": "PKR"
+      },
+      "available_slots": [
+        "2026-05-20T15:00:00+05:00",
+        "2026-05-21T11:00:00+05:00",
+        "2026-05-22T11:00:00+05:00",
+        "2026-05-24T17:00:00+05:00",
+        "2026-05-25T17:00:00+05:00",
+        "2026-05-26T18:00:00+05:00",
+        "2026-05-27T14:00:00+05:00",
+        "2026-05-28T15:00:00+05:00"
+      ],
+      "verified": false,
+      "languages_spoken": [
+        "Urdu",
+        "English"
+      ],
+      "bio": "1 years fixing ACs across Islamabad. Trained his son in the trade.",
+      "years_experience": 1,
+      "cultural_background": "Punjabi",
+      "_synthetic": true
+    }
+  },
+  "slot_chosen": "2026-05-21T11:00:00+05:00",
+  "race_check_result": true,
+  "confirmation_prompt": "No LLM Client",
+  "raw_llm_response": "{}",
+  "parsed_output": {
+    "status": "confirmed",
+    "booking_id": "BF9D3873C",
+    "provider_id": "P0003",
+    "provider_name": "Dost Muhammad Rajput",
+    "scheduled_datetime": "2026-05-21T11:00:00+05:00",
+    "confirmation_message": "Booking confirmed.",
+    "confirmation_language": "english",
+    "time_negotiated": false,
+    "followups_scheduled": [
+      "FF09372BE",
+      "F05FBFB93"
+    ],
+    "receipt_path": "trace/receipt_BF9D3873C.txt",
+    "error_reason": null
+  },
+  "summary": "ACTION booking_id=BF9D3873C | provider=P0003 | slot=2026-05-21T11:00:00+05:00 | status=confirmed | negotiated=false"
+}
